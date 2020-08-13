@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <title>Fernando Correia&#39;s Blog</title>
+    <link>https://fernandoacorreia.info/</link>
+    <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
     <lastBuildDate>Wed, 12 Aug 2020 05:16:46 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fernandoacorreia.info/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>New Blog</title>
-      <link>http://example.org/posts/new-blog/</link>
+      <link>https://fernandoacorreia.info/post/new-blog/</link>
       <pubDate>Wed, 12 Aug 2020 05:16:46 +0000</pubDate>
       
-      <guid>http://example.org/posts/new-blog/</guid>
+      <guid>https://fernandoacorreia.info/post/new-blog/</guid>
       <description>New Blog!
-I decided to start a new blog to talk about software development.</description>
+I decided to start a new blog to talk about software development.
+Using Clarity theme.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://fernandoacorreia.info/archives/</link>
+      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fernandoacorreia.info/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://fernandoacorreia.info/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fernandoacorreia.info/about/</guid>
+      <description>I&amp;rsquo;ve been a software engineer for over 30 years.
+Currently I&amp;rsquo;m a Principal Software Engineer at Domino Data Lab, where I build a data science platform.
+Any opinions expressed in this website are my own, not my employer&amp;rsquo;s.</description>
     </item>
     
   </channel>

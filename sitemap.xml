@@ -3,26 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://fernandoacorreia.info/</loc>
     <lastmod>2020-08-12T05:16:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/new-blog/</loc>
+    <loc>https://fernandoacorreia.info/post/new-blog/</loc>
     <lastmod>2020-08-12T05:16:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>https://fernandoacorreia.info/post/</loc>
     <lastmod>2020-08-12T05:16:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://fernandoacorreia.info/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://fernandoacorreia.info/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandoacorreia.info/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fernandoacorreia.info/tags/index/</loc>
+  </url>
+  
+  <url>
+    <loc>https://fernandoacorreia.info/tags/</loc>
   </url>
   
 </urlset>
