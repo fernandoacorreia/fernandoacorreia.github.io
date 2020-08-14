@@ -6,7 +6,7 @@
     <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 12 Aug 2020 05:16:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 21:42:46 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,12 +14,13 @@
     <item>
       <title>New Blog</title>
       <link>https://fernandocorreia.dev/post/new-blog/</link>
-      <pubDate>Wed, 12 Aug 2020 05:16:46 +0000</pubDate>
+      <pubDate>Thu, 13 Aug 2020 21:42:46 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/post/new-blog/</guid>
-      <description>New Blog!
-I decided to start a new blog to talk about software development.
-Using Clarity theme.</description>
+      <description>I decided to start a new blog to talk about software development.
+It&amp;rsquo;s been about 5 years since I last had a blog, so I went looking for what people are using in 2020.
+It turns out that Hugo is quite popular for building static sites.
+Two of its selling points are that it is super fast, and that people have built hundreds of good-looking themes so that you can hit the ground running.</description>
     </item>
     
     <item>

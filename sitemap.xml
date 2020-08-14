@@ -4,17 +4,27 @@
   
   <url>
     <loc>https://fernandocorreia.dev/</loc>
-    <lastmod>2020-08-12T05:16:46+00:00</lastmod>
+    <lastmod>2020-08-13T21:42:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/tags/blogging/</loc>
+    <lastmod>2020-08-13T21:42:46+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://fernandocorreia.dev/post/new-blog/</loc>
-    <lastmod>2020-08-12T05:16:46+00:00</lastmod>
+    <lastmod>2020-08-13T21:42:46+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://fernandocorreia.dev/post/</loc>
-    <lastmod>2020-08-12T05:16:46+00:00</lastmod>
+    <lastmod>2020-08-13T21:42:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/tags/</loc>
+    <lastmod>2020-08-13T21:42:46+00:00</lastmod>
   </url>
   
   <url>
@@ -28,10 +38,6 @@
   
   <url>
     <loc>https://fernandocorreia.dev/tags/index/</loc>
-  </url>
-  
-  <url>
-    <loc>https://fernandocorreia.dev/tags/</loc>
   </url>
   
 </urlset>

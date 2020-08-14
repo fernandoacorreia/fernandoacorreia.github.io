@@ -6,9 +6,19 @@
     <description>Recent content in Tags on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 13 Aug 2020 21:42:46 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blogging</title>
+      <link>https://fernandocorreia.dev/tags/blogging/</link>
+      <pubDate>Thu, 13 Aug 2020 21:42:46 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/tags/blogging/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>index</title>
