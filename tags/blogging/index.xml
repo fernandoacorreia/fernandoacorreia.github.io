@@ -13,10 +13,10 @@
     
     <item>
       <title>New Blog</title>
-      <link>https://fernandocorreia.dev/post/new-blog/</link>
+      <link>https://fernandocorreia.dev/posts/new-blog/</link>
       <pubDate>Thu, 13 Aug 2020 21:42:46 +0000</pubDate>
       
-      <guid>https://fernandocorreia.dev/post/new-blog/</guid>
+      <guid>https://fernandocorreia.dev/posts/new-blog/</guid>
       <description>I decided to start a new blog to talk about software development.
 It&amp;rsquo;s been about 5 years since I last had a blog, so I went looking for what people are using in 2020.
 It turns out that Hugo is quite popular for building static sites.
