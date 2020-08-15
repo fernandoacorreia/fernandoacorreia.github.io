@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 13 Aug 2020 21:42:46 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 04:35:19 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Custom domain with GitHub Pages</title>
+      <link>https://fernandocorreia.dev/posts/github-pages-custom-domain/</link>
+      <pubDate>Sat, 15 Aug 2020 04:35:19 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/github-pages-custom-domain/</guid>
+      <description>I am hosting my blog on GitHub Pages. I wanted to use my own domain name instead of a github.io subdomain.
+GitHub&amp;rsquo;s documentation is very helpful. Even so, it took me some effort to figure out all the details, so I&amp;rsquo;m going to share what I learned.
+These instructions are for using an &amp;ldquo;apex domain&amp;rdquo; e.g. fernandocorreia.dev. The settings are a bit different when using a subdomain like www.fernandocorreia.dev. Again, GitHub&amp;rsquo;s documentation is very helpful and does a good job of explaining these differences.</description>
+    </item>
     
     <item>
       <title>New Blog</title>

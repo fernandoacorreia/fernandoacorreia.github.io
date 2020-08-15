@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blogging on Fernando Correia&#39;s Blog</title>
-    <link>https://fernandocorreia.dev/tags/blogging/</link>
-    <description>Recent content in blogging on Fernando Correia&#39;s Blog</description>
+    <title>DNS on Fernando Correia&#39;s Blog</title>
+    <link>https://fernandocorreia.dev/tags/dns/</link>
+    <description>Recent content in DNS on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
     <lastBuildDate>Sat, 15 Aug 2020 04:35:19 +0000</lastBuildDate>
     
-	<atom:link href="https://fernandocorreia.dev/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://fernandocorreia.dev/tags/dns/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <description>I am hosting my blog on GitHub Pages. I wanted to use my own domain name instead of a github.io subdomain.
 GitHub&amp;rsquo;s documentation is very helpful. Even so, it took me some effort to figure out all the details, so I&amp;rsquo;m going to share what I learned.
 These instructions are for using an &amp;ldquo;apex domain&amp;rdquo; e.g. fernandocorreia.dev. The settings are a bit different when using a subdomain like www.fernandocorreia.dev. Again, GitHub&amp;rsquo;s documentation is very helpful and does a good job of explaining these differences.</description>
-    </item>
-    
-    <item>
-      <title>New Blog</title>
-      <link>https://fernandocorreia.dev/posts/new-blog/</link>
-      <pubDate>Thu, 13 Aug 2020 21:42:46 +0000</pubDate>
-      
-      <guid>https://fernandocorreia.dev/posts/new-blog/</guid>
-      <description>I decided to start a new blog to talk about software development.
-It&amp;rsquo;s been about 5 years since I last had a blog, so I went looking for what people are using in 2020.
-It turns out that Hugo is quite popular for building static sites.
-Two of its selling points are that it is super fast, and that people have built hundreds of good-looking themes so that you can hit the ground running.</description>
     </item>
     
   </channel>
