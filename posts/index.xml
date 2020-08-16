@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 16 Aug 2020 02:12:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 17:31:12 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Function declarations</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-4/</link>
+      <pubDate>Sun, 16 Aug 2020 17:31:12 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-4/</guid>
+      <description>This is part 4 of my journey learning Golang.
+Function declarations Functions are reusable blocks of code. For example:
+1func main () { 2 fmt.Println(&amp;#34;Hello, World!&amp;#34;) 3} The func keyword declares a function. It is followed by the function&amp;rsquo;s name, a list of arguments (delimited by parenthesis) and the function block (delimited by curly braces).
+main function In Go, the main function is special. When the main function is defined in the main package, it is automatically called when the program is executed.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Packages</title>
