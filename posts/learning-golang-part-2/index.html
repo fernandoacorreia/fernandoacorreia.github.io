@@ -153,7 +153,8 @@ Compiling Go programs An individual Go source file can be compiled with the go b
 <h1 id="compiling-go-programs">Compiling Go programs</h1>
 <p>An individual Go source file can be compiled with the <code>go build</code> command:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>go build {filename}.go
-</code></pre></div><p>The resulting binary can be executed with this command:</p>
+</code></pre></div><p>That will produce an executable binary file if the source&rsquo;s package is <code>main</code> (see <a href="/posts/learning-golang-part-3/">Part 3</a> for more on packages).</p>
+<p>The resulting binary can be executed with this command:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>./{filename}
 </code></pre></div><p>Example:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ go build main.go
@@ -211,9 +212,6 @@ languages? If you&rsquo;re a seasoned Go programmer, what would you add to these
     <ul class="flex-column">
       
       <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-3/" class="nav-link">Learning Golang Part 3</a>
-      </li>
-      <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-1/" class="nav-link">Learning Golang: Getting Started</a>
       </li>
       <li>
@@ -244,11 +242,6 @@ languages? If you&rsquo;re a seasoned Go programmer, what would you add to these
           <span class='button_tally'>2</span>
         </a>
         
-        <a href='https://fernandocorreia.dev/tags/untagged/' class=" post_tag button button_translucent">
-          UNTAGGED
-          <span class='button_tally'>2</span>
-        </a>
-        
         <a href='https://fernandocorreia.dev/tags/dns/' class=" post_tag button button_translucent">
           DNS
           <span class='button_tally'>1</span>
@@ -261,6 +254,11 @@ languages? If you&rsquo;re a seasoned Go programmer, what would you add to these
         
         <a href='https://fernandocorreia.dev/tags/golang/' class=" post_tag button button_translucent">
           GOLANG
+          <span class='button_tally'>1</span>
+        </a>
+        
+        <a href='https://fernandocorreia.dev/tags/untagged/' class=" post_tag button button_translucent">
+          UNTAGGED
           <span class='button_tally'>1</span>
         </a>
         
