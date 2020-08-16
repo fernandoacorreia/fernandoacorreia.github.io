@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Untagged on Fernando Correia&#39;s Blog</title>
+    <link>https://fernandocorreia.dev/tags/untagged/</link>
+    <description>Recent content in Untagged on Fernando Correia&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 16 Aug 2020 01:55:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://fernandocorreia.dev/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Golang: Compiling and running Go programs</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-2/</link>
+      <pubDate>Sun, 16 Aug 2020 01:55:20 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-2/</guid>
+      <description>This is part 2 of my journey learning Golang.
+Compiling Go programs An individual Go source file can be compiled with the go build command:
+1go build {filename}.go The resulting binary can be executed with this command:
+1./{filename} Example:
+1$ go build main.go 2$ ./main 3Hello World Running from source The go run command combines the two previous steps: it builds a binary from a source file and executes it:</description>
+    </item>
+    
+  </channel>
+</rss>
