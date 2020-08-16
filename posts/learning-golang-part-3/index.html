@@ -47,7 +47,7 @@ Package declaration The first line of a Go source file is the &ldquo;package dec
   
   
     
-  <body data-code="7" data-lines="true" id="documentTop">
+  <body data-code="20" data-lines="true" id="documentTop">
 
 <header class = 'nav_header' >
   <nav class = 'nav'>
@@ -158,23 +158,54 @@ Package declaration The first line of a Go source file is the &ldquo;package dec
 <p>Example:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">package</span> <span class="nx">main</span>
 </code></pre></div><p><code>go build</code> will produce an executable binary file for source files with <code>package main</code>.</p>
-<h1 id="importing-packages">Importing packages</h1>
+<h1 id="importing-a-package">Importing a package</h1>
 <p>The <code>import</code> keyword allows bringing in and using code from other packages.</p>
 <p>Example:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
 </code></pre></div><p>A &ldquo;package reference variable&rdquo; is created from the imported package&rsquo;s name &ndash; in this case, <code>fmt</code>.</p>
-<h1 id="full-example">Full example</h1>
+<h1 id="importing-multiple-packages">Importing multiple packages</h1>
+<p>It&rsquo;s usual for a source file to import multiple packages. The convention for that is to use a single <code>import</code> statement
+with a package list within parenthesis like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln">2</span>  <span class="s">&#34;package1&#34;</span>
+<span class="ln">3</span>  <span class="s">&#34;package2&#34;</span>
+<span class="ln">4</span><span class="p">)</span>
+</code></pre></div><h1 id="package-alias">Package alias</h1>
+<p>It is possible to define an &ldquo;alias&rdquo; as a shorthand name instead of the default package reference variable. The syntax
+for that is to specify the alias before the package name like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln">2</span>  <span class="nx">p1</span> <span class="s">&#34;package1&#34;</span>
+<span class="ln">3</span>  <span class="s">&#34;package2&#34;</span>
+<span class="ln">4</span><span class="p">)</span>
+</code></pre></div><p>That allows calling functions in <code>package1</code> like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="nx">p1</span><span class="p">.</span><span class="nf">SampleFunc</span><span class="p">()</span>
+</code></pre></div><h1 id="full-example">Full example</h1>
 <p>This is a full &ldquo;Hello World&rdquo; example in Go that demonstrates the concepts above.</p>
-<p>Notice that the first line is a package declaration with a package name of <code>main</code>. That will make this an executable
-program.</p>
-<p>On line 3, the <code>fmt</code> package is being imported, so that its <code>Println</code> function can be used on line 6.</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">package</span> <span class="nx">main</span>
-<span class="ln">2</span>
-<span class="ln">3</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
-<span class="ln">4</span>
-<span class="ln">5</span><span class="kd">func</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
-<span class="ln">6</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="p">)</span>
-<span class="ln">7</span><span class="p">}</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span>  <span class="nx">t</span> <span class="s">&#34;time&#34;</span>
+<span class="ln"> 6</span><span class="p">)</span>
+<span class="ln"> 7</span>
+<span class="ln"> 8</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="p">)</span>
+<span class="ln">10</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;The time is now &#34;</span><span class="p">,</span> <span class="nx">t</span><span class="p">.</span><span class="nf">Now</span><span class="p">())</span>
+<span class="ln">11</span><span class="p">}</span>
+</code></pre></div><p>Highlights:</p>
+<ul>
+<li>Line 1: The package declaration with a package name of <code>main</code>. That will make this an executable program.</li>
+<li>Line 3: The <code>import</code> statement is importing a list of packages.</li>
+<li>Line 4: Imports the &ldquo;fmt&rdquo; package with its standard name (&ldquo;fmt&rdquo;).</li>
+<li>Line 5: Imports the &ldquo;time&rdquo; package with the alias &ldquo;t&rdquo;.</li>
+<li>Line 9: Uses the <code>Println</code> function from package <code>fmt</code> to display &ldquo;Hello, World!&rdquo;</li>
+<li>Line 10: Uses the <code>Println</code> function from package <code>fmt</code> to display &ldquo;The time is now &quot; followed by the current time, as
+returned by function <code>Now</code> from package <code>time</code> (aliased as <code>t</code>).</li>
+</ul>
+<p>This is a sample output of the program above:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ go run main.go
+<span class="ln">2</span>Hello, World!
+<span class="ln">3</span>The time is now  2020-08-16 18:07:24.180778888 +0000 UTC m=+0.000097040
 </code></pre></div><h1 id="takeaways">Takeaways</h1>
 <ul>
 <li>The <code>package</code> keyword is used for the obligatory package declaration.</li>
