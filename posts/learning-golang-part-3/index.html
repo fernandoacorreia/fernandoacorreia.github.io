@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang Part 3 | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Packages | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,13 +14,15 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 3 of my journey learning Golang.">
+<meta name="description" content="This is part 3 of my journey learning Golang.
+Package declaration The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang Part 3" />
+<meta name = "twitter:title" content = "Learning Golang: Packages" />
 <meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-3/" />
-<meta property = "og:title" content = "Learning Golang Part 3" />
-<meta property = "og:description" content = "This is part 3 of my journey learning Golang." />
+<meta property = "og:title" content = "Learning Golang: Packages" />
+<meta property = "og:description" content = "This is part 3 of my journey learning Golang.
+Package declaration The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -45,8 +47,7 @@
   
   
     
-  
-  <body data-code="7" data-lines="false" id="documentTop">
+  <body data-code="7" data-lines="true" id="documentTop">
 
 <header class = 'nav_header' >
   <nav class = 'nav'>
@@ -104,7 +105,7 @@
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang Part 3</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Packages</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
@@ -116,13 +117,13 @@
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%20Part%203&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-3%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Packages&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-3%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-3%2f&t=Learning%20Golang%20Part%203" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-3%2f&t=Learning%20Golang%3a%20Packages" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
@@ -146,6 +147,41 @@
 
     
     <p>This is part 3 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="package-declaration">Package declaration</h1>
+<p>The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the <code>package</code> keyword.</p>
+<p>This serves a few purposes:</p>
+<ul>
+<li>It provides a structure for grouping related source files.</li>
+<li>It provides a mechanism for code reuse.</li>
+<li>It differentiates between executable packages from utility packages (i.e. libraries).</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">package</span> <span class="nx">main</span>
+</code></pre></div><p><code>go build</code> will produce an executable binary file for source files with <code>package main</code>.</p>
+<h1 id="importing-packages">Importing packages</h1>
+<p>The <code>import</code> keyword allows bringing in and using code from other packages.</p>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+</code></pre></div><p>A &ldquo;package reference variable&rdquo; is created from the imported package&rsquo;s name &ndash; in this case, <code>fmt</code>.</p>
+<h1 id="full-example">Full example</h1>
+<p>This is a full &ldquo;Hello World&rdquo; example in Go that demonstrates the concepts above.</p>
+<p>Notice that the first line is a package declaration with a package name of <code>main</code>. That will make this an executable
+program.</p>
+<p>On line 3, the <code>fmt</code> package is being imported, so that its <code>Println</code> function can be used on line 6.</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="kd">func</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
+<span class="ln">6</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello World&#34;</span><span class="p">)</span>
+<span class="ln">7</span><span class="p">}</span>
+</code></pre></div><h1 id="takeaways">Takeaways</h1>
+<ul>
+<li>The <code>package</code> keyword is used for the obligatory package declaration.</li>
+<li>The <code>import</code> keyword is used for bringing into context code from other packages.</li>
+<li><code>main</code> is a special package name for executable programs.</li>
+</ul>
+<p>If you know Go, what would you add to an initial exposure on the concept of packages?</p>
 
     <hr><div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -201,7 +237,7 @@
       <nav class="tags_nav">
         <a href='https://fernandocorreia.dev/categories/learning-golang/' class=" post_tag button button_translucent">
           LEARNING-GOLANG
-          <span class='button_tally'>1</span>
+          <span class='button_tally'>3</span>
         </a>
         
         
