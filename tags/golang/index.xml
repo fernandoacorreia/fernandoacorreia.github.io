@@ -6,10 +6,22 @@
     <description>Recent content in golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 16 Aug 2020 17:31:12 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2020 04:02:00 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Comments</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-5/</link>
+      <pubDate>Tue, 18 Aug 2020 04:02:00 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-5/</guid>
+      <description>This is part 5 of my journey learning Golang.
+Inline comments Go ignores text to the right of //:
+1// This entire line is ignored by the compiler. 2// fmt.Println(&amp;#34;Does NOT print&amp;#34;) 3fmt.Println(&amp;#34;This gets printed!&amp;#34;) // This part gets ignored Block comments All lines between /* and */ will be ignored:
+1/* 2This is ignored. 3This is also ignored. 4fmt.Println(&amp;#34;This WON&amp;#39;T print!&amp;#34;) 5*/ Godoc Go has a tool for automatically generating documentation from Go source code: Godoc.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Function declarations</title>
