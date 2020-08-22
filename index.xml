@@ -6,10 +6,22 @@
     <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 21 Aug 2020 03:18:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2020 01:55:41 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Running Go in a container</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-8/</link>
+      <pubDate>Sat, 22 Aug 2020 01:55:41 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-8/</guid>
+      <description>This is part 8 of my journey learning Golang.
+Reproducible build &amp;amp; run environments Over the years, it is not uncommon that different projects in the same language will have different requirements about the versions of the tools and libraries that they require.
+For instance, I learned that there are differences in the behavior of the GO111MODULE environment variable across Go versions 1.12 and 1.13.
+That&amp;rsquo;s why when I start a repository for a new project, one of the first things I do is to set up scripts for building and running the code in a reproducible way.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Multiline strings</title>

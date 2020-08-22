@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-figures="">
-  <head>  <title>GitHub Pages | Fernando Correia&#39;s Blog</title>
+<html lang="en" data-figures="" class="page">
+  <head>  <title>Learning Golang: Running Go in a container | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,13 +14,15 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="This is part 8 of my journey learning Golang.
+Reproducible build &amp; run environments Over the years, it is not uncommon that different projects in the same …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "GitHub Pages" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/tags/github-pages/" />
-<meta property = "og:title" content = "GitHub Pages" />
-<meta property = "og:description" content = "" />
+<meta name = "twitter:title" content = "Learning Golang: Running Go in a container" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-8/" />
+<meta property = "og:title" content = "Learning Golang: Running Go in a container" />
+<meta property = "og:description" content = "This is part 8 of my journey learning Golang.
+Reproducible build &amp; run environments Over the years, it is not uncommon that different projects in the same …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -30,7 +32,7 @@
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/tags/github-pages/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-8/'>
 
     
 
@@ -101,47 +103,114 @@
 </header>
 
     <main>
-
-<div class='grid-inverse wrap content'>
-  <ul class='posts' id = 'posts'>
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/github-pages-custom-domain/'>Custom domain with GitHub Pages</a>
-      </h3>
-      <div class = 'post_meta'>
+  
+<div class = 'grid-inverse wrap content'>
+  <article class='post_content'>
+    <h1 class='post_title'>Learning Golang: Running Go in a container</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 15, 2020</span>
-  <a href = 'https://fernandocorreia.dev/tags/blogging' class = 'post_tag button button_translucent'>blogging
-  </a>
-  <a href = 'https://fernandocorreia.dev/tags/dns' class = 'post_tag button button_translucent'>DNS
-  </a>
-  <a href = 'https://fernandocorreia.dev/tags/github-pages' class = 'post_tag button button_translucent'>GitHub Pages
+    Aug 22, 2020</span>
+  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>I am hosting my blog on GitHub Pages. I wanted to use my own domain name instead of a github.io subdomain.
-GitHub&rsquo;s documentation is very helpful. Even so, it took me some effort to figure out all the details, so I&rsquo;m going to share what I learned.
-These instructions are for using an &ldquo;apex …</p>
-          <a href='https://fernandocorreia.dev/posts/github-pages-custom-domain/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class='post_share'>
+  Share on:
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Running%20Go%20in%20a%20container&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-8%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#twitter"></use>
+    </svg>
+  </a>
   
-    <li>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-8%2f&t=Learning%20Golang%3a%20Running%20Go%20in%20a%20container" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#facebook"></use>
+    </svg>
+  </a>
+  <script>
+    function shareViaLinkedin() {
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-8/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    }
+  </script>
+  <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
+    <svg class="icon">
+      <use xlink:href="#linkedin"></use>
+    </svg>
+  </a>
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-8/" title="Copy Link" class="link link_yank">
+    <svg class="icon">
+      <use xlink:href="#yank"></use>
+    </svg>
+  </a>
+</div>
 
+    
+    <p>This is part 8 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="reproducible-build--run-environments">Reproducible build &amp; run environments</h1>
+<p>Over the years, it is not uncommon that different projects in the same language will have different requirements about
+the versions of the tools and libraries that they require.</p>
+<p>For instance, I learned that there are differences in the behavior of the <code>GO111MODULE</code> environment variable
+across Go versions 1.12 and 1.13.</p>
+<p>That&rsquo;s why when I start a repository for a new project, one of the first things I do is to set up scripts for building
+and running the code in a reproducible way.</p>
+<p>Docker containers are a very effective tool for that. So when I created a GitHub repo for my
+<a href="https://github.com/fernandoacorreia/learning-go">learning-go</a> project, I set up a quick script to run the code. This
+way I know I&rsquo;ll be able to run it years from now without any special setup other than having Docker installed.</p>
+<p>I wish this was a general practice for open source projects. Getting their build requirements installed can be a chore,
+particularly when there are version conflicts with other projects.</p>
+<h1 id="running-go-in-a-docker-container">Running Go in a Docker container</h1>
+<p>This is the script that I&rsquo;m using for running my first Go programs:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span><span class="cp">#!/bin/bash
+</span><span class="ln"> 2</span><span class="cp"></span>#
+<span class="ln"> 3</span><span class="c1"># Runs Go.</span>
+<span class="ln"> 4</span>#
+<span class="ln"> 5</span><span class="nb">set</span> -o nounset -o errexit -o pipefail                     <span class="c1"># Abort the script on errors</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="nv">SCRIPT_DIR</span><span class="o">=</span><span class="k">$(</span><span class="nb">cd</span> <span class="s2">&#34;</span><span class="k">$(</span>dirname <span class="s2">&#34;</span><span class="si">${</span><span class="nv">BASH_SOURCE</span><span class="p">[0]</span><span class="si">}</span><span class="s2">&#34;</span><span class="k">)</span><span class="s2">&#34;</span> <span class="o">&amp;&amp;</span> <span class="nb">pwd</span><span class="k">)</span>  <span class="c1"># Absolute directory where this script is stored</span>
+<span class="ln"> 8</span><span class="nv">BASE_DIR</span><span class="o">=</span><span class="k">$(</span><span class="nb">cd</span> <span class="s2">&#34;</span><span class="nv">$SCRIPT_DIR</span><span class="s2">/..&#34;</span> <span class="o">&amp;&amp;</span> <span class="nb">pwd</span><span class="k">)</span>                    <span class="c1"># Parent directory of this script</span>
+<span class="ln"> 9</span><span class="nv">GO_VERSION</span><span class="o">=</span><span class="s2">&#34;1.15-buster&#34;</span>                                  <span class="c1"># Docker image tag of the Go version that will be used</span>
+<span class="ln">10</span>
+<span class="ln">11</span>mkdir -p <span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">/.cache&#34;</span>                               <span class="c1"># Create .cache directory under base directory</span>
+<span class="ln">12</span>
+<span class="ln">13</span>docker run                       <span class="sb">`</span><span class="c1"># Run a Docker container                               ` \</span>
+<span class="ln">14</span>  --rm                           <span class="sb">`</span><span class="c1"># Remove the container when the command exits          ` \</span>
+<span class="ln">15</span>  -it                            <span class="sb">`</span><span class="c1"># Set an interactive terminal                          ` \</span>
+<span class="ln">16</span>  -v <span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">&#34;</span>:<span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">&#34;</span>     <span class="sb">`</span><span class="c1"># Mount base directory with same name in the container ` \</span>
+<span class="ln">17</span>  -v <span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">/.cache&#34;</span>:/.cache  <span class="sb">`</span><span class="c1"># Mount .cache directory under the container&#39;s root    ` \</span>
+<span class="ln">18</span>  -w <span class="s2">&#34;</span><span class="nv">$BASE_DIR</span><span class="s2">&#34;</span>                 <span class="sb">`</span><span class="c1"># Set base directory as the current working directory  ` \</span>
+<span class="ln">19</span>  --user <span class="k">$(</span>id -u<span class="k">)</span>:<span class="k">$(</span>id -g<span class="k">)</span>       <span class="sb">`</span><span class="c1"># Use same user ID inside the container as on the host ` \</span>
+<span class="ln">20</span>  golang:<span class="nv">$GO_VERSION</span>             <span class="sb">`</span><span class="c1"># Use Go&#39;s docker image with the specified tag         ` \</span>
+<span class="ln">21</span>  go <span class="nv">$@</span>                          <span class="sb">`</span><span class="c1"># Run go with the provided command line arguments      `</span>
+</code></pre></div><p>Source: <a href="https://github.com/fernandoacorreia/learning-go/blob/41ee9a088c12762e64814551f78ee7acf7240158/bin/go">learning-go/bin/go</a></p>
+<p>Essentially, this script will run Go in a Docker container, with the command-line arguments that are provided to it. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>bin/go run ascii-art/main.go
+</code></pre></div><p>See the inline comments for details on how it works. I am sure that I will evolve this script over time as required (e.g. for cross-platform builds).</p>
+<p>How about you? What&rsquo;s your preferred technique for reproducible build &amp; run environments? And specifically for Go, do
+you have any hints?</p>
 
-    </li>
-  </ul>
+    <hr><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fernando-correias-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <h2>Fernando Correia</h2>
@@ -156,9 +225,6 @@ These instructions are for using an &ldquo;apex …</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-8/" class="nav-link">Learning Golang: Running Go in a container</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-7/" class="nav-link">Learning Golang: Multiline strings</a>
       </li>
@@ -225,8 +291,6 @@ These instructions are for using an &ldquo;apex …</p>
 </aside>
 
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
