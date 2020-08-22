@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang: Comments | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Multiline strings | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,17 +14,17 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 5 of my journey learning Golang.
-Inline comments Go ignores text to the right of //:
-1// This entire line is ignored by the compiler. 2// …">
+<meta name="description" content="This is part 7 of my journey learning Golang.
+My first assignment on Codecademy&rsquo;s Learn Go course was to create a program that prints out ASCII art.
+The …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang: Comments" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-5/" />
-<meta property = "og:title" content = "Learning Golang: Comments" />
-<meta property = "og:description" content = "This is part 5 of my journey learning Golang.
-Inline comments Go ignores text to the right of //:
-1// This entire line is ignored by the compiler. 2// …" />
+<meta name = "twitter:title" content = "Learning Golang: Multiline strings" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-7/" />
+<meta property = "og:title" content = "Learning Golang: Multiline strings" />
+<meta property = "og:description" content = "This is part 7 of my journey learning Golang.
+My first assignment on Codecademy&rsquo;s Learn Go course was to create a program that prints out ASCII art.
+The …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -34,7 +34,7 @@ Inline comments Go ignores text to the right of //:
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-5/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-7/'>
 
     
 
@@ -50,7 +50,7 @@ Inline comments Go ignores text to the right of //:
   
     
   
-  <body data-code="20" data-lines="false" id="documentTop">
+  <body data-code="100" data-lines="false" id="documentTop">
 
 <header class = 'nav_header' >
   <nav class = 'nav'>
@@ -108,32 +108,32 @@ Inline comments Go ignores text to the right of //:
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang: Comments</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Multiline strings</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 18, 2020</span>
+    Aug 21, 2020</span>
   <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Comments&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-5%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Multiline%20strings&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-7%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-5%2f&t=Learning%20Golang%3a%20Comments" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-7%2f&t=Learning%20Golang%3a%20Multiline%20strings" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
   </a>
   <script>
     function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-5/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-7/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     }
   </script>
   <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
@@ -141,7 +141,7 @@ Inline comments Go ignores text to the right of //:
       <use xlink:href="#linkedin"></use>
     </svg>
   </a>
-  <a href="https://fernandocorreia.dev/posts/learning-golang-part-5/" title="Copy Link" class="link link_yank">
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-7/" title="Copy Link" class="link link_yank">
     <svg class="icon">
       <use xlink:href="#yank"></use>
     </svg>
@@ -149,67 +149,146 @@ Inline comments Go ignores text to the right of //:
 </div>
 
     
-    <p>This is part 5 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
-<h1 id="inline-comments">Inline comments</h1>
-<p>Go ignores text to the right of <code>//</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="c1">// This entire line is ignored by the compiler.
-</span><span class="ln">2</span><span class="c1">// fmt.Println(&#34;Does NOT print&#34;)
-</span><span class="ln">3</span><span class="c1"></span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;This gets printed!&#34;</span><span class="p">)</span> <span class="c1">// This part gets ignored
-</span></code></pre></div><h1 id="block-comments">Block comments</h1>
-<p>All lines between <code>/*</code> and <code>*/</code> will be ignored:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="cm">/*
-</span><span class="ln">2</span><span class="cm">This is ignored.
-</span><span class="ln">3</span><span class="cm">This is also ignored.
-</span><span class="ln">4</span><span class="cm">fmt.Println(&#34;This WON&#39;T print!&#34;)
-</span><span class="ln">5</span><span class="cm">*/</span>
-</code></pre></div><h1 id="godoc">Godoc</h1>
-<p>Go has a tool for automatically generating documentation from Go source code: <a href="https://godoc.org/golang.org/x/tools/cmd/godoc">Godoc</a>.</p>
-<p>From the <a href="https://blog.golang.org/godoc">blog post</a> that announced it in 2011:</p>
-<blockquote>
-<p>Godoc parses Go source code - including comments - and produces documentation as HTML or plain text.</p>
-</blockquote>
-<p>See an example in HTML format: <a href="https://godoc.org/archive/zip">zip - GoDoc</a>.</p>
-<p>Godoc follows some simple <a href="https://github.com/golang/go/wiki/Comments">conventions</a>.</p>
-<h1 id="package-comments">Package comments</h1>
-<p>This type of comment should be present in one of the source files of a package:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="c1">// Package sort provides primitives for sorting slices and user-defined
-</span><span class="ln">2</span><span class="c1">// collections.
-</span><span class="ln">3</span><span class="c1"></span><span class="kn">package</span> <span class="nx">sort</span>
-</code></pre></div><h1 id="top-level-identifier-comments">Top-level identifier comments</h1>
-<p>This is the format for describing a top-level function, <code>const</code>, <code>var</code>, etc.:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="c1">// enterOrbit causes Superman to fly into low Earth orbit, a position
-</span><span class="ln">2</span><span class="c1">// that presents several possibilities for planet salvation.
-</span><span class="ln">3</span><span class="c1"></span><span class="kd">func</span> <span class="nf">enterOrbit</span><span class="p">()</span> <span class="nx">os</span><span class="p">.</span><span class="nx">Error</span> <span class="p">{</span>
-<span class="ln">4</span>  <span class="o">...</span>
-<span class="ln">5</span><span class="p">}</span>
-</code></pre></div><h1 id="code-samples-in-comments">Code samples in comments</h1>
-<p>Indented text inside of a comment will be rendered as a pre-formatted block by Godoc:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="c1">// fight can be used on any enemy and returns whether Superman won.
-</span><span class="ln"> 2</span><span class="c1">//
-</span><span class="ln"> 3</span><span class="c1">// Examples:
-</span><span class="ln"> 4</span><span class="c1">//
-</span><span class="ln"> 5</span><span class="c1">//  fight(&#34;a random potato&#34;)
-</span><span class="ln"> 6</span><span class="c1">//  fight(LexLuthor{})
-</span><span class="ln"> 7</span><span class="c1">//
-</span><span class="ln"> 8</span><span class="c1"></span><span class="kd">func</span> <span class="nf">fight</span><span class="p">(</span><span class="nx">enemy</span> <span class="kd">interface</span><span class="p">{})</span> <span class="kt">bool</span> <span class="p">{</span>
-<span class="ln"> 9</span>  <span class="o">...</span>
-<span class="ln">10</span><span class="p">}</span>
-</code></pre></div><h1 id="bug-comments">Bug comments</h1>
-<p>Godoc ignores most comments that are not right above a top-level element. A bug comment is an exception: it will be
-included in the package&rsquo;s documentation under a &ldquo;Bugs&rdquo; section:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="c1">// BUG(name): The rule Title uses for word boundaries does not handle Unicode punctuation properly.
-</span></code></pre></div><p>The text in the parenthesis block is the user name of someone that can provide more information about the bug.</p>
-<h1 id="deprecation-notes">Deprecation notes</h1>
-<p>Elements that became redundant or obsolete can be marked with a paragraph in their doc comments that begins with
-&ldquo;Deprecated:&rdquo; followed by some information about the deprecation:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="c1">// ModTime returns the modification time in UTC using the legacy
-</span><span class="ln">2</span><span class="c1">// ModifiedDate and ModifiedTime fields.
-</span><span class="ln">3</span><span class="c1">//
-</span><span class="ln">4</span><span class="c1">// Deprecated: Use Modified instead.
-</span><span class="ln">5</span><span class="c1"></span><span class="kd">func</span> <span class="p">(</span><span class="nx">h</span> <span class="o">*</span><span class="nx">FileHeader</span><span class="p">)</span> <span class="nf">ModTime</span><span class="p">()</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Time</span> <span class="p">{</span>
-<span class="ln">6</span>  <span class="k">return</span> <span class="nf">msDosTimeToTime</span><span class="p">(</span><span class="nx">h</span><span class="p">.</span><span class="nx">ModifiedDate</span><span class="p">,</span> <span class="nx">h</span><span class="p">.</span><span class="nx">ModifiedTime</span><span class="p">)</span>
-<span class="ln">7</span><span class="p">}</span>
-</code></pre></div>
+    <p>This is part 7 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<p>My first assignment on Codecademy&rsquo;s <a href="https://www.codecademy.com/learn/learn-go">Learn Go</a> course was to create a program
+that prints out <a href="https://www.asciiart.eu/computers/computers">ASCII art</a>.</p>
+<p>The way that&rsquo;s different from a &ldquo;Hello, World&rdquo; program is that it needs to print multiple lines. So it was a great
+opportunity to learn about how multi-line strings can be represented in Go.</p>
+<h1 id="gos-string-literals">Go&rsquo;s string literals</h1>
+<p>String literals represent &ldquo;string constants&rdquo; i.e. immutable string values in a Go source file.</p>
+<p>There are two ways of declaring <a href="https://golang.org/ref/spec#String_literals">string literals</a> in Go: using quotes and using backticks. The first one declares an &ldquo;interpreted string&rdquo;, and the second one a &ldquo;raw string&rdquo;. There are also &ldquo;rune literals&rdquo;, which are not properly strings, but represent a single character.</p>
+<h1 id="interpreted-strings">Interpreted strings</h1>
+<p>A string literal declared between double quotes (<code>&quot;</code>) is an interpreted string.</p>
+<p>The characteristics of interpreted strings are:</p>
+<ul>
+<li>They can span a single line in the source file.</li>
+<li>They can contain any character except for a &ldquo;raw&rdquo; newline or an unescaped double quote.</li>
+<li>Backslash escapes are interpreted.</li>
+</ul>
+<p>Examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="s">&#34;foo&#34;</span>                  <span class="c1">// The word foo
+</span><span class="ln">2</span><span class="c1"></span><span class="s">&#34;foo\nbar&#34;</span>             <span class="c1">// foo, newline, and bar
+</span><span class="ln">3</span><span class="c1"></span><span class="s">&#34;Saudações&#34;</span>            <span class="c1">// UTF-8 text
+</span><span class="ln">4</span><span class="c1"></span><span class="s">&#34;Sauda\u00E7\u00F5es&#34;</span>  <span class="c1">// Unicode code points (same text as above)
+</span></code></pre></div><h1 id="raw-strings">Raw strings</h1>
+<p>A string literal declared between backticks (AKA &ldquo;back quotes&rdquo;) is a raw string. It has these characteristics:</p>
+<ul>
+<li>It can span multiple lines in the source code.</li>
+<li>The raw newlines in the source file become newlines in the string constant.</li>
+<li>It doesn&rsquo;t interpret escape sequences.</li>
+<li>It can&rsquo;t include backticks (not even via escaping; see above).</li>
+</ul>
+<h1 id="rune-literals">Rune literals</h1>
+<p>Quoting Go&rsquo;s <a href="https://golang.org/ref/spec#Rune_literals">documentation</a>, &ldquo;a rune literal represents a rune constant, an integer value identifying a Unicode code
+point.&rdquo; Conceptually it represents a single character (keeping in mind that it&rsquo;s Unicode).</p>
+<p>Run literals also interpret backslash escapes.</p>
+<p>Examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="sc">&#39;a&#39;</span>
+<span class="ln">2</span><span class="sc">&#39;ã&#39;</span>
+<span class="ln">3</span><span class="sc">&#39;\t&#39;</span>
+<span class="ln">4</span><span class="sc">&#39;\377&#39;</span>
+<span class="ln">5</span><span class="sc">&#39;\xff&#39;</span>
+<span class="ln">6</span><span class="sc">&#39;\u12e4&#39;</span>
+<span class="ln">7</span><span class="sc">&#39;\U00101234&#39;</span>
+</code></pre></div><h1 id="ascii-art-in-go-source-code">ASCII art in Go source code</h1>
+<p>The <a href="http://www.ascii-fr.com/-Computers-.html">ASCII art</a> that I wanted to print from my first Go program made liberal use of all sorts of symbols like backticks
+(`), single quotes (') and backslashes (\). It also had multiple lines, of course.</p>
+<p>I had a few alternatives for representing it in a source file:</p>
+<ol>
+<li>Between double quotes: I&rsquo;d need to break it down into multiple string constants (one per line) and escape the
+backslash and double quote characters. It would work, but it would look distorted in the source file.</li>
+<li>A very long, single-line interpreted script, with escaped newline characters. That&rsquo;s unwieldy.</li>
+<li>Between backticks: I&rsquo;d have a single multi-line string, and I wouldn&rsquo;t need to escape anything. But I wouldn&rsquo;t be
+able to use backticks in the string itself.</li>
+</ol>
+<p>Another alternative of course would be to not embed the string in a Go source file, but that is outside the goal of the exercise.
+In fact this exercise was quite clever because it forced me to learn a lot about string literals in Go.</p>
+<p>I decided to go with option 3 &ndash; backticks &ndash; mainly because the embedded string looks better in a Go source file if it
+isn&rsquo;t escaped. I compromised by replacing the backtick characters with backslashes in the ASCII art.</p>
+<p>This was my end result:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="c1">// Credit: unknown artist.
+</span><span class="ln"> 9</span><span class="c1"></span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">`    888888888888888888888
+</span><span class="ln">10</span><span class="s">  s 88 ooooooooooooooo 88     s 888888888888888888888888888888888888888
+</span><span class="ln">11</span><span class="s">  S 88 888888888888888 88    SS 888888888888888888888888888888888888888
+</span><span class="ln">12</span><span class="s"> SS 88 888888888888888 88   SSS 8888                         - --+ 8888
+</span><span class="ln">13</span><span class="s"> SS 88 ooooooooooooooo 88  sSSS 8888           o8888888o         | 8888
+</span><span class="ln">14</span><span class="s">sSS 88 888888888888888 88 SSSSS 8888         o88888888888o         8888
+</span><span class="ln">15</span><span class="s">SSS 88 888888888888888 88 SSSSS 8888        8888 88888 8888      | 8888
+</span><span class="ln">16</span><span class="s">SSS 88 ooooooooooooooo 88 SSSSS 8888       o888   888   888o       8888
+</span><span class="ln">17</span><span class="s">SSS 88 888888888888888 88 SSSSS 8888       8888   888   8888       8888
+</span><span class="ln">18</span><span class="s">SSS 88 888888888888888 88 SSSSS 8888       8888   888   8888       8888
+</span><span class="ln">19</span><span class="s">SSS 88 oooooooooo      88 SSSSS 8888       8888o o888o o8888       8888
+</span><span class="ln">20</span><span class="s">SSS 88 8888888888 .::. 88 SSSSS 8888       988 8o88888o8 88P       8888
+</span><span class="ln">21</span><span class="s">SSS 88 oooooooooo :::: 88 SSSSS 8888        8oo 9888889 oo8        8888
+</span><span class="ln">22</span><span class="s">SSS 88 8888888888  \&#39;  88 SSSSS 8888         988o     o88P         8888
+</span><span class="ln">23</span><span class="s">SSS 88ooooooooooooooooo88  SSSS 8888           98888888P           8888
+</span><span class="ln">24</span><span class="s">SSS 888888888888888888888__SSSS 8888                               8888_____
+</span><span class="ln">25</span><span class="s">SSS |   *  *  *   )8c8888  SSSS 888888888888888888888888888888888888888
+</span><span class="ln">26</span><span class="s">SSS 888888888888888888888.  SSS 888888888888888888888888888888888888888
+</span><span class="ln">27</span><span class="s">SSS 888888888888888888888 \_ SSsssss oooooooooooooooooooooooooooo ssss
+</span><span class="ln">28</span><span class="s">SSS 888888888888888888888  \\   __SS 88+-8+-88============8-8==88 S
+</span><span class="ln">29</span><span class="s">SSS 888888888888888888888-. \\  \  S 8888888888888888888888888888
+</span><span class="ln">30</span><span class="s">SSS 888888888888888888888  \\\  \\       \.__________.&#39;      \ .
+</span><span class="ln">31</span><span class="s">SSS 88O8O8O8O8O8O8O8O8O88  \\.   \\______________________________\_.
+</span><span class="ln">32</span><span class="s">SSS 88 el cheapo 8O8O8O88 \\  &#39;.  \|________________________________|
+</span><span class="ln">33</span><span class="s"> SS 88O8O8O8O8o8O8O8O8O88  \\   &#39;-.___
+</span><span class="ln">34</span><span class="s">  S 888888888888888888888 /~          ~~~~~-----~~~~---.__
+</span><span class="ln">35</span><span class="s"> .---------------------------------------------------.    ~--.
+</span><span class="ln">36</span><span class="s"> \ \______\ __________________________________________\-------^.-----------.
+</span><span class="ln">37</span><span class="s"> :&#39;  _   _ _ _ _  _ _ _ _  _ _ _ _   _ _ _           \\        \
+</span><span class="ln">38</span><span class="s"> ::\ ,\_\,\_\_\_\_\\_\_\_\_\\_\_\_\_\,\_\_\_\           \      o &#39;8o 8o .
+</span><span class="ln">39</span><span class="s"> |::\  -_-_-_-_-_-_-_-_-_-_-_-_-_-___  -_-_-_   _ _ _ _  \      8o 88 88 \
+</span><span class="ln">40</span><span class="s"> |_::\ ,\_\_\_\_\_\_\_\_\_\_\_\_\_\___\,\_\_\_\,\_\_\_\_\ \      88       \
+</span><span class="ln">41</span><span class="s">    \:\ ,\__\_\_\_\_\_\_\_\_\_\_\_\_\  \,\_\_\_\,\_\_\_\ \ \      88       .
+</span><span class="ln">42</span><span class="s">     \:\ ,\__\_\_\_\_\_\_\_\_\_\_\_\____\    _   ,\_\_\_\_\ \      88o    .|
+</span><span class="ln">43</span><span class="s">       :\ ,\____\_\_\_\_\_\_\_\_\_\_\____\  ,\_\ _,\_\_\_\ \ \      &#39;ooooo&#39;
+</span><span class="ln">44</span><span class="s">        :\ ,\__\\__\_______________\__\\__\,\_\_\_\,\___\_\_\ \
+</span><span class="ln">45</span><span class="s">         \\  --  -- --------------- --  --   - - -   --- - -   )____________
+</span><span class="ln">46</span><span class="s">           \--------------------------------------------------&#39;
+</span><span class="ln">47</span><span class="s">`</span><span class="p">)</span>
+<span class="ln">48</span><span class="p">}</span>
+</code></pre></div><p>Source: <a href="https://github.com/fernandoacorreia/learning-go/blob/7c489be6bb0b6625c1f6a8e46f2ae56dfc363035/ascii-art/main.go">ascii-art/main.go</a></p>
+<h1 id="takeaways">Takeaways</h1>
+<p>Go offers 3 ways to represent string or character literals:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Syntax</th>
+<th align="center">Symbol</th>
+<th align="center">Span</th>
+<th align="right">Escaping</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Interpreted strings</td>
+<td align="center">double quotes (<code>&quot;</code>)</td>
+<td align="center">Single source line</td>
+<td align="right">Yes</td>
+</tr>
+<tr>
+<td align="center">Raw strings</td>
+<td align="center">backticks (<code>`</code>)</td>
+<td align="center">Multiple source lines</td>
+<td align="right">No</td>
+</tr>
+<tr>
+<td align="center">Rune literals</td>
+<td align="center">single quotes (<code>'</code>)</td>
+<td align="center">Single code point</td>
+<td align="right">Yes</td>
+</tr>
+</tbody>
+</table>
+<p>What else would you point out about strings in Go?</p>
+
     <hr><div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -246,10 +325,10 @@ included in the package&rsquo;s documentation under a &ldquo;Bugs&rdquo; section
     <ul class="flex-column">
       
       <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-7/" class="nav-link">Learning Golang: Multiline strings</a>
+        <a href="https://fernandocorreia.dev/posts/learning-golang-part-6/" class="nav-link">Learning Golang: Resources for learning Go</a>
       </li>
       <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-6/" class="nav-link">Learning Golang: Resources for learning Go</a>
+        <a href="https://fernandocorreia.dev/posts/learning-golang-part-5/" class="nav-link">Learning Golang: Comments</a>
       </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-4/" class="nav-link">Learning Golang: Function declarations</a>

@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 19 Aug 2020 03:27:35 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2020 03:18:04 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Multiline strings</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-7/</link>
+      <pubDate>Fri, 21 Aug 2020 03:18:04 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-7/</guid>
+      <description>This is part 7 of my journey learning Golang.
+My first assignment on Codecademy&amp;rsquo;s Learn Go course was to create a program that prints out ASCII art.
+The way that&amp;rsquo;s different from a &amp;ldquo;Hello, World&amp;rdquo; program is that it needs to print multiple lines. So it was a great opportunity to learn about how multi-line strings can be represented in Go.
+Go&amp;rsquo;s string literals String literals represent &amp;ldquo;string constants&amp;rdquo; i.e. immutable string values in a Go source file.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Resources for learning Go</title>
