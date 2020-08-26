@@ -6,10 +6,22 @@
     <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 22 Aug 2020 01:55:41 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2020 03:29:48 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Numeric data types</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-9/</link>
+      <pubDate>Wed, 26 Aug 2020 03:29:48 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-9/</guid>
+      <description>This is part 9 of my journey learning Golang.
+Data types are a designation by a programming language about the kind of values that are being stored.
+Go has several basic data types built in. This article explores Go&amp;rsquo;s basic numeric data types (and Boolean, which is related). See Go&amp;rsquo;s documentation for more details.
+Boolean values Boolean values can be either false (equivalent to 0) or true (equivalent to 1). Although in principle they only require 1 bit of storage, Go uses a byte for convenience reasons.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Running Go in a container</title>
