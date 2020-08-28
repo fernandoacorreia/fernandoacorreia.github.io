@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang: Numeric data types | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Basic data types | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -19,9 +19,9 @@ Data types are a designation by a programming language about the kind of values 
 Go has …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang: Numeric data types" />
+<meta name = "twitter:title" content = "Learning Golang: Basic data types" />
 <meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-9/" />
-<meta property = "og:title" content = "Learning Golang: Numeric data types" />
+<meta property = "og:title" content = "Learning Golang: Basic data types" />
 <meta property = "og:description" content = "This is part 9 of my journey learning Golang.
 Data types are a designation by a programming language about the kind of values that are being stored.
 Go has …" />
@@ -108,7 +108,7 @@ Go has …" />
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang: Numeric data types</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Basic data types</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
@@ -120,13 +120,13 @@ Go has …" />
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Numeric%20data%20types&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-9%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Basic%20data%20types&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-9%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-9%2f&t=Learning%20Golang%3a%20Numeric%20data%20types" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-9%2f&t=Learning%20Golang%3a%20Basic%20data%20types" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
@@ -151,8 +151,8 @@ Go has …" />
     
     <p>This is part 9 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
 <p>Data types are a designation by a programming language about the kind of values that are being stored.</p>
-<p>Go has several basic data types built in. This article explores Go&rsquo;s basic numeric data types (and Boolean, which is related). See <a href="https://golang.org/ref/spec#Boolean_types">Go&rsquo;s documentation</a> for more details.</p>
-<h1 id="boolean-values">Boolean values</h1>
+<p>Go has several basic data types built in. This article explores boolean, numeric and string data types. See <a href="https://golang.org/ref/spec#Boolean_types">Go&rsquo;s documentation</a> for more details.</p>
+<h1 id="boolean-data-type">Boolean data type</h1>
 <p>Boolean values can be either <code>false</code> (equivalent to 0) or <code>true</code> (equivalent to 1). Although in principle they only require
 1 bit of storage, Go uses a byte for convenience reasons.</p>
 <table>
@@ -173,7 +173,14 @@ Go has …" />
 </tr>
 </tbody>
 </table>
-<h1 id="integer-numbers">Integer numbers</h1>
+<h1 id="numeric-data-types">Numeric data types</h1>
+<p>There are three categories of numeric data types in Go:</p>
+<ul>
+<li>Integer (whole numbers)</li>
+<li>Floating point (numbers with a fractionary part)</li>
+<li>Complex (imaginary numbers)</li>
+</ul>
+<h2 id="integer-numbers">Integer numbers</h2>
 <p>These represent whole numbers. Integer data types have different lenghts and can be signed or unsigned:</p>
 <table>
 <thead>
@@ -235,12 +242,13 @@ Go has …" />
 </tr>
 </tbody>
 </table>
-<p>There are also two aliases for the above data types:</p>
+<p>There are also aliases for some of the above data types:</p>
 <ul>
 <li><code>byte</code>: alias for <code>uint8</code></li>
 <li><code>rune</code>: alias for <code>int32</code> (represents a <a href="https://www.geeksforgeeks.org/rune-in-golang/">Unicode code point</a> (loosely, a &ldquo;character&rdquo;)</li>
+<li><code>int</code>: alias for <code>int32</code> or <code>int64</code> depending on the platform</li>
 </ul>
-<h1 id="floating-point-numbers">Floating-point numbers</h1>
+<h2 id="floating-point-numbers">Floating-point numbers</h2>
 <p>These represent numbers that may have a fractional part. They don&rsquo;t have a minimum or maximum value, but they have
 different levels of precision (accuracy) for representing numbers.</p>
 <table>
@@ -272,7 +280,7 @@ different levels of precision (accuracy) for representing numbers.</p>
 </table>
 <p>Hint: Floating point data types are binary numbers. They can present rounding errors when storing decimal numbers. For
 applications that require guaranteed precision for decimal values (like currency) see the <a href="https://godoc.org/github.com/shopspring/decimal">decimal</a> package.</p>
-<h1 id="complex-numbers">Complex numbers</h1>
+<h2 id="complex-numbers">Complex numbers</h2>
 <p>These represent numbers with an <a href="https://en.wikipedia.org/wiki/Complex_number">imaginary part</a>. They&rsquo;re useful for
 computations on 2-dimensional space and calculations involving square roots.</p>
 <table>
@@ -296,15 +304,37 @@ computations on 2-dimensional space and calculations involving square roots.</p>
 </tr>
 </tbody>
 </table>
+<h1 id="string">String</h1>
+<p>Go strings are &ldquo;a read-only slice of bytes&rdquo;, i.e. a contiguous sequence of bytes &ndash; <code>uint8</code> integers.</p>
+<p>It&rsquo;s important to notice that these can be arbitrary bytes. They don&rsquo;t have to be Unicode code points and they don&rsquo;t
+have to be encoded as UTF-8 or any other encoding. That said, Go&rsquo;s library functions assume that strings are encoded as
+UTF-8. See <a href="https://blog.golang.org/strings">this blog post</a> for more details.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Data type</th>
+<th align="left">Content</th>
+<th align="left">Length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">string</td>
+<td align="left">bytes (uint8)</td>
+<td align="left">0 to maximum int value</td>
+</tr>
+</tbody>
+</table>
 <h1 id="takeaways">Takeaways</h1>
-<p>Go offers several built-in numeric data types. Each one is suited for different use cases:</p>
+<p>Go offers several built-in data types. Each one is suited for different use cases:</p>
 <ul>
 <li><code>bool</code> for boolean logic (true and false values)</li>
 <li>signed and unsigned integers of different sizes for fast, memory-efficient arithmetic with whole numbers</li>
 <li>two levels of precision for numbers with a fractional part</li>
 <li>two different lengths for complex numbers</li>
+<li><code>string</code> for sequences of bytes</li>
 </ul>
-<p>This level of specialization can be overwhelming at first, and requires understanding the types and ranges of data that
+<p>This level of specialization (particularly of the numeric data types) can be overwhelming at first, and requires understanding the types and ranges of data that
 the aplication will handle. The trade-off is being able to produce faster-running programs that require less memory in
 comparison with equivalent programs in languages with a more lax type system.</p>
 

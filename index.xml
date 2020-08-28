@@ -12,15 +12,15 @@
     
     
     <item>
-      <title>Learning Golang: Numeric data types</title>
+      <title>Learning Golang: Basic data types</title>
       <link>https://fernandocorreia.dev/posts/learning-golang-part-9/</link>
       <pubDate>Wed, 26 Aug 2020 03:29:48 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-9/</guid>
       <description>This is part 9 of my journey learning Golang.
 Data types are a designation by a programming language about the kind of values that are being stored.
-Go has several basic data types built in. This article explores Go&amp;rsquo;s basic numeric data types (and Boolean, which is related). See Go&amp;rsquo;s documentation for more details.
-Boolean values Boolean values can be either false (equivalent to 0) or true (equivalent to 1). Although in principle they only require 1 bit of storage, Go uses a byte for convenience reasons.</description>
+Go has several basic data types built in. This article explores boolean, numeric and string data types. See Go&amp;rsquo;s documentation for more details.
+Boolean data type Boolean values can be either false (equivalent to 0) or true (equivalent to 1). Although in principle they only require 1 bit of storage, Go uses a byte for convenience reasons.</description>
     </item>
     
     <item>
