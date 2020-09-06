@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang: Compiling and running Go programs | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Variables | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,17 +14,15 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 2 of my journey learning Golang.
-Compiling Go programs An individual Go source file can be compiled with the go build command:
-1go build …">
+<meta name="description" content="This is part 11 of my journey learning Golang.
+Variables A variable is a named value that can change during the execution of a program. The difference from a …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang: Compiling and running Go programs" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-2/" />
-<meta property = "og:title" content = "Learning Golang: Compiling and running Go programs" />
-<meta property = "og:description" content = "This is part 2 of my journey learning Golang.
-Compiling Go programs An individual Go source file can be compiled with the go build command:
-1go build …" />
+<meta name = "twitter:title" content = "Learning Golang: Variables" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-11/" />
+<meta property = "og:title" content = "Learning Golang: Variables" />
+<meta property = "og:description" content = "This is part 11 of my journey learning Golang.
+Variables A variable is a named value that can change during the execution of a program. The difference from a …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -34,7 +32,7 @@ Compiling Go programs An individual Go source file can be compiled with the go b
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-2/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-11/'>
 
     
 
@@ -108,32 +106,32 @@ Compiling Go programs An individual Go source file can be compiled with the go b
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang: Compiling and running Go programs</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Variables</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 16, 2020</span>
+    Sep 6, 2020</span>
   <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Compiling%20and%20running%20Go%20programs&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-2%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Variables&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-11%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-2%2f&t=Learning%20Golang%3a%20Compiling%20and%20running%20Go%20programs" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-11%2f&t=Learning%20Golang%3a%20Variables" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
   </a>
   <script>
     function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-2/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-11/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     }
   </script>
   <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
@@ -141,7 +139,7 @@ Compiling Go programs An individual Go source file can be compiled with the go b
       <use xlink:href="#linkedin"></use>
     </svg>
   </a>
-  <a href="https://fernandocorreia.dev/posts/learning-golang-part-2/" title="Copy Link" class="link link_yank">
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-11/" title="Copy Link" class="link link_yank">
     <svg class="icon">
       <use xlink:href="#yank"></use>
     </svg>
@@ -149,32 +147,84 @@ Compiling Go programs An individual Go source file can be compiled with the go b
 </div>
 
     
-    <p>This is part 2 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
-<h1 id="compiling-go-programs">Compiling Go programs</h1>
-<p>An individual Go source file can be compiled with the <code>go build</code> command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>go build {filename}.go
-</code></pre></div><p>That will produce an executable binary file if the source&rsquo;s package is <code>main</code> (see <a href="/posts/learning-golang-part-3/">Part 3</a> for more on packages).</p>
-<p>The resulting binary can be executed with this command:</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>./{filename}
-</code></pre></div><p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ go build main.go
-<span class="ln">2</span>$ ./main
-<span class="ln">3</span>Hello World
-</code></pre></div><h1 id="running-from-source">Running from source</h1>
-<p>The <code>go run</code> command combines the two previous steps: it builds a binary from a source file and executes it:</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>go run {filename}.go
-</code></pre></div><p>That&rsquo;s super handy for an interactive workflow during development.</p>
-<p>Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>$ go run main.go
-<span class="ln">2</span>Hello World
-</code></pre></div><p><code>go run</code> does <strong>not</strong> create a binary in the current folder.</p>
-<h1 id="takeaways">Takeaways</h1>
+    <p>This is part 11 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="variables">Variables</h1>
+<p>A variable is a named value that can change during the execution of a program. The difference from a constant (which is
+also a named value) is that a variable&rsquo;s value can be modified at run time.</p>
+<h1 id="variable-declarations">Variable declarations</h1>
+<p>In Go, variables are declared following this pattern: <code>var</code> {identifier} {type}. Examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">var</span> <span class="nx">songName</span> <span class="kt">string</span>
+<span class="ln">2</span><span class="kd">var</span> <span class="nx">lengthOfSong</span> <span class="kt">uint16</span>
+<span class="ln">3</span><span class="kd">var</span> <span class="nx">isMusicOver</span> <span class="kt">bool</span>
+<span class="ln">4</span><span class="kd">var</span> <span class="nx">songRating</span> <span class="kt">float32</span>
+</code></pre></div><h1 id="zero-values">Zero values</h1>
+<p>If a value is not assigned to the variable when it is declared (like above) then it is initialized with a &ldquo;zero value&rdquo;.
+The actual value depends on the data type. Generally:</p>
 <ul>
-<li><code>go build</code> will compile and produce a binary.</li>
-<li><code>go run</code> will compile and run without producing a binary.</li>
+<li>0 for numeric data types</li>
+<li><code>false</code> for the boolean data type</li>
+<li>empty string for string data type</li>
 </ul>
-<p>This looks like a pretty handy workflow to me. What do you think? How does that compare to your experience with other
-languages? If you&rsquo;re a seasoned Go programmer, what would you add to these notes?</p>
+<h1 id="default-values">Default values</h1>
+<p>The initial value of a variable can be assigned when it is declared:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">var</span> <span class="nx">shoppingCartQuantity</span> <span class="p">=</span> <span class="mi">1</span>
+<span class="ln">2</span><span class="kd">var</span> <span class="nx">shoppingCartItemName</span> <span class="p">=</span> <span class="s">&#34;cupholder&#34;</span>
+<span class="ln">3</span><span class="kd">var</span> <span class="nx">shoppingCartPrice</span> <span class="p">=</span> <span class="mf">19.99</span>
+<span class="ln">4</span><span class="kd">var</span> <span class="nx">shoppingCartExtendedWarranty</span> <span class="p">=</span> <span class="kc">true</span>
+</code></pre></div><h1 id="defining-multiple-variables">Defining multiple variables</h1>
+<p>Go has a shorthand for declaring several variables in a single statement:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">var</span> <span class="p">(</span>
+<span class="ln">2</span>  <span class="nx">a</span> <span class="p">=</span> <span class="mi">5</span>
+<span class="ln">3</span>  <span class="nx">b</span> <span class="p">=</span> <span class="mi">10</span>
+<span class="ln">4</span>  <span class="nx">c</span> <span class="p">=</span> <span class="mi">15</span>
+<span class="ln">5</span><span class="p">)</span>
+</code></pre></div><p>Use the keyword <code>var</code> (or <code>const</code>) followed by parentheses with each variable on its own line.</p>
+<h1 id="shorthand-declaration">Shorthand declaration</h1>
+<p>The <code>:=</code> symbol is a shorthand for declaring a variable and assigning a default value. The type of the variable is
+inferred from the type of the value, instead of being explicitly declared.</p>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="nx">message</span> <span class="o">:=</span> <span class="s">&#34;Hello, world!&#34;</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
+<span class="ln">10</span><span class="p">}</span>
+</code></pre></div><h1 id="updating-a-variable">Updating a variable</h1>
+<p>The <code>=</code> symbol assigns a new value to a variable based on the expression at the right side of the statement (i.e. after
+&ldquo;=&rdquo;).</p>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="kd">var</span> <span class="nx">count</span> <span class="kt">uint64</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span>
+<span class="ln">10</span>  <span class="nx">count</span> <span class="p">=</span> <span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="ln">11</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span>
+<span class="ln">12</span>  <span class="nx">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="ln">13</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span>
+<span class="ln">14</span>  <span class="nx">count</span> <span class="p">=</span> <span class="mi">99</span>
+<span class="ln">15</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">count</span><span class="p">)</span>
+<span class="ln">16</span><span class="p">}</span>
+</code></pre></div><p>This will print:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>0
+<span class="ln">2</span>1
+<span class="ln">3</span>2
+<span class="ln">4</span>99
+</code></pre></div><p>The first value (0) is the &ldquo;zero value&rdquo; for numeric data types and it is the initial value of a numeric variable unless
+a different default value is set in the <code>var</code> statement.</p>
+<p>The second value (1) is the result of the expression <code>count + 1</code>.</p>
+<p>The third value (2) is the result of the expression <code>count + 1</code>. The <code>+=</code> symbol is a shorthand for an arithmetic
+expression based on the variable&rsquo;s current value.</p>
+<p>The third value (99) is the result of the expression <code>99</code> (i.e. you can assign any value to the variable; you&rsquo;re not
+limited to arithmetic expressions based on the previous value).</p>
 
     <hr><div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -211,9 +261,6 @@ languages? If you&rsquo;re a seasoned Go programmer, what would you add to these
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-11/" class="nav-link">Learning Golang: Variables</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-10/" class="nav-link">Learning Golang: Literals and Constants</a>
       </li>

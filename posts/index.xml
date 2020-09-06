@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 06 Sep 2020 17:55:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 18:13:20 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Variables</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-11/</link>
+      <pubDate>Sun, 06 Sep 2020 18:13:20 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-11/</guid>
+      <description>This is part 11 of my journey learning Golang.
+Variables A variable is a named value that can change during the execution of a program. The difference from a constant (which is also a named value) is that a variable&amp;rsquo;s value can be modified at run time.
+Variable declarations In Go, variables are declared following this pattern: var {identifier} {type}. Examples:
+1var songName string 2var lengthOfSong uint16 3var isMusicOver bool 4var songRating float32 Zero values If a value is not assigned to the variable when it is declared (like above) then it is initialized with a &amp;ldquo;zero value&amp;rdquo;.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Literals and Constants</title>
