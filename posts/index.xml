@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 26 Aug 2020 03:29:48 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 17:55:33 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Literals and Constants</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-10/</link>
+      <pubDate>Sun, 06 Sep 2020 17:55:33 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-10/</guid>
+      <description>This is part 10 of my journey learning Golang.
+Literals In Go, values can be many things. Just to name a few, values can be numbers (like 109), or text wrapped in quotes (like &amp;ldquo;Hello world&amp;rdquo;).
+Literals are values written in the source code. For example:
+1fmt.Println(&amp;#34;Hello, world!&amp;#34;) // String literal 2fmt.Println(42) // Integer literal 3fmt.Println(3.141592653589793238) // Floating point literal Constants In addition to literal values (i.e. values directly expressed in the source code), Go also allows &amp;ldquo;named values&amp;rdquo;, i.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Basic data types</title>
