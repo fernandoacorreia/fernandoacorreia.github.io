@@ -6,10 +6,22 @@
     <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 07 Sep 2020 21:06:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 01:35:40 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Strings</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-13/</link>
+      <pubDate>Tue, 08 Sep 2020 01:35:40 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-13/</guid>
+      <description>This is part 13 of my journey learning Golang.
+Strings in Go Strings represent a sequence of bytes. More specifically, a read-only slice of uint8 integers.
+Their main use is for representing text. This text is usually, but not necessarily, encoded as UTF-8. In Go, strings can also be used to represent text in any encoding, and also raw bytes, not necessarily corresponding to text.
+It&amp;rsquo;s important to notice that strings can be empty (i.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Compilation Errors</title>

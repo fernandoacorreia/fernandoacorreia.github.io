@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang: Basic data types | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Strings | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,17 +14,15 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 9 of my journey learning Golang.
-Data types are a designation by a programming language about the kind of values that are being stored.
-Go has …">
+<meta name="description" content="This is part 13 of my journey learning Golang.
+Strings in Go Strings represent a sequence of bytes. More specifically, a read-only slice of uint8 integers. …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang: Basic data types" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-9/" />
-<meta property = "og:title" content = "Learning Golang: Basic data types" />
-<meta property = "og:description" content = "This is part 9 of my journey learning Golang.
-Data types are a designation by a programming language about the kind of values that are being stored.
-Go has …" />
+<meta name = "twitter:title" content = "Learning Golang: Strings" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-13/" />
+<meta property = "og:title" content = "Learning Golang: Strings" />
+<meta property = "og:description" content = "This is part 13 of my journey learning Golang.
+Strings in Go Strings represent a sequence of bytes. More specifically, a read-only slice of uint8 integers. …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -34,7 +32,7 @@ Go has …" />
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-9/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-13/'>
 
     
 
@@ -108,32 +106,32 @@ Go has …" />
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang: Basic data types</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Strings</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 26, 2020</span>
+    Sep 8, 2020</span>
   <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Basic%20data%20types&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-9%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Strings&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-13%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-9%2f&t=Learning%20Golang%3a%20Basic%20data%20types" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-13%2f&t=Learning%20Golang%3a%20Strings" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
   </a>
   <script>
     function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-9/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-13/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     }
   </script>
   <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
@@ -141,7 +139,7 @@ Go has …" />
       <use xlink:href="#linkedin"></use>
     </svg>
   </a>
-  <a href="https://fernandocorreia.dev/posts/learning-golang-part-9/" title="Copy Link" class="link link_yank">
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-13/" title="Copy Link" class="link link_yank">
     <svg class="icon">
       <use xlink:href="#yank"></use>
     </svg>
@@ -149,195 +147,77 @@ Go has …" />
 </div>
 
     
-    <p>This is part 9 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
-<p>Data types are a designation by a programming language about the kind of values that are being stored.</p>
-<p>Go has several basic data types built in. This article explores boolean, numeric and string data types. See <a href="https://golang.org/ref/spec#Boolean_types">Go&rsquo;s documentation</a> for more details.</p>
-<h1 id="boolean-data-type">Boolean data type</h1>
-<p>Boolean values can be either <code>false</code> (equivalent to 0) or <code>true</code> (equivalent to 1). Although in principle they only require
-1 bit of storage, Go uses a byte for convenience reasons.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data type</th>
-<th align="right">Number of bits</th>
-<th align="right">Minimum value</th>
-<th align="right">Maximum value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">bool</td>
-<td align="right">8</td>
-<td align="right"><code>false</code></td>
-<td align="right"><code>true</code></td>
-</tr>
-</tbody>
-</table>
-<h1 id="numeric-data-types">Numeric data types</h1>
-<p>There are three categories of numeric data types in Go:</p>
+    <p>This is part 13 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="strings-in-go">Strings in Go</h1>
+<p>Strings represent a sequence of bytes. More specifically, a read-only slice of <code>uint8</code> integers.</p>
+<p>Their main use is for representing text. This text is usually, but not necessarily, encoded as UTF-8. In Go, strings can
+also be used to represent text in any encoding, and also raw bytes, not necessarily corresponding to text.</p>
+<p>It&rsquo;s important to notice that strings can be empty (i.e. have a length of 0) and that they can be arbitrarily long (as
+large as it will fit in memory).</p>
+<h1 id="string-literals">String literals</h1>
+<p>Go provides two ways for declaring string values in source code: interpreted or raw.</p>
+<h2 id="interpreted-strings">Interpreted strings</h2>
+<p>The quote (<code>&quot;</code>) character indicates an interpreted string literal. They have these characteristics:</p>
 <ul>
-<li>Integer (whole numbers)</li>
-<li>Floating point (numbers with a fractionary part)</li>
-<li>Complex (imaginary numbers)</li>
+<li>They can span a single line in the source file (i.e. they can&rsquo;t contain an unescaped newline character).</li>
+<li>They can contain any other character except for an unescaped double quote.</li>
+<li>Backslash escapes are interpreted.</li>
 </ul>
-<h2 id="integer-numbers">Integer numbers</h2>
-<p>These represent whole numbers. Integer data types have different lenghts and can be signed or unsigned:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data type</th>
-<th align="right">Number of bits</th>
-<th align="right">Minimum value</th>
-<th align="right">Maximum value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">int8</td>
-<td align="right">8</td>
-<td align="right">-128</td>
-<td align="right">127</td>
-</tr>
-<tr>
-<td align="left">int16</td>
-<td align="right">16</td>
-<td align="right">-32,768</td>
-<td align="right">32,767</td>
-</tr>
-<tr>
-<td align="left">int32</td>
-<td align="right">32</td>
-<td align="right">-2,147,483,648</td>
-<td align="right">2,147,483,647</td>
-</tr>
-<tr>
-<td align="left">int64</td>
-<td align="right">64</td>
-<td align="right">-9,223,372,036,854,775,808</td>
-<td align="right">9,223,372,036,854,775,807</td>
-</tr>
-<tr>
-<td align="left">uint8</td>
-<td align="right">8</td>
-<td align="right">0</td>
-<td align="right">255</td>
-</tr>
-<tr>
-<td align="left">uint16</td>
-<td align="right">16</td>
-<td align="right">0</td>
-<td align="right">65,535</td>
-</tr>
-<tr>
-<td align="left">uint32</td>
-<td align="right">32</td>
-<td align="right">0</td>
-<td align="right">4,294,967,295</td>
-</tr>
-<tr>
-<td align="left">uint64</td>
-<td align="right">64</td>
-<td align="right">0</td>
-<td align="right">18,446,744,073,709,551,615</td>
-</tr>
-</tbody>
-</table>
-<p>There are also aliases for some of the above data types:</p>
+<p>Examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="s">&#34;foo&#34;</span>                  <span class="c1">// The word foo
+</span><span class="ln">2</span><span class="c1"></span><span class="s">&#34;foo\nbar&#34;</span>             <span class="c1">// foo, newline, and bar
+</span><span class="ln">3</span><span class="c1"></span><span class="s">&#34;Saudações&#34;</span>            <span class="c1">// UTF-8 text
+</span><span class="ln">4</span><span class="c1"></span><span class="s">&#34;Sauda\u00E7\u00F5es&#34;</span>  <span class="c1">// Unicode code points (same text as above)
+</span></code></pre></div><h2 id="raw-strings">Raw strings</h2>
+<p>The backtick (<code>`</code>) character indicates a &ldquo;raw&rdquo; string literal. They have these characteristics:</p>
 <ul>
-<li><code>byte</code>: alias for <code>uint8</code></li>
-<li><code>rune</code>: alias for <code>int32</code> (represents a <a href="https://www.geeksforgeeks.org/rune-in-golang/">Unicode code point</a> (loosely, a &ldquo;character&rdquo;)</li>
-<li><code>int</code>: alias for <code>int32</code> or <code>int64</code> depending on the platform</li>
+<li>They can span multiple lines in the source code.</li>
+<li>The raw newlines in the source file become newlines in the string constant.</li>
+<li>They don&rsquo;t interpret escape sequences.</li>
+<li>They can&rsquo;t include backticks (not even via escaping; see above).</li>
 </ul>
-<h2 id="floating-point-numbers">Floating-point numbers</h2>
-<p>These represent numbers that may have a fractional part. They don&rsquo;t have a minimum or maximum value, but they have
-different levels of precision (accuracy) for representing numbers.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data type</th>
-<th align="right">Number of bits</th>
-<th align="left">Precision</th>
-<th align="right">Exponent length</th>
-<th align="right">Fraction length</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">float32</td>
-<td align="right">32</td>
-<td align="left"><a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format#IEEE_754_single-precision_binary_floating-point_format:_binary32">single</a></td>
-<td align="right">8</td>
-<td align="right">23</td>
-</tr>
-<tr>
-<td align="left">float64</td>
-<td align="right">64</td>
-<td align="left"><a href="https://en.wikipedia.org/wiki/Double-precision_floating-point_format#IEEE_754_double-precision_binary_floating-point_format:_binary64">double</a></td>
-<td align="right">11</td>
-<td align="right">52</td>
-</tr>
-</tbody>
-</table>
-<p>Hint: Floating point data types are binary numbers. They can present rounding errors when storing decimal numbers. For
-applications that require guaranteed precision for decimal values (like currency) see the <a href="https://godoc.org/github.com/shopspring/decimal">decimal</a> package.</p>
-<h2 id="complex-numbers">Complex numbers</h2>
-<p>These represent numbers with an <a href="https://en.wikipedia.org/wiki/Complex_number">imaginary part</a>. They&rsquo;re useful for
-computations on 2-dimensional space and calculations involving square roots.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data type</th>
-<th align="right">Number of bits</th>
-<th align="left">Range</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">complex64</td>
-<td align="right">64</td>
-<td align="left">complex numbers with float32 real and imaginary parts</td>
-</tr>
-<tr>
-<td align="left">complex128</td>
-<td align="right">128</td>
-<td align="left">complex numbers with float64 real and imaginary parts</td>
-</tr>
-</tbody>
-</table>
-<h1 id="string">String</h1>
-<p>Go strings are &ldquo;a read-only slice of bytes&rdquo;, i.e. a contiguous sequence of bytes &ndash; <code>uint8</code> integers.</p>
-<p>It&rsquo;s important to notice that these can be arbitrary bytes. They don&rsquo;t have to be Unicode code points and they don&rsquo;t
-have to be encoded as UTF-8 or any other encoding. That said, Go&rsquo;s library functions assume that strings are encoded as
-UTF-8. See <a href="https://blog.golang.org/strings">this blog post</a> for more details.</p>
-<table>
-<thead>
-<tr>
-<th align="left">Data type</th>
-<th align="left">Content</th>
-<th align="left">Length</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">string</td>
-<td align="left">bytes (uint8)</td>
-<td align="left">0 to maximum int value</td>
-</tr>
-</tbody>
-</table>
-<h1 id="takeaways">Takeaways</h1>
-<p>Go offers several built-in data types. Each one is suited for different use cases:</p>
-<ul>
-<li><code>bool</code> for boolean logic (true and false values)</li>
-<li>signed and unsigned integers of different sizes for fast, memory-efficient arithmetic with whole numbers</li>
-<li>two levels of precision for numbers with a fractional part</li>
-<li>two different lengths for complex numbers</li>
-<li><code>string</code> for sequences of bytes</li>
-</ul>
-<p>This level of specialization (particularly of the numeric data types) can be overwhelming at first, and requires understanding the types and ranges of data that
-the aplication will handle. The trade-off is being able to produce faster-running programs that require less memory in
-comparison with equivalent programs in languages with a more lax type system.</p>
-
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="s">`line1
+</span><span class="ln">2</span><span class="s">line2
+</span><span class="ln">3</span><span class="s">line3`</span>
+</code></pre></div><h1 id="declaring-string-variables">Declaring string variables</h1>
+<p>A string variable can be explicitly declared using the <code>string</code> type:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">var</span> <span class="nx">season</span> <span class="kt">string</span>
+</code></pre></div><p>And a string literal can be assigned to it like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="nx">season</span> <span class="p">=</span> <span class="s">&#34;Autumn&#34;</span>
+</code></pre></div><p>String variables can also be declared using the <code>:=</code> shorthand notation. That will declare them with an implicit type
+and assign an initial value, like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="nx">season</span> <span class="o">:=</span> <span class="s">&#34;Autumn&#34;</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">season</span><span class="p">)</span>
+<span class="ln">10</span><span class="p">}</span>
+</code></pre></div><p>The code above prints:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Autumn
+</code></pre></div><h1 id="string-concatenation">String concatenation</h1>
+<p>The <code>+</code> operator will concatenate two strings. No extra spaces are added on either side.</p>
+<p>For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="nx">wish</span> <span class="o">:=</span> <span class="s">&#34;Happy&#34;</span>
+<span class="ln"> 9</span>  <span class="nx">season</span> <span class="o">:=</span> <span class="s">&#34;Autumn&#34;</span>
+<span class="ln">10</span>  <span class="nx">greeting</span> <span class="o">:=</span> <span class="nx">wish</span> <span class="o">+</span> <span class="s">&#34; &#34;</span> <span class="o">+</span> <span class="nx">season</span> <span class="o">+</span> <span class="s">&#34;!&#34;</span>
+<span class="ln">11</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">greeting</span><span class="p">)</span>
+<span class="ln">12</span><span class="p">}</span>
+</code></pre></div><p>That creates a new string value, which is the result of the expression, and assigns it to the <code>greeting</code> variable.</p>
+<p>The code above prints:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Happy Autumn!
+</code></pre></div>
     <hr><div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -374,9 +254,6 @@ comparison with equivalent programs in languages with a more lax type system.</p
     <ul class="flex-column">
       
       <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-13/" class="nav-link">Learning Golang: Strings</a>
-      </li>
-      <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-12/" class="nav-link">Learning Golang: Compilation Errors</a>
       </li>
       <li>
@@ -384,6 +261,9 @@ comparison with equivalent programs in languages with a more lax type system.</p
       </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-10/" class="nav-link">Learning Golang: Literals and Constants</a>
+      </li>
+      <li>
+        <a href="https://fernandocorreia.dev/posts/learning-golang-part-9/" class="nav-link">Learning Golang: Basic data types</a>
       </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-8/" class="nav-link">Learning Golang: Running Go in a container</a>
