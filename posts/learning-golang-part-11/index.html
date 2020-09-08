@@ -162,8 +162,8 @@ also a named value) is that a variable&rsquo;s value can be modified at run time
 The actual value depends on the data type. Generally:</p>
 <ul>
 <li>0 for numeric data types</li>
-<li><code>false</code> for the boolean data type</li>
-<li>empty string for string data type</li>
+<li><code>false</code> for the <code>boolean</code> data type</li>
+<li>empty string (<code>&quot;&quot;</code>) for <code>string</code> data type</li>
 </ul>
 <h1 id="default-values">Default values</h1>
 <p>The initial value of a variable can be assigned when it is declared:</p>
@@ -193,6 +193,22 @@ inferred from the type of the value, instead of being explicitly declared.</p>
 <span class="ln"> 8</span>  <span class="nx">message</span> <span class="o">:=</span> <span class="s">&#34;Hello, world!&#34;</span>
 <span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nx">message</span><span class="p">)</span>
 <span class="ln">10</span><span class="p">}</span>
+</code></pre></div><p>Go offers another way to declare and initialize a variable inferring its type:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="kd">var</span> <span class="nx">planet</span> <span class="p">=</span> <span class="s">&#34;Earth&#34;</span>        <span class="c1">// Inferred type: string
+</span><span class="ln"> 9</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">radiusInKm</span> <span class="p">=</span> <span class="mf">6371.009</span>   <span class="c1">// Inferred type: float64
+</span><span class="ln">10</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">daysInTheYear</span> <span class="p">=</span> <span class="mi">365</span>     <span class="c1">// Inferred type: int (int64 or int32)
+</span><span class="ln">11</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">hasMoon</span> <span class="p">=</span> <span class="kc">true</span>          <span class="c1">// Inferred type: boolean
+</span><span class="ln">12</span><span class="c1"></span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%T %T %T %T\n&#34;</span><span class="p">,</span> <span class="nx">planet</span><span class="p">,</span> <span class="nx">radiusInKm</span><span class="p">,</span> <span class="nx">daysInTheYear</span><span class="p">,</span> <span class="nx">hasMoon</span><span class="p">)</span>
+<span class="ln">13</span><span class="p">}</span>
+</code></pre></div><p>The code above prints:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>string float64 int bool
 </code></pre></div><h1 id="updating-a-variable">Updating a variable</h1>
 <p>The <code>=</code> symbol assigns a new value to a variable based on the expression at the right side of the statement (i.e. after
 &ldquo;=&rdquo;). <code>=</code> is called the &ldquo;assignment operator&rdquo;. It is the same operator that was used above to assign default values when
