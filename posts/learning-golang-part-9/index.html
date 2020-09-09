@@ -247,7 +247,10 @@ Go has …" />
 <li><code>byte</code>: alias for <code>uint8</code></li>
 <li><code>rune</code>: alias for <code>int32</code> (represents a <a href="https://www.geeksforgeeks.org/rune-in-golang/">Unicode code point</a> (loosely, a &ldquo;character&rdquo;)</li>
 <li><code>int</code>: alias for <code>int32</code> or <code>int64</code> depending on the platform</li>
+<li><code>uint</code>: alias for <code>uint32</code> or <code>uint64</code> depending on the platform</li>
 </ul>
+<p>Most current computers are 64-bit systems. On those systems, <code>int</code> and <code>uint</code> will be 64-bit integers. On other (older
+or special-purpose) 32-bit systems, <code>int</code> and <code>uint</code> will be 32 bits in size.</p>
 <h2 id="floating-point-numbers">Floating-point numbers</h2>
 <p>These represent numbers that may have a fractional part. They don&rsquo;t have a minimum or maximum value, but they have
 different levels of precision (accuracy) for representing numbers.</p>

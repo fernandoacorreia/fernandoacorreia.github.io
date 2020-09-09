@@ -209,7 +209,9 @@ inferred from the type of the value, instead of being explicitly declared.</p>
 <span class="ln">13</span><span class="p">}</span>
 </code></pre></div><p>The code above prints:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>string float64 int bool
-</code></pre></div><h1 id="updating-a-variable">Updating a variable</h1>
+</code></pre></div><p>Notice that values that infer their types from integer literals (like 365 above) will be of type <code>int</code>. On most computer
+systems, they will be 64 bits in length. On 32-bit systems, these variables will be 32 bits in length.</p>
+<h1 id="updating-a-variable">Updating a variable</h1>
 <p>The <code>=</code> symbol assigns a new value to a variable based on the expression at the right side of the statement (i.e. after
 &ldquo;=&rdquo;). <code>=</code> is called the &ldquo;assignment operator&rdquo;. It is the same operator that was used above to assign default values when
 a variable was declared. It can also be used at later parts of the code for updating the value of the variable (i.e.
