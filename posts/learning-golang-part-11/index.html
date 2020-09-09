@@ -172,14 +172,19 @@ The actual value depends on the data type. Generally:</p>
 <span class="ln">3</span><span class="kd">var</span> <span class="nx">shoppingCartPrice</span> <span class="p">=</span> <span class="mf">19.99</span>
 <span class="ln">4</span><span class="kd">var</span> <span class="nx">shoppingCartExtendedWarranty</span> <span class="p">=</span> <span class="kc">true</span>
 </code></pre></div><h1 id="defining-multiple-variables">Defining multiple variables</h1>
-<p>Go has a shorthand for declaring several variables in a single statement:</p>
+<p>Go has a shorthand for declaring several variables in a single statement. Use the keyword <code>var</code> (or <code>const</code>) followed
+by parentheses with each variable on its own line:</p>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">var</span> <span class="p">(</span>
 <span class="ln">2</span>  <span class="nx">a</span> <span class="p">=</span> <span class="mi">5</span>
 <span class="ln">3</span>  <span class="nx">b</span> <span class="p">=</span> <span class="mi">10</span>
 <span class="ln">4</span>  <span class="nx">c</span> <span class="p">=</span> <span class="mi">15</span>
 <span class="ln">5</span><span class="p">)</span>
-</code></pre></div><p>Use the keyword <code>var</code> (or <code>const</code>) followed by parentheses with each variable on its own line.</p>
-<h1 id="shorthand-declaration">Shorthand declaration</h1>
+</code></pre></div><p>Another way to declare multiple variables in a single statement, initialized with their zero value, is:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">var</span> <span class="nx">part1</span><span class="p">,</span> <span class="nx">part2</span> <span class="kt">string</span>
+</code></pre></div><p>It&rsquo;s also possible to declare multiple variables, while initializing them and letting their types be inferred from the
+value:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="nx">anInteger</span><span class="p">,</span> <span class="nx">aString</span><span class="p">,</span> <span class="nx">aBoolean</span> <span class="o">:=</span> <span class="mi">42</span><span class="p">,</span> <span class="s">&#34;Hello&#34;</span><span class="p">,</span> <span class="kc">true</span>
+</code></pre></div><h1 id="shorthand-declaration">Shorthand declaration</h1>
 <p>The <code>:=</code> symbol is a shorthand for declaring a variable and assigning a default value. The type of the variable is
 inferred from the type of the value, instead of being explicitly declared.</p>
 <p>Example:</p>
