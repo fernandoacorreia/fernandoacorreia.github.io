@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang: Getting Started | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Assigning and printing variables | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,15 +14,17 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 1 of my journey learning Golang.
-The Go programming language (Golang) is becoming more relevant by the day. It is, famously, the language of the …">
+<meta name="description" content="This is part 14 of my journey learning Golang.
+As an exercise for Codecademy&rsquo;s Learn Go course, I wrote my second Go program.
+It simulates a catalog for a …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang: Getting Started" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-1/" />
-<meta property = "og:title" content = "Learning Golang: Getting Started" />
-<meta property = "og:description" content = "This is part 1 of my journey learning Golang.
-The Go programming language (Golang) is becoming more relevant by the day. It is, famously, the language of the …" />
+<meta name = "twitter:title" content = "Learning Golang: Assigning and printing variables" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-14/" />
+<meta property = "og:title" content = "Learning Golang: Assigning and printing variables" />
+<meta property = "og:description" content = "This is part 14 of my journey learning Golang.
+As an exercise for Codecademy&rsquo;s Learn Go course, I wrote my second Go program.
+It simulates a catalog for a …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -32,7 +34,7 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-1/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-14/'>
 
     
 
@@ -48,7 +50,7 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
   
     
   
-  <body data-code="100" data-lines="false" id="documentTop">
+  <body data-code="200" data-lines="false" id="documentTop">
 
 <header class = 'nav_header' >
   <nav class = 'nav'>
@@ -106,32 +108,32 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang: Getting Started</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Assigning and printing variables</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 16, 2020</span>
+    Sep 11, 2020</span>
   <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Getting%20Started&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-1%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Assigning%20and%20printing%20variables&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-14%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-1%2f&t=Learning%20Golang%3a%20Getting%20Started" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-14%2f&t=Learning%20Golang%3a%20Assigning%20and%20printing%20variables" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
   </a>
   <script>
     function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-1/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-14/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     }
   </script>
   <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
@@ -139,7 +141,7 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
       <use xlink:href="#linkedin"></use>
     </svg>
   </a>
-  <a href="https://fernandocorreia.dev/posts/learning-golang-part-1/" title="Copy Link" class="link link_yank">
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-14/" title="Copy Link" class="link link_yank">
     <svg class="icon">
       <use xlink:href="#yank"></use>
     </svg>
@@ -147,15 +149,138 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
 </div>
 
     
-    <p>This is part 1 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
-<p>The Go programming language (Golang) is becoming more relevant by the day. It is, famously, the language of the Docker
-and Kubernetes projects. Both have had a huge impact on how companies run applications, and I develop for them on a
-daily basis. Golang is also seeing increased adotoption at my company.</p>
-<p>I&rsquo;m starting on a journey to become more familiar with this language. I decided to start from the fundamentals. I&rsquo;m
-going to follow the <a href="https://www.codecademy.com/learn/learn-go">Learn Go</a> course on Codecademy</p>
-<p>I&rsquo;m going to share notes of what I learn as I go.</p>
-<p>Have you thought about learning Go too? Or have you already learned it? What other resources would you recommend for a
-novice? Let me know in the comments below.</p>
+    <p>This is part 14 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<p>As an exercise for Codecademy&rsquo;s <a href="https://www.codecademy.com/learn/learn-go">Learn Go</a> course, I wrote my second Go
+program.</p>
+<p>It simulates a catalog for a comic book store.</p>
+<p>At this point the course has only covered the most fundamental parts of Go, like variables, simple data types, basic
+arithmetic, and printing. Arrays and functions are still out of the picture.</p>
+<p>For that reason, the structure of the program is very primitive and there is a lot of repetition (room for improvement).</p>
+<p>That still made it a valuable exercise. Some of the concepts that this little program reinforces are:</p>
+<ul>
+<li>Declaring variables of different data types.</li>
+<li>Assigning (and re-assigning) values to variables.</li>
+<li>Doing basic arithmetic.</li>
+<li>Mixing whole numbers arithmetic with fractional numbers arithmetic (data type conversion).</li>
+<li>Printing out variable values along with text literals.</li>
+</ul>
+<p>This is the full code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">  1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln">  2</span>
+<span class="ln">  3</span><span class="kn">import</span><span class="p">(</span>
+<span class="ln">  4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln">  5</span><span class="p">)</span>
+<span class="ln">  6</span>
+<span class="ln">  7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">  8</span>  <span class="c1">// Comic book variables
+</span><span class="ln">  9</span><span class="c1"></span>  <span class="kd">var</span> <span class="nx">publisher</span><span class="p">,</span> <span class="nx">writer</span><span class="p">,</span> <span class="nx">artist</span><span class="p">,</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">genre</span> <span class="kt">string</span>
+<span class="ln"> 10</span>  <span class="kd">var</span> <span class="nx">year</span><span class="p">,</span> <span class="nx">pageNumber</span><span class="p">,</span> <span class="nx">age</span> <span class="kt">int</span>
+<span class="ln"> 11</span>  <span class="kd">var</span> <span class="nx">grade</span><span class="p">,</span> <span class="nx">price</span> <span class="kt">float32</span>
+<span class="ln"> 12</span>
+<span class="ln"> 13</span>  <span class="c1">// Define first comic book
+</span><span class="ln"> 14</span><span class="c1"></span>  <span class="nx">title</span> <span class="p">=</span> <span class="s">&#34;Mr. GoToSleep&#34;</span>
+<span class="ln"> 15</span>  <span class="nx">genre</span> <span class="p">=</span> <span class="s">&#34;Mistery&#34;</span>
+<span class="ln"> 16</span>  <span class="nx">writer</span> <span class="p">=</span> <span class="s">&#34;Tracey Hatchet&#34;</span>
+<span class="ln"> 17</span>  <span class="nx">artist</span> <span class="p">=</span> <span class="s">&#34;Jewel Tampson&#34;</span>
+<span class="ln"> 18</span>  <span class="nx">publisher</span> <span class="p">=</span> <span class="s">&#34;DizzyBooks Publishing Inc.&#34;</span>
+<span class="ln"> 19</span>  <span class="nx">year</span> <span class="p">=</span> <span class="mi">1997</span>
+<span class="ln"> 20</span>  <span class="nx">pageNumber</span> <span class="p">=</span> <span class="mi">14</span>
+<span class="ln"> 21</span>  <span class="nx">grade</span> <span class="p">=</span> <span class="mf">6.5</span>
+<span class="ln"> 22</span>  <span class="nx">age</span> <span class="p">=</span> <span class="mi">2020</span> <span class="o">-</span> <span class="nx">year</span>
+<span class="ln"> 23</span>  <span class="nx">price</span> <span class="p">=</span> <span class="nb">float32</span><span class="p">(</span><span class="nx">age</span> <span class="o">*</span> <span class="nx">pageNumber</span><span class="p">)</span> <span class="o">*</span> <span class="nx">grade</span> <span class="o">/</span> <span class="mf">100.0</span>
+<span class="ln"> 24</span>
+<span class="ln"> 25</span>  <span class="c1">// Print out variables
+</span><span class="ln"> 26</span><span class="c1"></span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span>
+<span class="ln"> 27</span>    <span class="nx">title</span><span class="p">,</span>
+<span class="ln"> 28</span>    <span class="s">&#34;genre&#34;</span><span class="p">,</span>
+<span class="ln"> 29</span>    <span class="nx">genre</span><span class="p">,</span>
+<span class="ln"> 30</span>    <span class="s">&#34;written by&#34;</span><span class="p">,</span>
+<span class="ln"> 31</span>    <span class="nx">writer</span><span class="p">,</span>
+<span class="ln"> 32</span>    <span class="s">&#34;drawn by&#34;</span><span class="p">,</span>
+<span class="ln"> 33</span>    <span class="nx">artist</span><span class="p">,</span>
+<span class="ln"> 34</span>    <span class="s">&#34;published by&#34;</span><span class="p">,</span>
+<span class="ln"> 35</span>    <span class="nx">publisher</span><span class="p">,</span>
+<span class="ln"> 36</span>    <span class="s">&#34;on&#34;</span><span class="p">,</span>
+<span class="ln"> 37</span>    <span class="nx">year</span><span class="p">,</span>
+<span class="ln"> 38</span>    <span class="s">&#34;containing&#34;</span><span class="p">,</span>
+<span class="ln"> 39</span>    <span class="nx">pageNumber</span><span class="p">,</span>
+<span class="ln"> 40</span>    <span class="s">&#34;pages&#34;</span><span class="p">,</span>
+<span class="ln"> 41</span>    <span class="s">&#34;in condition&#34;</span><span class="p">,</span>
+<span class="ln"> 42</span>    <span class="nx">grade</span><span class="p">,</span>
+<span class="ln"> 43</span>    <span class="s">&#34;price&#34;</span><span class="p">,</span>
+<span class="ln"> 44</span>    <span class="nx">price</span><span class="p">,</span>
+<span class="ln"> 45</span>  <span class="p">)</span>
+<span class="ln"> 46</span>
+<span class="ln"> 47</span>  <span class="c1">// Define second comic book
+</span><span class="ln"> 48</span><span class="c1"></span>  <span class="nx">title</span> <span class="p">=</span> <span class="s">&#34;Epic Vol. 1&#34;</span>
+<span class="ln"> 49</span>  <span class="nx">genre</span> <span class="p">=</span> <span class="s">&#34;SciFi&#34;</span>
+<span class="ln"> 50</span>  <span class="nx">writer</span> <span class="p">=</span> <span class="s">&#34;Ryan N. Shawn&#34;</span>
+<span class="ln"> 51</span>  <span class="nx">artist</span> <span class="p">=</span> <span class="s">&#34;Phoebe Paperclips&#34;</span>
+<span class="ln"> 52</span>  <span class="nx">publisher</span> <span class="p">=</span> <span class="s">&#34;DizzyBooks Publishing Inc.&#34;</span>
+<span class="ln"> 53</span>  <span class="nx">year</span> <span class="p">=</span> <span class="mi">2013</span>
+<span class="ln"> 54</span>  <span class="nx">pageNumber</span> <span class="p">=</span> <span class="mi">160</span>
+<span class="ln"> 55</span>  <span class="nx">grade</span> <span class="p">=</span> <span class="mf">9.0</span>
+<span class="ln"> 56</span>  <span class="nx">age</span> <span class="p">=</span> <span class="mi">2020</span> <span class="o">-</span> <span class="nx">year</span>
+<span class="ln"> 57</span>  <span class="nx">price</span> <span class="p">=</span> <span class="nb">float32</span><span class="p">(</span><span class="nx">age</span> <span class="o">*</span> <span class="nx">pageNumber</span><span class="p">)</span> <span class="o">*</span> <span class="nx">grade</span> <span class="o">/</span> <span class="mf">100.0</span>
+<span class="ln"> 58</span>
+<span class="ln"> 59</span>  <span class="c1">// Print out variables
+</span><span class="ln"> 60</span><span class="c1"></span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span>
+<span class="ln"> 61</span>    <span class="nx">title</span><span class="p">,</span>
+<span class="ln"> 62</span>    <span class="s">&#34;genre&#34;</span><span class="p">,</span>
+<span class="ln"> 63</span>    <span class="nx">genre</span><span class="p">,</span>
+<span class="ln"> 64</span>    <span class="s">&#34;written by&#34;</span><span class="p">,</span>
+<span class="ln"> 65</span>    <span class="nx">writer</span><span class="p">,</span>
+<span class="ln"> 66</span>    <span class="s">&#34;drawn by&#34;</span><span class="p">,</span>
+<span class="ln"> 67</span>    <span class="nx">artist</span><span class="p">,</span>
+<span class="ln"> 68</span>    <span class="s">&#34;published by&#34;</span><span class="p">,</span>
+<span class="ln"> 69</span>    <span class="nx">publisher</span><span class="p">,</span>
+<span class="ln"> 70</span>    <span class="s">&#34;on&#34;</span><span class="p">,</span>
+<span class="ln"> 71</span>    <span class="nx">year</span><span class="p">,</span>
+<span class="ln"> 72</span>    <span class="s">&#34;containing&#34;</span><span class="p">,</span>
+<span class="ln"> 73</span>    <span class="nx">pageNumber</span><span class="p">,</span>
+<span class="ln"> 74</span>    <span class="s">&#34;pages&#34;</span><span class="p">,</span>
+<span class="ln"> 75</span>    <span class="s">&#34;in condition&#34;</span><span class="p">,</span>
+<span class="ln"> 76</span>    <span class="nx">grade</span><span class="p">,</span>
+<span class="ln"> 77</span>    <span class="s">&#34;price&#34;</span><span class="p">,</span>
+<span class="ln"> 78</span>    <span class="nx">price</span><span class="p">,</span>
+<span class="ln"> 79</span>  <span class="p">)</span>
+<span class="ln"> 80</span>
+<span class="ln"> 81</span>  <span class="c1">// Define third comic book
+</span><span class="ln"> 82</span><span class="c1"></span>  <span class="nx">title</span> <span class="p">=</span> <span class="s">&#34;Ms. Y&#34;</span>
+<span class="ln"> 83</span>  <span class="nx">genre</span> <span class="p">=</span> <span class="s">&#34;Adventure&#34;</span>
+<span class="ln"> 84</span>  <span class="nx">writer</span> <span class="p">=</span> <span class="s">&#34;Gordon Ryan&#34;</span>
+<span class="ln"> 85</span>  <span class="nx">artist</span> <span class="p">=</span> <span class="s">&#34;Isobelle Leclair&#34;</span>
+<span class="ln"> 86</span>  <span class="nx">publisher</span> <span class="p">=</span> <span class="s">&#34;Astra Books&#34;</span>
+<span class="ln"> 87</span>  <span class="nx">year</span> <span class="p">=</span> <span class="mi">2001</span>
+<span class="ln"> 88</span>  <span class="nx">pageNumber</span> <span class="p">=</span> <span class="mi">47</span>
+<span class="ln"> 89</span>  <span class="nx">grade</span> <span class="p">=</span> <span class="mf">8.5</span>
+<span class="ln"> 90</span>  <span class="nx">age</span> <span class="p">=</span> <span class="mi">2020</span> <span class="o">-</span> <span class="nx">year</span>
+<span class="ln"> 91</span>  <span class="nx">price</span> <span class="p">=</span> <span class="nb">float32</span><span class="p">(</span><span class="nx">age</span> <span class="o">*</span> <span class="nx">pageNumber</span><span class="p">)</span> <span class="o">*</span> <span class="nx">grade</span> <span class="o">/</span> <span class="mf">100.0</span>
+<span class="ln"> 92</span>
+<span class="ln"> 93</span>  <span class="c1">// Print out variables
+</span><span class="ln"> 94</span><span class="c1"></span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span>
+<span class="ln"> 95</span>    <span class="nx">title</span><span class="p">,</span>
+<span class="ln"> 96</span>    <span class="s">&#34;genre&#34;</span><span class="p">,</span>
+<span class="ln"> 97</span>    <span class="nx">genre</span><span class="p">,</span>
+<span class="ln"> 98</span>    <span class="s">&#34;written by&#34;</span><span class="p">,</span>
+<span class="ln"> 99</span>    <span class="nx">writer</span><span class="p">,</span>
+<span class="ln">100</span>    <span class="s">&#34;drawn by&#34;</span><span class="p">,</span>
+<span class="ln">101</span>    <span class="nx">artist</span><span class="p">,</span>
+<span class="ln">102</span>    <span class="s">&#34;published by&#34;</span><span class="p">,</span>
+<span class="ln">103</span>    <span class="nx">publisher</span><span class="p">,</span>
+<span class="ln">104</span>    <span class="s">&#34;on&#34;</span><span class="p">,</span>
+<span class="ln">105</span>    <span class="nx">year</span><span class="p">,</span>
+<span class="ln">106</span>    <span class="s">&#34;containing&#34;</span><span class="p">,</span>
+<span class="ln">107</span>    <span class="nx">pageNumber</span><span class="p">,</span>
+<span class="ln">108</span>    <span class="s">&#34;pages&#34;</span><span class="p">,</span>
+<span class="ln">109</span>    <span class="s">&#34;in condition&#34;</span><span class="p">,</span>
+<span class="ln">110</span>    <span class="nx">grade</span><span class="p">,</span>
+<span class="ln">111</span>    <span class="s">&#34;price&#34;</span><span class="p">,</span>
+<span class="ln">112</span>    <span class="nx">price</span><span class="p">,</span>
+<span class="ln">113</span>  <span class="p">)</span>
+<span class="ln">114</span>
+<span class="ln">115</span><span class="p">}</span>
+</code></pre></div><p>Source: <a href="https://github.com/fernandoacorreia/learning-go/blob/6b190b7778dd20a39045a7746f7b86a53c1701f8/comic-mischief/main.go">learning-go/comic-mischief/main.go</a></p>
 
     <hr><div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -192,9 +317,6 @@ novice? Let me know in the comments below.</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-14/" class="nav-link">Learning Golang: Assigning and printing variables</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-13/" class="nav-link">Learning Golang: Strings</a>
       </li>

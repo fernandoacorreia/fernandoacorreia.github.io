@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 08 Sep 2020 01:35:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 03:59:46 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Assigning and printing variables</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-14/</link>
+      <pubDate>Fri, 11 Sep 2020 03:59:46 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-14/</guid>
+      <description>This is part 14 of my journey learning Golang.
+As an exercise for Codecademy&amp;rsquo;s Learn Go course, I wrote my second Go program.
+It simulates a catalog for a comic book store.
+At this point the course has only covered the most fundamental parts of Go, like variables, simple data types, basic arithmetic, and printing. Arrays and functions are still out of the picture.
+For that reason, the structure of the program is very primitive and there is a lot of repetition (room for improvement).</description>
+    </item>
     
     <item>
       <title>Learning Golang: Strings</title>
