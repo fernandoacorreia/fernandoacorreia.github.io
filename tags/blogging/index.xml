@@ -6,10 +6,21 @@
     <description>Recent content in blogging on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 15 Aug 2020 04:35:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 17:24:50 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Registering a website with Google Search Console</title>
+      <link>https://fernandocorreia.dev/posts/google-search-console/</link>
+      <pubDate>Sat, 12 Sep 2020 17:24:50 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/google-search-console/</guid>
+      <description>Google has a free tool called Search Console that &amp;ldquo;help you measure your site&amp;rsquo;s Search traffic and performance, fix issues, and make your site shine in Google Search results&amp;rdquo;.
+This is super handy to make sure that your website is being properly indexed by Google, to keep on top of how much traffic it is getting, and to be on the lookout for errors.
+Registering your website with Google It only takes a few simple steps to add your website to Google&amp;rsquo;s Search Console:</description>
+    </item>
     
     <item>
       <title>Custom domain with GitHub Pages</title>

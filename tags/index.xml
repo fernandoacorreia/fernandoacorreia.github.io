@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 12 Sep 2020 04:21:49 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 17:24:50 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blogging</title>
+      <link>https://fernandocorreia.dev/tags/blogging/</link>
+      <pubDate>Sat, 12 Sep 2020 17:24:50 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/tags/blogging/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>golang</title>
@@ -17,15 +26,6 @@
       <pubDate>Sat, 12 Sep 2020 04:21:49 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blogging</title>
-      <link>https://fernandocorreia.dev/tags/blogging/</link>
-      <pubDate>Sat, 15 Aug 2020 04:35:19 +0000</pubDate>
-      
-      <guid>https://fernandocorreia.dev/tags/blogging/</guid>
       <description></description>
     </item>
     
