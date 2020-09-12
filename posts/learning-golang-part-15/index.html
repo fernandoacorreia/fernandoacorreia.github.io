@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-figures="">
-  <head>  <title>Categories | Fernando Correia&#39;s Blog</title>
+<html lang="en" data-figures="" class="page">
+  <head>  <title>Learning Golang: Println and Print | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,13 +14,15 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="This is part 15 of my journey learning Golang.
+fmt Package Go&rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Categories" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/categories/" />
-<meta property = "og:title" content = "Categories" />
-<meta property = "og:description" content = "" />
+<meta name = "twitter:title" content = "Learning Golang: Println and Print" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-15/" />
+<meta property = "og:title" content = "Learning Golang: Println and Print" />
+<meta property = "og:description" content = "This is part 15 of my journey learning Golang.
+fmt Package Go&rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -30,7 +32,7 @@
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/categories/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-15/'>
 
     
 
@@ -101,39 +103,113 @@
 </header>
 
     <main>
-
-<div class='grid-inverse wrap content'>
-  <ul class='posts' id = 'posts'>
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/categories/learning-golang/'>learning golang</a>
-      </h3>
-      <div class = 'post_meta'>
+  
+<div class = 'grid-inverse wrap content'>
+  <article class='post_content'>
+    <h1 class='post_title'>Learning Golang: Println and Print</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
     Sep 12, 2020</span>
+  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
+  </a>
 </div>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'></p>
-          <a href='https://fernandocorreia.dev/categories/learning-golang/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class='post_share'>
+  Share on:
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Println%20and%20Print&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-15%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#twitter"></use>
+    </svg>
+  </a>
   
-    <li>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-15%2f&t=Learning%20Golang%3a%20Println%20and%20Print" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#facebook"></use>
+    </svg>
+  </a>
+  <script>
+    function shareViaLinkedin() {
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-15/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    }
+  </script>
+  <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
+    <svg class="icon">
+      <use xlink:href="#linkedin"></use>
+    </svg>
+  </a>
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-15/" title="Copy Link" class="link link_yank">
+    <svg class="icon">
+      <use xlink:href="#yank"></use>
+    </svg>
+  </a>
+</div>
 
+    
+    <p>This is part 15 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="fmt-package">fmt Package</h1>
+<p>Go&rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, old-school style of the C
+language, but modernized.</p>
+<p>This article covers the most basic functions for printing out text <code>Println</code> and <code>Print</code>:</p>
+<h1 id="println">Println</h1>
+<p>The <code>Println</code> function prints outs a line of text to the standard output device.</p>
+<p>It prints its arguments, with a space between them, and a new line character at the end.</p>
+<p>For example, this program:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln">2</span>
+<span class="ln">3</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+<span class="ln">4</span>
+<span class="ln">5</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">6</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Line&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="ln">7</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;This&#34;</span><span class="p">,</span> <span class="s">&#34;is&#34;</span><span class="p">,</span> <span class="s">&#34;line&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="ln">8</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;End&#34;</span><span class="p">)</span>
+<span class="ln">9</span><span class="p">}</span>
+</code></pre></div><p>prints out:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Line 1
+<span class="ln">2</span>This is line 2
+<span class="ln">3</span>End
+</code></pre></div><h1 id="print">Print</h1>
+<p>The <code>Print</code> function prints out its arguments without adding spaces in between. It also doesn&rsquo;t add a new line
+character.</p>
+<p>For instance this program:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 4</span>
+<span class="ln"> 5</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 6</span>  <span class="nx">points</span> <span class="o">:=</span> <span class="mi">25750</span>
+<span class="ln"> 7</span>  <span class="nx">rating</span> <span class="o">:=</span> <span class="s">&#34;HIGH SCORE!&#34;</span>
+<span class="ln"> 8</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;Your points&#34;</span><span class="p">,</span> <span class="s">&#34;: &#34;</span><span class="p">)</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="nx">points</span><span class="p">)</span>
+<span class="ln">10</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34; (&#34;</span><span class="p">,</span> <span class="nx">rating</span><span class="p">,</span> <span class="s">&#34;)&#34;</span><span class="p">)</span>
+<span class="ln">11</span><span class="p">}</span>
+</code></pre></div><p>prints out:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Your points: 25750 (HIGH SCORE!)
+</code></pre></div><p>Notice how the spaces are embedded in the arguments. Also, a line break was not added at the end. The next output would
+continue on the same line.</p>
 
-    </li>
-  </ul>
+    <hr><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fernando-correias-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <h2>Fernando Correia</h2>
@@ -148,9 +224,6 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-15/" class="nav-link">Learning Golang: Println and Print</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-14/" class="nav-link">Learning Golang: Assigning and printing variables</a>
       </li>
@@ -217,8 +290,6 @@
 </aside>
 
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

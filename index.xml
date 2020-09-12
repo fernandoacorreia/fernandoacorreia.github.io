@@ -6,10 +6,23 @@
     <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 11 Sep 2020 03:59:46 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 04:21:49 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Println and Print</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-15/</link>
+      <pubDate>Sat, 12 Sep 2020 04:21:49 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-15/</guid>
+      <description>This is part 15 of my journey learning Golang.
+fmt Package Go&amp;rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, old-school style of the C language, but modernized.
+This article covers the most basic functions for printing out text Println and Print:
+Println The Println function prints outs a line of text to the standard output device.
+It prints its arguments, with a space between them, and a new line character at the end.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Assigning and printing variables</title>
