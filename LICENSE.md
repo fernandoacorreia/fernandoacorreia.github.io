@@ -5,3 +5,6 @@ Fernando Correia's Blog by Fernando de Alcantara Correia is licensed under a Cre
 Based on a work at https://github.com/fernandoacorreia/blog.
 
 To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+
+This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as
+attribution is given to the creator. The license allows for commercial use.
