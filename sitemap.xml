@@ -4,7 +4,37 @@
   
   <url>
     <loc>https://fernandocorreia.dev/</loc>
-    <lastmod>2020-09-12T17:24:50+00:00</lastmod>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/categories/</loc>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/tags/golang/</loc>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/categories/learning-golang/</loc>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/posts/learning-golang-part-16/</loc>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/posts/</loc>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fernandocorreia.dev/tags/</loc>
+    <lastmod>2020-09-15T03:39:46+00:00</lastmod>
   </url>
   
   <url>
@@ -13,33 +43,8 @@
   </url>
   
   <url>
-    <loc>https://fernandocorreia.dev/posts/</loc>
-    <lastmod>2020-09-12T17:24:50+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://fernandocorreia.dev/posts/google-search-console/</loc>
     <lastmod>2020-09-12T17:24:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fernandocorreia.dev/tags/</loc>
-    <lastmod>2020-09-12T17:24:50+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fernandocorreia.dev/categories/</loc>
-    <lastmod>2020-09-12T04:21:49+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fernandocorreia.dev/tags/golang/</loc>
-    <lastmod>2020-09-12T04:21:49+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://fernandocorreia.dev/categories/learning-golang/</loc>
-    <lastmod>2020-09-12T04:21:49+00:00</lastmod>
   </url>
   
   <url>

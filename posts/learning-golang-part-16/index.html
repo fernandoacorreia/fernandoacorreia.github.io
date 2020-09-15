@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-figures="">
-  <head>  <title>golang | Fernando Correia&#39;s Blog</title>
+<html lang="en" data-figures="" class="page">
+  <head>  <title>Learning Golang: Printf | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,13 +14,17 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="This is part 16 of my journey learning Golang.
+The Printf method The Printf method from the fmt package writes a formatted string to standard output.
+Printf …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "golang" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/tags/golang/" />
-<meta property = "og:title" content = "golang" />
-<meta property = "og:description" content = "" />
+<meta name = "twitter:title" content = "Learning Golang: Printf" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-16/" />
+<meta property = "og:title" content = "Learning Golang: Printf" />
+<meta property = "og:description" content = "This is part 16 of my journey learning Golang.
+The Printf method The Printf method from the fmt package writes a formatted string to standard output.
+Printf …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -30,7 +34,7 @@
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/tags/golang/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-16/'>
 
     
 
@@ -101,208 +105,198 @@
 </header>
 
     <main>
-
-<div class='grid-inverse wrap content'>
-  <ul class='posts' id = 'posts'>
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/learning-golang-part-6/'>Learning Golang: Resources for learning Go</a>
-      </h3>
-      <div class = 'post_meta'>
+  
+<div class = 'grid-inverse wrap content'>
+  <article class='post_content'>
+    <h1 class='post_title'>Learning Golang: Printf</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 19, 2020</span>
+    Sep 15, 2020</span>
   <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>This is part 6 of my journey learning Golang.
-Books and tutorials  A Tour of Go: An introduction that covers the most important features of the language. An Introduction to Programming in Go: A free e-book from 2012. Introducing Go: An O&rsquo;Reilly book from 2016. &ldquo;Perfect for beginners familiar with …</p>
-          <a href='https://fernandocorreia.dev/posts/learning-golang-part-6/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class='post_share'>
+  Share on:
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Printf&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-16%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#twitter"></use>
+    </svg>
+  </a>
   
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/learning-golang-part-5/'>Learning Golang: Comments</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 18, 2020</span>
-  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-16%2f&t=Learning%20Golang%3a%20Printf" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#facebook"></use>
+    </svg>
+  </a>
+  <script>
+    function shareViaLinkedin() {
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-16/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    }
+  </script>
+  <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
+    <svg class="icon">
+      <use xlink:href="#linkedin"></use>
+    </svg>
+  </a>
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-16/" title="Copy Link" class="link link_yank">
+    <svg class="icon">
+      <use xlink:href="#yank"></use>
+    </svg>
   </a>
 </div>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>This is part 5 of my journey learning Golang.
-Inline comments Go ignores text to the right of //:
-1// This entire line is ignored by the compiler. 2// fmt.Println(&#34;Does NOT print&#34;) 3fmt.Println(&#34;This gets printed!&#34;) // This part gets ignored Block comments All lines between /* and */ will be ignored: …</p>
-          <a href='https://fernandocorreia.dev/posts/learning-golang-part-5/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/learning-golang-part-4/'>Learning Golang: Function declarations</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 16, 2020</span>
-  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
-  </a>
-</div>
+    
+    <p>This is part 16 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="the-printf-method">The Printf method</h1>
+<p>The <a href="https://golang.org/pkg/fmt/#Printf">Printf</a> method from the <a href="https://golang.org/pkg/fmt/">fmt</a> package writes a
+formatted string to standard output.</p>
+<p><code>Printf</code> makes it possible to <strong>interpolate</strong> strings. This is done by leaving placeholders in a string, and using
+values to fill in these placeholders.</p>
+<h1 id="printf-syntax">Printf syntax</h1>
+<p><code>Printf</code> accepts a string argument, potentially with formatting placeholders, and zero or more value arguments. For
+example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="nx">answer</span> <span class="o">:=</span> <span class="s">&#34;C&#34;</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Is %v your final answer?&#34;</span><span class="p">,</span> <span class="nx">answer</span><span class="p">)</span>
+<span class="ln">10</span><span class="p">}</span>
+</code></pre></div><p>prints out:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Is C your final answer?
+</code></pre></div><p>Keep in mind that, like <code>Print</code>, <code>Printf</code> does not automatically add a newline character.</p>
+<p>The <code>%v</code> portion of the first argument is the placeholder for a &ldquo;value&rdquo;.</p>
+<h1 id="multiple-placeholders">Multiple placeholders</h1>
+<p>The &ldquo;format specifier&rdquo; i.e. the first argument can contain an arbitrary number of placeholders. This way, multiple
+values can be printed out with a single statement. This is one use case where <code>Printf</code> shines over <code>Print</code>. To achieve
+the same thing with <code>Print</code> several statements would be required. Additionally <code>Print</code> doesn&rsquo;t support any formatting
+other than the default string representation of its argument.</p>
+<p>For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="kd">const</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">pronoun</span><span class="p">,</span> <span class="nx">profession</span> <span class="p">=</span> <span class="s">&#34;Kim&#34;</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="s">&#34;She&#34;</span><span class="p">,</span> <span class="s">&#34;woodworker&#34;</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%s is %d years old.\n&#34;</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">age</span><span class="p">)</span>
+<span class="ln">10</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%s is a %s.\n&#34;</span><span class="p">,</span> <span class="nx">pronoun</span><span class="p">,</span> <span class="nx">profession</span><span class="p">)</span>
+<span class="ln">11</span><span class="p">}</span>
+</code></pre></div><p>prints out:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>Kim is 22 years old.
+<span class="ln">2</span>She is a woodworker.
+</code></pre></div><p>A newline character is printed after each of these lines, because it was explicitly included in the format specifier.</p>
+<p>Notice that the placeholders used were <code>%s</code> (for string) and <code>%d</code> (for decimal i.e. base 10 integer number).</p>
+<h1 id="verbs">Verbs</h1>
+<p>The placeholders in the format specifier are called &ldquo;verbs&rdquo;. To view a full list of supported format verbs, see the <a href="https://golang.org/pkg/fmt/#pkg-overview">fmt
+package&rsquo;s documentation</a>.</p>
+<p>These are some of the most common ones:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Verb</th>
+<th align="left">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">%v</td>
+<td align="left">the value in a default format</td>
+</tr>
+<tr>
+<td align="left">%+v</td>
+<td align="left">a default representation of structs, with field names</td>
+</tr>
+<tr>
+<td align="left">%#v</td>
+<td align="left">a Go-syntax representation of the value</td>
+</tr>
+<tr>
+<td align="left">%T</td>
+<td align="left">a Go-syntax representation of the type of the value</td>
+</tr>
+<tr>
+<td align="left">%d</td>
+<td align="left">an integer value in decimal (base 10) representation</td>
+</tr>
+<tr>
+<td align="left">%E</td>
+<td align="left">scientific notation, e.g. -1.234456E+78</td>
+</tr>
+<tr>
+<td align="left">%f</td>
+<td align="left">decimal point but no exponent, e.g. 123.456</td>
+</tr>
+<tr>
+<td align="left">%s</td>
+<td align="left">a string or slice (without interpreting the bytes)</td>
+</tr>
+<tr>
+<td align="left">%q</td>
+<td align="left">a double-quoted string safely escaped with Go syntax</td>
+</tr>
+</tbody>
+</table>
+<p>To print a literal <code>%</code> (percent) symbol escape it like this: <code>%%</code>.</p>
+<h1 id="width-and-precision">Width and precision</h1>
+<p>The width of each formatted value can be specified by an optional decimal number immediately preceding the verb.</p>
+<p>The precision can be specified after the (optional) width by a period followed by a decimal number.</p>
+<p>This example shows some common uses of these modifiers:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="kd">const</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">n</span> <span class="p">=</span> <span class="s">&#34;Pi&#34;</span><span class="p">,</span> <span class="mf">3.1415926535</span>
+<span class="ln"> 9</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;&#39;%v&#39;=&#39;%v&#39;\n&#34;</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span>
+<span class="ln">10</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;&#39;%s&#39;=&#39;%f&#39;\n&#34;</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span>
+<span class="ln">11</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;&#39;%10s&#39;=&#39;%1.4f&#39;\n&#34;</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span>
+<span class="ln">12</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;&#39;%-10s&#39;=&#39;%1.1f&#39;\n&#34;</span><span class="p">,</span> <span class="nx">s</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span>
+<span class="ln">13</span><span class="p">}</span>
+</code></pre></div><p>this is the output:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>&#39;Pi&#39;=&#39;3.1415926535&#39;
+<span class="ln">2</span>&#39;Pi&#39;=&#39;3.141593&#39;
+<span class="ln">3</span>&#39;        Pi&#39;=&#39;3.1416&#39;
+<span class="ln">4</span>&#39;Pi        &#39;=&#39;3.1&#39;
+</code></pre></div><p>Note that in the example above the single quotes (<code>'</code>) are just regular characters to help visualize where each formatted
+value starts and ends. They have no special meaning for the <code>Printf</code> method.</p>
+<p>There are many more special cases and flags than would fit an introductory article. The package&rsquo;s
+<a href="https://golang.org/pkg/fmt/#pkg-overview">documentation</a> is a great place to find out what all the possibilities are.</p>
+<h1 id="takeaways">Takeaways</h1>
+<p><code>Printf</code> is an extremely useful and flexible method. It resembles in versatility the original <code>printf</code> function of the C
+language, but it is simpler to use.</p>
+<p>Do you often use <code>Printf</code>? What other tips would you highlight?</p>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>This is part 4 of my journey learning Golang.
-Function declarations Functions are reusable blocks of code. For example:
-1func main () { 2 fmt.Println(&#34;Hello, World!&#34;) 3} The func keyword declares a function. It is followed by the function&rsquo;s name, a list of arguments (delimited by parenthesis) and the …</p>
-          <a href='https://fernandocorreia.dev/posts/learning-golang-part-4/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/learning-golang-part-3/'>Learning Golang: Packages</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 16, 2020</span>
-  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
-  </a>
-</div>
-
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>This is part 3 of my journey learning Golang.
-Package declaration The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the package keyword.
-This serves a few purposes:
- It provides a structure for grouping related source files. It provides a mechanism for code reuse. It differentiates …</p>
-          <a href='https://fernandocorreia.dev/posts/learning-golang-part-3/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/learning-golang-part-2/'>Learning Golang: Compiling and running Go programs</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 16, 2020</span>
-  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
-  </a>
-</div>
-
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>This is part 2 of my journey learning Golang.
-Compiling Go programs An individual Go source file can be compiled with the go build command:
-1go build {filename}.go That will produce an executable binary file if the source&rsquo;s package is main (see Part 3 for more on packages).
-The resulting binary can be executed …</p>
-          <a href='https://fernandocorreia.dev/posts/learning-golang-part-2/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/posts/learning-golang-part-1/'>Learning Golang: Getting Started</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 16, 2020</span>
-  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
-  </a>
-</div>
-
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'>This is part 1 of my journey learning Golang.
-The Go programming language (Golang) is becoming more relevant by the day. It is, famously, the language of the Docker and Kubernetes projects. Both have had a huge impact on how companies run applications, and I develop for them on a daily basis. Golang is also seeing …</p>
-          <a href='https://fernandocorreia.dev/posts/learning-golang-part-1/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-    <li>
-<ul class="pagination">
-  <li class="page-item">
-    <a href="/tags/golang/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="/tags/golang/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a class="page-link" href="/tags/golang/">1</a>
-  </li>
-  <li class="page-item active">
-    <a class="page-link" href="/tags/golang/page/2/">2</a>
-  </li>
-  <li class="page-item disabled">
-    <a  class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-  </li>
-  <li class="page-item">
-    <a href="/tags/golang/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-  </li>
-</ul>
-
-
-    </li>
-  </ul>
+    <hr><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fernando-correias-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <h2>Fernando Correia</h2>
@@ -317,9 +311,6 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-16/" class="nav-link">Learning Golang: Printf</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/google-search-console/" class="nav-link">Registering a website with Google Search Console</a>
       </li>
@@ -386,8 +377,6 @@ The Go programming language (Golang) is becoming more relevant by the day. It is
 </aside>
 
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>

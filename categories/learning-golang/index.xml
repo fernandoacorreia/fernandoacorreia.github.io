@@ -6,10 +6,23 @@
     <description>Recent content in learning golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 12 Sep 2020 04:21:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 03:39:46 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/categories/learning-golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Printf</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-16/</link>
+      <pubDate>Tue, 15 Sep 2020 03:39:46 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-16/</guid>
+      <description>This is part 16 of my journey learning Golang.
+The Printf method The Printf method from the fmt package writes a formatted string to standard output.
+Printf makes it possible to interpolate strings. This is done by leaving placeholders in a string, and using values to fill in these placeholders.
+Printf syntax Printf accepts a string argument, potentially with formatting placeholders, and zero or more value arguments. For example:
+1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5) 6 7func main() { 8 answer := &amp;#34;C&amp;#34; 9 fmt.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Println and Print</title>
@@ -20,7 +33,7 @@
       <description>This is part 15 of my journey learning Golang.
 fmt Package Go&amp;rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, old-school style of the C language, but modernized.
 This article covers the most basic functions for printing out text Println and Print:
-Println The Println function prints outs a line of text to the standard output device.
+Println The Println method prints outs a line of text to the standard output device.
 It prints its arguments, with a space between them, and a new line character at the end.</description>
     </item>
     
