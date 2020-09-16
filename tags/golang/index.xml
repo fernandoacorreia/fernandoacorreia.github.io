@@ -6,10 +6,22 @@
     <description>Recent content in golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 15 Sep 2020 03:39:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2020 03:09:15 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Sprint, Sprintln, Sprintf</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-17/</link>
+      <pubDate>Wed, 16 Sep 2020 03:09:15 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-17/</guid>
+      <description>This is part 17 of my journey learning Golang.
+The fmt package has methods like Print, Println and Printf to print text to the standard output device.
+It also has corresponding methods that return the strings that would be printed out, instead of actually printing them out. Afterwards the program can use the returned values for any purpose like for instance sending an email or creating a PDF file.
+Sprint Returns a string containing the input arguments.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Printf</title>
