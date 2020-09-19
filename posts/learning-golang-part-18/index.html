@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" data-figures="">
-  <head>  <title>Tags | Fernando Correia&#39;s Blog</title>
+<html lang="en" data-figures="" class="page">
+  <head>  <title>Learning Golang: Scan, Scanln and Scanf | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,13 +14,15 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="">
+<meta name="description" content="This is part 18 of my journey learning Golang.
+Command line interface When building programs that run on a terminal it is often useful to be able to allow the …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Tags" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/tags/" />
-<meta property = "og:title" content = "Tags" />
-<meta property = "og:description" content = "" />
+<meta name = "twitter:title" content = "Learning Golang: Scan, Scanln and Scanf" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-18/" />
+<meta property = "og:title" content = "Learning Golang: Scan, Scanln and Scanf" />
+<meta property = "og:description" content = "This is part 18 of my journey learning Golang.
+Command line interface When building programs that run on a terminal it is often useful to be able to allow the …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -30,7 +32,7 @@
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/tags/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-18/'>
 
     
 
@@ -101,114 +103,133 @@
 </header>
 
     <main>
-
-<div class='grid-inverse wrap content'>
-  <ul class='posts' id = 'posts'>
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/tags/golang/'>golang</a>
-      </h3>
-      <div class = 'post_meta'>
+  
+<div class = 'grid-inverse wrap content'>
+  <article class='post_content'>
+    <h1 class='post_title'>Learning Golang: Scan, Scanln and Scanf</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
     Sep 19, 2020</span>
+  <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
+  </a>
 </div>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'></p>
-          <a href='https://fernandocorreia.dev/tags/golang/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
+    <div class='post_share'>
+  Share on:
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Scan%2c%20Scanln%20and%20Scanf&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-18%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#twitter"></use>
+    </svg>
+  </a>
   
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/tags/blogging/'>blogging</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Sep 12, 2020</span>
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-18%2f&t=Learning%20Golang%3a%20Scan%2c%20Scanln%20and%20Scanf" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <svg class="icon">
+      <use xlink:href="#facebook"></use>
+    </svg>
+  </a>
+  <script>
+    function shareViaLinkedin() {
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-18/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+    }
+  </script>
+  <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
+    <svg class="icon">
+      <use xlink:href="#linkedin"></use>
+    </svg>
+  </a>
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-18/" title="Copy Link" class="link link_yank">
+    <svg class="icon">
+      <use xlink:href="#yank"></use>
+    </svg>
+  </a>
 </div>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'></p>
-          <a href='https://fernandocorreia.dev/tags/blogging/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/tags/dns/'>DNS</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 15, 2020</span>
-</div>
+    
+    <p>This is part 18 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="command-line-interface">Command line interface</h1>
+<p>When building programs that run on a terminal it is often useful to be able to allow the user to enter text.</p>
+<p>For instance the <code>ssh-keygen</code> utility will prompt for a path and a passphrase.</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>❯ ssh-keygen -t rsa -b 4096 -C &#34;your_email@example.com&#34;
+<span class="ln">2</span>Generating public/private rsa key pair.
+<span class="ln">3</span>Enter file in which to save the key (/home/fernando/.ssh/id_rsa): /tmp/test_rsa
+<span class="ln">4</span>Enter passphrase (empty for no passphrase):
+<span class="ln">5</span>Enter same passphrase again:
+</code></pre></div><h1 id="scan">Scan</h1>
+<p>The <code>Scan</code> method of the <code>fmt</code> package will read a single space-separated token (like a single word) from the standard
+input device (which is usually the console).</p>
+<p><code>Scan</code> expects an address as its argument. That can be provided by using the <code>&amp;</code> symbol in front of a variable name.</p>
+<p>For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 5</span><span class="p">)</span>
+<span class="ln"> 6</span>
+<span class="ln"> 7</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln"> 8</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;What is your first name? &#34;</span><span class="p">)</span>
+<span class="ln"> 9</span>  <span class="kd">var</span> <span class="nx">response</span> <span class="kt">string</span>
+<span class="ln">10</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Scan</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">response</span><span class="p">)</span>
+<span class="ln">11</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;Hello, %v!\n&#34;</span><span class="p">,</span> <span class="nx">response</span><span class="p">)</span>
+<span class="ln">12</span><span class="p">}</span>
+</code></pre></div><p>Source: <a href="https://github.com/fernandoacorreia/learning-go/blob/624ebfb008efbb446abccace077df08f5ffe9c3b/scanning/scan.go">learning-go/scanning/scan.go</a></p>
+<p>This program, when executed, will wait for the user to enter a line of text, and then it will take the first word of
+that line (until it finds a space or the end of the line):</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>❯ go run ./scanning/scan.go
+<span class="ln">2</span>What is your first name? Jane
+<span class="ln">3</span>Hello, Jane!
+</code></pre></div><p>If more than one word is entered, only the first one is read by <code>Scan</code>. The remainder is left in the console and can be
+read by another <code>Scan</code> call. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>❯ go run ./scanning/scan.go
+<span class="ln">2</span>What is your first name? Jane Doe
+<span class="ln">3</span>Hello, Jane!
+<span class="ln">4</span>
+<span class="ln">5</span>❯ Doe
+<span class="ln">6</span>zsh: Doe: command not found...
+</code></pre></div><p>Notice how the rest of the input was left in the console, and was read by the terminal after the program finished.</p>
+<h1 id="scanln">Scanln</h1>
+<p>The <code>Scanln</code> method is similar to <code>Scan</code>. It will also read space-separated tokens. Two differences are:</p>
+<ul>
+<li>it will stop at a newline character;</li>
+<li>it requires a newline or EOF character after the last item.</li>
+</ul>
+<h1 id="scanf">Scanf</h1>
+<p>According to the <a href="https://golang.org/pkg/fmt/#Scanf">documentation</a>:</p>
+<blockquote>
+<p>Scanf scans text read from standard input, storing successive space-separated values into successive arguments as determined by the format. It returns the number of items successfully scanned. If that is less than the number of arguments, err will report why. Newlines in the input must match newlines in the format. The one exception: the verb %c always scans the next rune in the input, even if it is a space (or tab etc.) or newline.</p>
+</blockquote>
+<p><code>Scanf</code> adds finer-grained control (via a format string) to input parsing.</p>
+<h1 id="reading-full-lines-from-the-console">Reading full lines from the console</h1>
+<p>If the program requires reading a full line from standard input, instead of using the <code>fmt</code> package it is better to use
+the <code>bufio</code> package.</p>
+<p>This article teaches how to do that: <a href="https://tutorialedge.net/golang/reading-console-input-golang/">Reading in Console Input in Golang</a>.</p>
+<h1 id="takeaways">Takeaways</h1>
+<p>The &ldquo;Scan&rdquo; family of methods in the <code>fmt</code> package is meant for reading tokens and other kinds of delimited values from
+standard input.</p>
+<p>The <code>bufio</code> package is better suited for interacting with users via a command line interface.</p>
 
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'></p>
-          <a href='https://fernandocorreia.dev/tags/dns/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-      
-<li class = 'post_item'>
-  <div class = 'excerpt'>
-    <div class = 'excerpt_header'>
-      <h3 class = 'post_link'>
-        <a href='https://fernandocorreia.dev/tags/github-pages/'>GitHub Pages</a>
-      </h3>
-      <div class = 'post_meta'>
-  <svg class="icon">
-    <use xlink:href="#calendar"></use>
-  </svg>
-  <span class="post_date">
-    Aug 15, 2020</span>
-</div>
-
-    </div>
-      <div class = 'excerpt_footer'>
-        <div>
-          <p class = 'pale'></p>
-          <a href='https://fernandocorreia.dev/tags/github-pages/' class='excerpt_more button'>Read More</a>
-        </div>
-      </div>
-    </div>
-  </li>
-  
-    <li>
-
-
-    </li>
-  </ul>
+    <hr><div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "fernando-correias-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
 <aside class="sidebar">
   <section class="sidebar_inner">
     <h2>Fernando Correia</h2>
@@ -223,9 +244,6 @@
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-18/" class="nav-link">Learning Golang: Scan, Scanln and Scanf</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-17/" class="nav-link">Learning Golang: Sprint, Sprintln, Sprintf</a>
       </li>
@@ -292,8 +310,6 @@
 </aside>
 
 </div>
-
-
     </main><svg width="0" height="0" class="hidden">
   <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
     <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
