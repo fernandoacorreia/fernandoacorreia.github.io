@@ -6,10 +6,21 @@
     <description>Recent content in golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 19 Sep 2020 16:09:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2020 04:26:15 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: if and else</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-19/</link>
+      <pubDate>Thu, 08 Oct 2020 04:26:15 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-19/</guid>
+      <description>This is part 19 of my journey learning Golang.
+Conditionals Any program can be written in terms of three control structures:
+ the sequence structure, in which expressions are executed in sequence, one after the other, in the order that they are written; the selection structure, in which a statement can be executed or not, depending on some condition; and the iteration structure, in which statements may be executed repeatedly until a condition becomes true (or false).</description>
+    </item>
     
     <item>
       <title>Learning Golang: Scan, Scanln and Scanf</title>
