@@ -6,10 +6,24 @@
     <description>Recent content in learning golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 08 Oct 2020 04:26:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2020 03:32:37 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/categories/learning-golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Logical operators</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-20/</link>
+      <pubDate>Fri, 09 Oct 2020 03:32:37 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-20/</guid>
+      <description>This is part 20 of my journey learning Golang.
+Boolean algebra Boolean algebra is about logical operations applied to the boolean values true and false.
+The most common operations are &amp;ldquo;and&amp;rdquo; (conjunction), &amp;ldquo;or&amp;rdquo; (disjunction) and &amp;ldquo;not&amp;rdquo; (negation).
+Fun fact: it is called &amp;ldquo;boolean&amp;rdquo; because it was introduced by George Boole in 1847.
+Logical operators Go provides three operators for boolean algebra, called &amp;ldquo;logical operators&amp;rdquo;:
+ &amp;amp;&amp;amp;: AND operator. ||: OR operator.</description>
+    </item>
     
     <item>
       <title>Learning Golang: if and else</title>

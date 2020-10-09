@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-figures="" class="page">
-  <head>  <title>Learning Golang: Function declarations | Fernando Correia&#39;s Blog</title>
+  <head>  <title>Learning Golang: Logical operators | Fernando Correia&#39;s Blog</title>
   <meta charset='utf-8'>
   <meta name="generator" content="Hugo 0.74.3" />
   <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
@@ -14,17 +14,17 @@
 </script>
 <meta property = "og:locale" content = "en_US" />
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 4 of my journey learning Golang.
-Function declarations Functions are reusable blocks of code. For example:
-1func main () { 2 …">
+<meta name="description" content="This is part 20 of my journey learning Golang.
+Boolean algebra Boolean algebra is about logical operations applied to the boolean values true and false.
+The …">
 <meta name = "twitter:card" content = "summary" />
 <meta name = "twitter:creator" content = "@facorreia">
-<meta name = "twitter:title" content = "Learning Golang: Function declarations" />
-<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-4/" />
-<meta property = "og:title" content = "Learning Golang: Function declarations" />
-<meta property = "og:description" content = "This is part 4 of my journey learning Golang.
-Function declarations Functions are reusable blocks of code. For example:
-1func main () { 2 …" />
+<meta name = "twitter:title" content = "Learning Golang: Logical operators" />
+<meta property = "og:url" content = "https://fernandocorreia.dev/posts/learning-golang-part-20/" />
+<meta property = "og:title" content = "Learning Golang: Logical operators" />
+<meta property = "og:description" content = "This is part 20 of my journey learning Golang.
+Boolean algebra Boolean algebra is about logical operations applied to the boolean values true and false.
+The …" />
 <meta property = "og:image" content = "https://fernandocorreia.dev/images/thumbnail.png" />
 <link rel='apple-touch-icon' sizes='180x180' href='https://fernandocorreia.dev/icons/apple-touch-icon.png'>
 <link rel='icon' type='image/png' sizes='32x32' href='https://fernandocorreia.dev/icons/favicon-32x32.png'>
@@ -34,7 +34,7 @@ Function declarations Functions are reusable blocks of code. For example:
 <meta name="msapplication-TileColor" content="#002538">
 <meta name="theme-color" content="#002538">
 
-  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-4/'>
+  <link rel='canonical' href='https://fernandocorreia.dev/posts/learning-golang-part-20/'>
 
     
 
@@ -108,32 +108,32 @@ Function declarations Functions are reusable blocks of code. For example:
   
 <div class = 'grid-inverse wrap content'>
   <article class='post_content'>
-    <h1 class='post_title'>Learning Golang: Function declarations</h1><div class = 'post_meta'>
+    <h1 class='post_title'>Learning Golang: Logical operators</h1><div class = 'post_meta'>
   <svg class="icon">
     <use xlink:href="#calendar"></use>
   </svg>
   <span class="post_date">
-    Aug 16, 2020</span>
+    Oct 9, 2020</span>
   <a href = 'https://fernandocorreia.dev/tags/golang' class = 'post_tag button button_translucent'>golang
   </a>
 </div>
 
     <div class='post_share'>
   Share on:
-  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Function%20declarations&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-4%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+  <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Logical%20operators&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-20%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#twitter"></use>
     </svg>
   </a>
   
-  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-4%2f&t=Learning%20Golang%3a%20Function%20declarations" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+  <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-20%2f&t=Learning%20Golang%3a%20Logical%20operators" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
     <svg class="icon">
       <use xlink:href="#facebook"></use>
     </svg>
   </a>
   <script>
     function shareViaLinkedin() {
-      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-4/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      window.open('http://www.linkedin.com/shareArticle?mini=true&url='+encodeURIComponent("https://fernandocorreia.dev/posts/learning-golang-part-20/"), '', 'left=0,top=0,width=650,height=420,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
     }
   </script>
   <a href="#linkedinshare" id = "linkedinshare" class="linkedin" title="Share on LinkedIn" rel="nofollow" onclick="shareViaLinkedin()">
@@ -141,7 +141,7 @@ Function declarations Functions are reusable blocks of code. For example:
       <use xlink:href="#linkedin"></use>
     </svg>
   </a>
-  <a href="https://fernandocorreia.dev/posts/learning-golang-part-4/" title="Copy Link" class="link link_yank">
+  <a href="https://fernandocorreia.dev/posts/learning-golang-part-20/" title="Copy Link" class="link link_yank">
     <svg class="icon">
       <use xlink:href="#yank"></use>
     </svg>
@@ -149,17 +149,216 @@ Function declarations Functions are reusable blocks of code. For example:
 </div>
 
     
-    <p>This is part 4 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
-<h1 id="function-declarations">Function declarations</h1>
-<p>Functions are reusable blocks of code. For example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln">1</span><span class="kd">func</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
-<span class="ln">2</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="p">)</span>
-<span class="ln">3</span><span class="p">}</span>
-</code></pre></div><p>The <code>func</code> keyword declares a function. It is followed by the function&rsquo;s name, a list of arguments (delimited by
-parenthesis) and the function block (delimited by curly braces).</p>
-<h1 id="main-function">main function</h1>
-<p>In Go, the <code>main</code> function is special. When the <code>main</code> function is defined in the <code>main</code> package, it is automatically
-called when the program is executed.</p>
+    <p>This is part 20 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
+<h1 id="boolean-algebra">Boolean algebra</h1>
+<p>Boolean algebra is about logical operations applied to the boolean values <code>true</code> and <code>false</code>.</p>
+<p>The most common operations are &ldquo;and&rdquo; (conjunction), &ldquo;or&rdquo; (disjunction) and &ldquo;not&rdquo; (negation).</p>
+<p>Fun fact: it is called &ldquo;boolean&rdquo; because it was introduced by George Boole in 1847.</p>
+<h1 id="logical-operators">Logical operators</h1>
+<p>Go provides three operators for boolean algebra, called &ldquo;logical operators&rdquo;:</p>
+<ul>
+<li><code>&amp;&amp;</code>: AND operator.</li>
+<li><code>||</code>: OR operator.</li>
+<li><code>!</code>: NOT operator.</li>
+</ul>
+<h2 id="and">And</h2>
+<p>The <code>&amp;&amp;</code> operator takes two boolean values and it produces <code>true</code> if and only if <strong>both</strong> its operands are <code>true</code>.</p>
+<p>In other words: <code>p &amp;&amp; q</code> is &ldquo;if p then q else false&rdquo;.</p>
+<p>In table format:</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">true</th>
+<th align="left">false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>true</strong></td>
+<td align="left">true</td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><strong>false</strong></td>
+<td align="left">false</td>
+<td align="left">false</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;os&#34;</span>
+<span class="ln"> 5</span>  <span class="s">&#34;bufio&#34;</span>
+<span class="ln"> 6</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 7</span>  <span class="s">&#34;strings&#34;</span>
+<span class="ln"> 8</span><span class="p">)</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">11</span>  <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+<span class="ln">12</span>
+<span class="ln">13</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;Are the lights on (y/n)? &#34;</span><span class="p">)</span>
+<span class="ln">14</span>  <span class="nx">lightsOnInput</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+<span class="ln">15</span>  <span class="nx">lightsOnCleaned</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSuffix</span><span class="p">(</span><span class="nx">lightsOnInput</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+<span class="ln">16</span>  <span class="nx">lightsOn</span> <span class="o">:=</span> <span class="nx">lightsOnCleaned</span> <span class="o">==</span> <span class="s">&#34;y&#34;</span>
+<span class="ln">17</span>
+<span class="ln">18</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;Is the door open (y/n)? &#34;</span><span class="p">)</span>
+<span class="ln">19</span>  <span class="nx">doorOpenInput</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+<span class="ln">20</span>  <span class="nx">doorOpenCleaned</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSuffix</span><span class="p">(</span><span class="nx">doorOpenInput</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+<span class="ln">21</span>  <span class="nx">doorOpen</span> <span class="o">:=</span> <span class="nx">doorOpenCleaned</span> <span class="o">==</span> <span class="s">&#34;y&#34;</span>
+<span class="ln">22</span>
+<span class="ln">23</span>  <span class="k">if</span> <span class="nx">lightsOn</span> <span class="o">&amp;&amp;</span> <span class="nx">doorOpen</span> <span class="p">{</span>
+<span class="ln">24</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Go in.&#34;</span><span class="p">)</span>
+<span class="ln">25</span>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="ln">26</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Come back later.&#34;</span><span class="p">)</span>
+<span class="ln">27</span>  <span class="p">}</span>
+<span class="ln">28</span><span class="p">}</span>
+</code></pre></div><p>Source:
+<a href="https://github.com/fernandoacorreia/learning-go/blob/cab6ed1c278aa69f87deb2371ddd9d66ba6ddc50/logical/and.go">learning-go/logical/and.go</a></p>
+<p>Sample runs:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>❯ bin/go run ./logical/and.go
+<span class="ln"> 2</span>Are the lights on (y/n)? y
+<span class="ln"> 3</span>Is the door open (y/n)? y
+<span class="ln"> 4</span>Go in.
+<span class="ln"> 5</span>
+<span class="ln"> 6</span>❯ bin/go run ./logical/and.go
+<span class="ln"> 7</span>Are the lights on (y/n)? n
+<span class="ln"> 8</span>Is the door open (y/n)? y
+<span class="ln"> 9</span>Come back later.
+<span class="ln">10</span>
+<span class="ln">11</span>❯ bin/go run ./logical/and.go
+<span class="ln">12</span>Are the lights on (y/n)? y
+<span class="ln">13</span>Is the door open (y/n)? n
+<span class="ln">14</span>Come back later.
+</code></pre></div><h2 id="or">Or</h2>
+<p>The <code>||</code> operator takes two boolean values and it produces <code>true</code> if <strong>either</strong> of its operands is <code>true</code> (or if both are
+<code>true</code>).</p>
+<p>In other words: <code>p || q</code> is &ldquo;if p then true else q&rdquo;.</p>
+<p>In table format:</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">true</th>
+<th align="left">false</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>true</strong></td>
+<td align="left">true</td>
+<td align="left">true</td>
+</tr>
+<tr>
+<td align="left"><strong>false</strong></td>
+<td align="left">true</td>
+<td align="left">false</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;bufio&#34;</span>
+<span class="ln"> 5</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 6</span>  <span class="s">&#34;os&#34;</span>
+<span class="ln"> 7</span>  <span class="s">&#34;strings&#34;</span>
+<span class="ln"> 8</span><span class="p">)</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">11</span>  <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+<span class="ln">12</span>
+<span class="ln">13</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;What day of the week is it? &#34;</span><span class="p">)</span>
+<span class="ln">14</span>  <span class="nx">dowInput</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+<span class="ln">15</span>  <span class="nx">dow</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSuffix</span><span class="p">(</span><span class="nx">dowInput</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+<span class="ln">16</span>
+<span class="ln">17</span>  <span class="k">if</span> <span class="nx">dow</span> <span class="o">==</span> <span class="s">&#34;Saturday&#34;</span> <span class="o">||</span> <span class="nx">dow</span> <span class="o">==</span> <span class="s">&#34;Sunday&#34;</span> <span class="p">{</span>
+<span class="ln">18</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Stay home.&#34;</span><span class="p">)</span>
+<span class="ln">19</span>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="ln">20</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Go to work.&#34;</span><span class="p">)</span>
+<span class="ln">21</span>  <span class="p">}</span>
+<span class="ln">22</span><span class="p">}</span>
+</code></pre></div><p>Source:
+<a href="https://github.com/fernandoacorreia/learning-go/blob/cab6ed1c278aa69f87deb2371ddd9d66ba6ddc50/logical/or.go">learning-go/logical/or.go</a></p>
+<p>Sample runs:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>❯ bin/go run ./logical/or.go
+<span class="ln"> 2</span>What day of the week is it? Saturday
+<span class="ln"> 3</span>Stay home.
+<span class="ln"> 4</span>
+<span class="ln"> 5</span>❯ bin/go run ./logical/or.go
+<span class="ln"> 6</span>What day of the week is it? Sunday
+<span class="ln"> 7</span>Stay home.
+<span class="ln"> 8</span>
+<span class="ln"> 9</span>❯ bin/go run ./logical/or.go
+<span class="ln">10</span>What day of the week is it? Monday
+<span class="ln">11</span>Go to work.
+</code></pre></div><h2 id="not">Not</h2>
+<p>The <code>!</code> operator returns <code>true</code> if its operand is <code>false</code> and <code>false</code> if its operand is <code>true</code>. It reverses (&ldquo;negates&rdquo;)
+the value of its operand.</p>
+<p>In other words: <code>!p</code> is &ldquo;not p&rdquo;.</p>
+<p>In table format:</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">!</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>true</strong></td>
+<td align="left">false</td>
+</tr>
+<tr>
+<td align="left"><strong>false</strong></td>
+<td align="left">true</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;bufio&#34;</span>
+<span class="ln"> 5</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 6</span>  <span class="s">&#34;os&#34;</span>
+<span class="ln"> 7</span>  <span class="s">&#34;strings&#34;</span>
+<span class="ln"> 8</span><span class="p">)</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">11</span>  <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+<span class="ln">12</span>
+<span class="ln">13</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;Are you hungry (y/n)? &#34;</span><span class="p">)</span>
+<span class="ln">14</span>  <span class="nx">hungryInput</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+<span class="ln">15</span>  <span class="nx">hungryCleaned</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSuffix</span><span class="p">(</span><span class="nx">hungryInput</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+<span class="ln">16</span>  <span class="nx">hungry</span> <span class="o">:=</span> <span class="nx">hungryCleaned</span> <span class="o">==</span> <span class="s">&#34;y&#34;</span>
+<span class="ln">17</span>  <span class="nx">notHungry</span> <span class="o">:=</span> <span class="p">!</span><span class="nx">hungry</span>
+<span class="ln">18</span>
+<span class="ln">19</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;You are hungry:&#34;</span><span class="p">,</span> <span class="nx">hungry</span><span class="p">)</span>
+<span class="ln">20</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;You are satisfied:&#34;</span><span class="p">,</span> <span class="nx">notHungry</span><span class="p">)</span>
+<span class="ln">21</span><span class="p">}</span>
+</code></pre></div><p>Source:
+<a href="https://github.com/fernandoacorreia/learning-go/blob/cab6ed1c278aa69f87deb2371ddd9d66ba6ddc50/logical/not.go">learning-go/logical/not.go</a></p>
+<p>Sample runs:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln">1</span>❯ bin/go run ./logical/not.go
+<span class="ln">2</span>Are you hungry (y/n)? y
+<span class="ln">3</span>You are hungry: true
+<span class="ln">4</span>You are satisfied: false
+<span class="ln">5</span>
+<span class="ln">6</span>❯ bin/go run ./logical/not.go
+<span class="ln">7</span>Are you hungry (y/n)? n
+<span class="ln">8</span>You are hungry: false
+<span class="ln">9</span>You are satisfied: true
+</code></pre></div><h1 id="takeaways">Takeaways</h1>
+<ul>
+<li>Go has three operators for boolean arithmetic: <code>&amp;&amp;</code> (and), <code>||</code> (or) and <code>!</code> (not).</li>
+<li>These operators are very useful for writing conditions for <code>if</code> statements.</li>
+<li>They&rsquo;re also useful whenever a boolean value needs to be produced based on one or more boolean values.</li>
+<li>Relational operators (such as <code>==</code>, <code>&lt;</code>, <code>&gt;</code>, etc.) return boolean values and are easy to use in boolean expressions.</li>
+</ul>
 
     <hr><div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -196,9 +395,6 @@ called when the program is executed.</p>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       
-      <li>
-        <a href="https://fernandocorreia.dev/posts/learning-golang-part-20/" class="nav-link">Learning Golang: Logical operators</a>
-      </li>
       <li>
         <a href="https://fernandocorreia.dev/posts/learning-golang-part-19/" class="nav-link">Learning Golang: if and else</a>
       </li>
