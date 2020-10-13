@@ -281,7 +281,7 @@ was <code>false</code>.</p>
 <span class="ln">27</span><span class="p">}</span>
 </code></pre></div><p>Source:
 <a href="https://github.com/fernandoacorreia/learning-go/blob/8b2734601cf72a7354397a9e7e1080ca0eacadee/conditionals/if-else.go">learning-go/conditionals/if-else.go</a></p>
-<p>When ran repeatedly, the program will produce output like this:</p>
+<p>When executed repeatedly, the program will produce output like this:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>❯ bin/go run conditionals/if-else.go
 <span class="ln"> 2</span>Limit: 4
 <span class="ln"> 3</span>Value: 4
@@ -356,7 +356,57 @@ is less than the limit, the block for the second <code>if</code> statement is ex
 <p>Keep in mind that you can chain as many <code>else if</code> statements as necessary, each with a different condition the must be
 true for its block to be executed. The sequence may or may not have a final <code>else</code> clause not followed by a new <code>if</code>
 statement.</p>
-<h1 id="takeaways">Takeaways</h1>
+<h1 id="else-if-chains">else if chains</h1>
+<p><code>else if</code> statements can be chained as many times as necessary. The block for the first condition that evaluates to
+<code>true</code> will be executed, and the others will be skipped. If no condition is <code>true</code>, and there is an <code>else</code> clause, its
+block will be executed. If there isn&rsquo;t an <code>else</code> clause, then no block will be executed for that chain.</p>
+<p>For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="ln"> 1</span><span class="kn">package</span> <span class="nx">main</span>
+<span class="ln"> 2</span>
+<span class="ln"> 3</span><span class="kn">import</span> <span class="p">(</span>
+<span class="ln"> 4</span>  <span class="s">&#34;os&#34;</span>
+<span class="ln"> 5</span>  <span class="s">&#34;bufio&#34;</span>
+<span class="ln"> 6</span>  <span class="s">&#34;fmt&#34;</span>
+<span class="ln"> 7</span>  <span class="s">&#34;strings&#34;</span>
+<span class="ln"> 8</span><span class="p">)</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="ln">11</span>  <span class="c1">// Ask the user to enter a number.
+</span><span class="ln">12</span><span class="c1"></span>  <span class="nx">reader</span> <span class="o">:=</span> <span class="nx">bufio</span><span class="p">.</span><span class="nf">NewReader</span><span class="p">(</span><span class="nx">os</span><span class="p">.</span><span class="nx">Stdin</span><span class="p">)</span>
+<span class="ln">13</span>  <span class="nx">fmt</span><span class="p">.</span><span class="nf">Print</span><span class="p">(</span><span class="s">&#34;What position did you finish at? &#34;</span><span class="p">)</span>
+<span class="ln">14</span>  <span class="nx">positionInput</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">reader</span><span class="p">.</span><span class="nf">ReadString</span><span class="p">(</span><span class="sc">&#39;\n&#39;</span><span class="p">)</span>
+<span class="ln">15</span>  <span class="nx">position</span> <span class="o">:=</span> <span class="nx">strings</span><span class="p">.</span><span class="nf">TrimSuffix</span><span class="p">(</span><span class="nx">positionInput</span><span class="p">,</span> <span class="s">&#34;\n&#34;</span><span class="p">)</span>
+<span class="ln">16</span>
+<span class="ln">17</span>  <span class="c1">// Print out message for the position.
+</span><span class="ln">18</span><span class="c1"></span>  <span class="k">if</span> <span class="nx">position</span> <span class="o">==</span> <span class="s">&#34;1&#34;</span> <span class="p">{</span>
+<span class="ln">19</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Congrats! You finished in first place.&#34;</span><span class="p">)</span>
+<span class="ln">20</span>  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="nx">position</span> <span class="o">==</span> <span class="s">&#34;2&#34;</span> <span class="p">{</span>
+<span class="ln">21</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;You were a close second.&#34;</span><span class="p">)</span>
+<span class="ln">22</span>  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="nx">position</span> <span class="o">==</span> <span class="s">&#34;3&#34;</span> <span class="p">{</span>
+<span class="ln">23</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;You finished in third.&#34;</span><span class="p">)</span>
+<span class="ln">24</span>  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+<span class="ln">25</span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Better luck next time!&#34;</span><span class="p">)</span>
+<span class="ln">26</span>  <span class="p">}</span>
+<span class="ln">27</span><span class="p">}</span>
+</code></pre></div><p>Source:
+<a href="https://github.com/fernandoacorreia/learning-go/blob/ff5bee3567f191bbd9cc74f655d7d7de8aa09fe2/conditionals/if-else-chain.go">learning-go/conditionals/if-else-chain.go</a></p>
+<p>The program above produces this output:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"><span class="ln"> 1</span>❯ bin/go run ./conditionals/if-else-chain.go
+<span class="ln"> 2</span>What position did you finish at? 1
+<span class="ln"> 3</span>Congrats! You finished in first place.
+<span class="ln"> 4</span>
+<span class="ln"> 5</span>❯ bin/go run ./conditionals/if-else-chain.go
+<span class="ln"> 6</span>What position did you finish at? 2
+<span class="ln"> 7</span>You were a close second.
+<span class="ln"> 8</span>
+<span class="ln"> 9</span>❯ bin/go run ./conditionals/if-else-chain.go
+<span class="ln">10</span>What position did you finish at? 3
+<span class="ln">11</span>You finished in third.
+<span class="ln">12</span>
+<span class="ln">13</span>❯ bin/go run ./conditionals/if-else-chain.go
+<span class="ln">14</span>What position did you finish at? 4
+<span class="ln">15</span>Better luck next time!
+</code></pre></div><h1 id="takeaways">Takeaways</h1>
 <ul>
 <li>Go provides the <code>if</code> keyword for creating a selection strucuture that will only execute a block of statements if a
 condition is <code>true</code>.</li>
@@ -367,6 +417,8 @@ condition of the preceding <code>if</code> statement was <code>false</code>.</li
 <li>If no <code>if</code> condition was <code>true</code>, and no <code>else</code> clause was provided, no statement will be executed.</li>
 <li>The program flow will continue on the next statement following the end of the entire sequence of <code>if</code>, <code>else if</code> and
 <code>else</code> blocks.</li>
+<li>the conditions following the <code>if</code> can be as complex as necessary. for instance they can use Go&rsquo;s <a href="/posts/learning-golang-part-20/">logical
+operators</a> (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>) to combine multiple boolean values.</li>
 </ul>
 
     <hr><div id="disqus_thread"></div>
