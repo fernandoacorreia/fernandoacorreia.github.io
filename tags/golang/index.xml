@@ -6,10 +6,22 @@
     <description>Recent content in golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 09 Oct 2020 03:32:37 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Dec 2020 18:59:21 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: switch</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-21/</link>
+      <pubDate>Sat, 19 Dec 2020 18:59:21 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-21/</guid>
+      <description>This is part 21 of my journey learning Golang.
+Chained conditions It is a common pattern for a program to have a sequence of conditional statements testing for different values of the same variable or function result.
+For instance:
+1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5) 6 7func main() { 8 x := 0 9 y := 0 10 for command := &amp;#34;&amp;#34;; command != &amp;#34;end&amp;#34;; { 11 fmt.Print(&amp;#34;Command? &amp;#34;) 12 fmt.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Logical operators</title>
