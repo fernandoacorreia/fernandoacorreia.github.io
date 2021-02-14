@@ -6,10 +6,21 @@
     <description>Recent content in learning golang on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 19 Dec 2020 18:59:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Feb 2021 03:24:01 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/categories/learning-golang/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Scoped shorthand variable declaration</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-22/</link>
+      <pubDate>Sun, 14 Feb 2021 03:24:01 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-22/</guid>
+      <description>This is part 22 of my journey learning Golang.
+Variable scopes A common source of errors in programming is using the same variable in many different parts of a program. For a deep dive into the problems that this practice can cause, take a look at Global Variables Are Bad.
+A common solution that is adopted by most programming languages is to make it possible to declare variables that can only be used by a subset of the program.</description>
+    </item>
     
     <item>
       <title>Learning Golang: switch</title>
