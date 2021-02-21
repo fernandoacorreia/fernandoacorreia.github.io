@@ -6,10 +6,23 @@
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 14 Feb 2021 03:24:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Feb 2021 23:29:42 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Learning Golang: Random numbers</title>
+      <link>https://fernandocorreia.dev/posts/learning-golang-part-23/</link>
+      <pubDate>Sat, 20 Feb 2021 23:29:42 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/learning-golang-part-23/</guid>
+      <description>This is part 23 of my journey learning Golang.
+Random number generators For some kinds of programs, like simulations, games, or test code, it is useful to be able to generate unpredictable sequences of numbers.
+While generating truly random numbers is a hard problem (see RANDOM.ORG), a common alternative is to use a pseudorandom number generator.
+Go has a package for generating pseudo-random numbers: rand.
+Random integer The Int() function from the rand package returns a non-negative pseudo-random int.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Scoped shorthand variable declaration</title>
