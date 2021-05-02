@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 20 Feb 2021 23:29:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 May 2021 22:03:43 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>origin</title>
+      <link>https://fernandocorreia.dev/tags/origin/</link>
+      <pubDate>Sun, 02 May 2021 22:03:43 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/tags/origin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>golang</title>

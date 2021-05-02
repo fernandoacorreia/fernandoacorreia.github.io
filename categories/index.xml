@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 20 Feb 2021 23:29:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 May 2021 22:03:43 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>personal</title>
+      <link>https://fernandocorreia.dev/categories/personal/</link>
+      <pubDate>Sun, 02 May 2021 22:03:43 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/categories/personal/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>learning golang</title>

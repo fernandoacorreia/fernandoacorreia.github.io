@@ -6,10 +6,20 @@
     <description>Recent content on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 20 Feb 2021 23:29:42 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 May 2021 22:03:43 +0000</lastBuildDate>
     
 	<atom:link href="https://fernandocorreia.dev/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My origin story: TK85</title>
+      <link>https://fernandocorreia.dev/posts/origin-tk85/</link>
+      <pubDate>Sun, 02 May 2021 22:03:43 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/origin-tk85/</guid>
+      <description>The year is 1984. Brazil is under a military dictatorship. As part of their colossal mismanagement of the country&amp;rsquo;s economy, which would result in over 1.2 trillion Dollars in foreign debt at current values, and hiperinflation that reached over 200% a year, the military government had instituted protectionist measures banning imports of computers.
+The intent was to preserve national sovereignty by controlling the manufacturing process. This policy would eventually elicit economic sanctions by the Reagan government.</description>
+    </item>
     
     <item>
       <title>Learning Golang: Random numbers</title>
