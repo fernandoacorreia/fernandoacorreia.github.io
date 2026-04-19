@@ -5,20 +5,24 @@
     <link>https://fernandocorreia.dev/posts/</link>
     <description>Recent content in Posts on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 02 May 2021 22:03:43 +0000</lastBuildDate>
-    
-	<atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <copyright>Fernando de Alcantara Correia</copyright>
+    <lastBuildDate>Sun, 02 May 2021 22:03:43 +0000</lastBuildDate><atom:link href="https://fernandocorreia.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My origin story: TK85</title>
       <link>https://fernandocorreia.dev/posts/origin-tk85/</link>
       <pubDate>Sun, 02 May 2021 22:03:43 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/origin-tk85/</guid>
-      <description>The year is 1984. Brazil is under a military dictatorship. As part of their colossal mismanagement of the country&amp;rsquo;s economy, which would result in over 1.2 trillion US Dollars in foreign debt at current values, and hiperinflation that reached over 200% a year, the military government had instituted protectionist measures banning imports of computers.
-The intent was to preserve national sovereignty by controlling the manufacturing process. This policy would eventually elicit economic sanctions by the Reagan government.</description>
+      <description>
+        
+          
+            &lt;p&gt;The year is 1984. Brazil is under a military dictatorship. As part of their colossal mismanagement of the country&amp;rsquo;s economy, which would result in over 1.2 trillion US Dollars in foreign debt at current values, and hiperinflation that reached over 200% a year, the military government had instituted &lt;a href=&#34;https://pt.wikipedia.org/wiki/Pol%C3%ADtica_Nacional_de_Inform%C3%A1tica&#34;&gt;protectionist measures&lt;/a&gt; banning imports of computers.&lt;/p&gt;
+&lt;p&gt;The intent was to preserve national sovereignty by controlling the manufacturing process. This policy would eventually elicit economic &lt;a href=&#34;https://www.nytimes.com/1987/11/14/business/reagan-imposes-punitive-tariffs-against-brazil.html&#34;&gt;sanctions&lt;/a&gt; by the Reagan government.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -27,11 +31,22 @@ The intent was to preserve national sovereignty by controlling the manufacturing
       <pubDate>Sat, 20 Feb 2021 23:29:42 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-23/</guid>
-      <description>This is part 23 of my journey learning Golang.
-Random number generators For some kinds of programs, like simulations, games, or test code, it is useful to be able to generate unpredictable sequences of numbers.
-While generating truly random numbers is a hard problem (see RANDOM.ORG), a common alternative is to use a pseudorandom number generator.
-Go has a package for generating pseudo-random numbers: rand.
-Random integer The Int() function from the rand package returns a non-negative pseudo-random int.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 23 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;random-number-generators&#34;&gt;Random number generators&lt;/h1&gt;
+&lt;p&gt;For some kinds of programs, like simulations, games, or test code, it is useful to be able to generate unpredictable
+sequences of numbers.&lt;/p&gt;
+&lt;p&gt;While generating truly random numbers is a hard problem (see &lt;a href=&#34;https://www.random.org/&#34;&gt;RANDOM.ORG&lt;/a&gt;), a common
+alternative is to use a &lt;a href=&#34;https://en.wikipedia.org/wiki/Pseudorandom_number_generator&#34;&gt;pseudorandom number generator&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Go has a package for generating pseudo-random numbers: &lt;a href=&#34;https://golang.org/pkg/math/rand/&#34;&gt;rand&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;random-integer&#34;&gt;Random integer&lt;/h1&gt;
+&lt;p&gt;The &lt;code&gt;Int()&lt;/code&gt; function from the &lt;code&gt;rand&lt;/code&gt; package returns a non-negative pseudo-random &lt;code&gt;int&lt;/code&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -40,9 +55,23 @@ Random integer The Int() function from the rand package returns a non-negative p
       <pubDate>Sun, 14 Feb 2021 03:24:01 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-22/</guid>
-      <description>This is part 22 of my journey learning Golang.
-Variable scopes A common source of errors in programming is using the same variable in many different parts of a program. For a deep dive into the problems that this practice can cause, take a look at Global Variables Are Bad.
-A common solution that is adopted by most programming languages is to make it possible to declare variables that can only be used by a subset of the program.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 22 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;variable-scopes&#34;&gt;Variable scopes&lt;/h1&gt;
+&lt;p&gt;A common source of errors in programming is using the same variable in many different parts of a program. For a deep
+dive into the problems that this practice can cause, take a look at &lt;a href=&#34;https://wiki.c2.com/?GlobalVariablesAreBad&#34;&gt;Global Variables Are
+Bad&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A common solution that is adopted by most programming languages is to make it possible to declare variables that can
+only be used by a subset of the program. For instance, by a single module, class, function, or statement inside of a
+function. This concept of the area of a program that can use a given identifier is called a &amp;ldquo;scope&amp;rdquo;. The smaller the
+scope, the smaller the amount of logic that can deal with that variable, and the smaller the chance of subtle errors
+creeping in.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -51,10 +80,47 @@ A common solution that is adopted by most programming languages is to make it po
       <pubDate>Sat, 19 Dec 2020 18:59:21 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-21/</guid>
-      <description>This is part 21 of my journey learning Golang.
-Chained conditions It is a common pattern for a program to have a sequence of conditional statements testing for different values of the same variable or function result.
-For instance:
-1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5) 6 7func main() { 8 x := 0 9 y := 0 10 for command := &amp;#34;&amp;#34;; command != &amp;#34;end&amp;#34;; { 11 fmt.Print(&amp;#34;Command? &amp;#34;) 12 fmt.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 21 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;chained-conditions&#34;&gt;Chained conditions&lt;/h1&gt;
+&lt;p&gt;It is a common pattern for a program to have a sequence of conditional statements testing for different values of the
+same variable or function result.&lt;/p&gt;
+&lt;p&gt;For instance:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;end&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;11&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Command? &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Scan&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;13&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;up&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;14&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;down&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;16&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;17&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;18&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;19&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;21&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;end&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;22&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Exiting.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;23&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;24&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Invalid command: %v\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;26&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;x=%v, y=%v\n&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Source: &lt;a href=&#34;https://github.com/fernandoacorreia/learning-go/blob/1f6a68a8a72624870a1839ec022785c1c272284a/switch/if-else.go&#34;&gt;learning-go/switch/if-else.go&lt;/a&gt;&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -63,12 +129,27 @@ For instance:
       <pubDate>Fri, 09 Oct 2020 03:32:37 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-20/</guid>
-      <description>This is part 20 of my journey learning Golang.
-Boolean algebra Boolean algebra is about logical operations applied to the boolean values true and false.
-The most common operations are &amp;ldquo;and&amp;rdquo; (conjunction), &amp;ldquo;or&amp;rdquo; (disjunction) and &amp;ldquo;not&amp;rdquo; (negation).
-Fun fact: it is called &amp;ldquo;boolean&amp;rdquo; because it was introduced by George Boole in 1847.
-Logical operators Go provides three operators for boolean algebra, called &amp;ldquo;logical operators&amp;rdquo;:
- &amp;amp;&amp;amp;: AND operator. ||: OR operator.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 20 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;boolean-algebra&#34;&gt;Boolean algebra&lt;/h1&gt;
+&lt;p&gt;Boolean algebra is about logical operations applied to the boolean values &lt;code&gt;true&lt;/code&gt; and &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The most common operations are &amp;ldquo;and&amp;rdquo; (conjunction), &amp;ldquo;or&amp;rdquo; (disjunction) and &amp;ldquo;not&amp;rdquo; (negation).&lt;/p&gt;
+&lt;p&gt;Fun fact: it is called &amp;ldquo;boolean&amp;rdquo; because it was introduced by George Boole in 1847.&lt;/p&gt;
+&lt;h1 id=&#34;logical-operators&#34;&gt;Logical operators&lt;/h1&gt;
+&lt;p&gt;Go provides three operators for boolean algebra, called &amp;ldquo;logical operators&amp;rdquo;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;: AND operator.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;||&lt;/code&gt;: OR operator.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!&lt;/code&gt;: NOT operator.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;and&#34;&gt;And&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; operator takes two boolean values and it produces &lt;code&gt;true&lt;/code&gt; if and only if &lt;strong&gt;both&lt;/strong&gt; its operands are &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -77,9 +158,24 @@ Logical operators Go provides three operators for boolean algebra, called &amp;l
       <pubDate>Thu, 08 Oct 2020 04:26:15 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-19/</guid>
-      <description>This is part 19 of my journey learning Golang.
-Conditionals Any program can be written in terms of three control structures:
- the sequence structure, in which expressions are executed in sequence, one after the other, in the order that they are written; the selection structure, in which a statement can be executed or not, depending on some condition; and the iteration structure, in which statements may be executed repeatedly until a condition becomes true (or false).</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 19 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;conditionals&#34;&gt;Conditionals&lt;/h1&gt;
+&lt;p&gt;Any program can be written in terms of three control structures:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;strong&gt;sequence structure&lt;/strong&gt;, in which expressions are executed in sequence, one after the other, in the order that they are
+written;&lt;/li&gt;
+&lt;li&gt;the &lt;strong&gt;selection structure&lt;/strong&gt;, in which a statement can be executed or not, depending on some condition; and&lt;/li&gt;
+&lt;li&gt;the &lt;strong&gt;iteration structure&lt;/strong&gt;, in which statements may be executed repeatedly until a condition becomes true (or false).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Conditionals are selection structures. The provide a way for expressing decision-making in a program. Depending on the
+value of an expression, the program may execute (or not) one or more statements.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -88,10 +184,25 @@ Conditionals Any program can be written in terms of three control structures:
       <pubDate>Sat, 19 Sep 2020 16:09:07 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-18/</guid>
-      <description>This is part 18 of my journey learning Golang.
-Command line interface When building programs that run on a terminal it is often useful to be able to allow the user to enter text.
-For instance the ssh-keygen utility will prompt for a path and a passphrase.
-1❯ ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34; 2Generating public/private rsa key pair. 3Enter file in which to save the key (/home/fernando/.ssh/id_rsa): /tmp/test_rsa 4Enter passphrase (empty for no passphrase): 5Enter same passphrase again: Scan The Scan method of the fmt package will read a single space-separated token (like a single word) from the standard input device (which is usually the console).</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 18 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;command-line-interface&#34;&gt;Command line interface&lt;/h1&gt;
+&lt;p&gt;When building programs that run on a terminal it is often useful to be able to allow the user to enter text.&lt;/p&gt;
+&lt;p&gt;For instance the &lt;code&gt;ssh-keygen&lt;/code&gt; utility will prompt for a path and a passphrase.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;❯ ssh-keygen -t rsa -b 4096 -C &amp;#34;your_email@example.com&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Generating public/private rsa key pair.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Enter file in which to save the key (/home/fernando/.ssh/id_rsa): /tmp/test_rsa
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Enter passphrase (empty for no passphrase):
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Enter same passphrase again:
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;scan&#34;&gt;Scan&lt;/h1&gt;
+&lt;p&gt;The &lt;code&gt;Scan&lt;/code&gt; method of the &lt;code&gt;fmt&lt;/code&gt; package will read a single space-separated token (like a single word) from the standard
+input device (which is usually the console).&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -100,10 +211,20 @@ For instance the ssh-keygen utility will prompt for a path and a passphrase.
       <pubDate>Wed, 16 Sep 2020 03:09:15 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-17/</guid>
-      <description>This is part 17 of my journey learning Golang.
-The fmt package has methods like Print, Println and Printf to print text to the standard output device.
-It also has corresponding methods that return the strings that would be printed out, instead of actually printing them out. Afterwards the program can use the returned values for any purpose like for instance sending an email or creating a PDF file.
-Sprint Returns a string containing the input arguments.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 17 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;fmt&lt;/code&gt; package has methods like &lt;code&gt;Print&lt;/code&gt;, &lt;code&gt;Println&lt;/code&gt; and &lt;code&gt;Printf&lt;/code&gt; to print text to the standard output device.&lt;/p&gt;
+&lt;p&gt;It also has corresponding methods that return the strings that would be printed out, instead of actually printing them
+out. Afterwards the program can use the returned values for any purpose like for instance sending an email or creating a
+PDF file.&lt;/p&gt;
+&lt;h1 id=&#34;sprint&#34;&gt;Sprint&lt;/h1&gt;
+&lt;p&gt;Returns a string containing the input arguments. No spaces or new line characters are added automatically.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -112,11 +233,33 @@ Sprint Returns a string containing the input arguments.</description>
       <pubDate>Tue, 15 Sep 2020 03:39:46 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-16/</guid>
-      <description>This is part 16 of my journey learning Golang.
-The Printf method The Printf method from the fmt package writes a formatted string to standard output.
-Printf makes it possible to interpolate strings. This is done by leaving placeholders in a string, and using values to fill in these placeholders.
-Printf syntax Printf accepts a string argument, potentially with formatting placeholders, and zero or more value arguments. For example:
-1package main 2 3import ( 4 &amp;#34;fmt&amp;#34; 5) 6 7func main() { 8 answer := &amp;#34;C&amp;#34; 9 fmt.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 16 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;the-printf-method&#34;&gt;The Printf method&lt;/h1&gt;
+&lt;p&gt;The &lt;a href=&#34;https://golang.org/pkg/fmt/#Printf&#34;&gt;Printf&lt;/a&gt; method from the &lt;a href=&#34;https://golang.org/pkg/fmt/&#34;&gt;fmt&lt;/a&gt; package writes a
+formatted string to standard output.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Printf&lt;/code&gt; makes it possible to &lt;strong&gt;interpolate&lt;/strong&gt; strings. This is done by leaving placeholders in a string, and using
+values to fill in these placeholders.&lt;/p&gt;
+&lt;h1 id=&#34;printf-syntax&#34;&gt;Printf syntax&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Printf&lt;/code&gt; accepts a string argument, potentially with formatting placeholders, and zero or more value arguments. For
+example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 6&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 7&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 8&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;answer&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;C&amp;#34;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt; 9&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Is %v your final answer?&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;answer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;prints out:&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -125,9 +268,20 @@ Printf syntax Printf accepts a string argument, potentially with formatting plac
       <pubDate>Sat, 12 Sep 2020 17:24:50 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/google-search-console/</guid>
-      <description>Google has a free tool called Search Console that &amp;ldquo;help you measure your site&amp;rsquo;s Search traffic and performance, fix issues, and make your site shine in Google Search results&amp;rdquo;.
-This is super handy to make sure that your website is being properly indexed by Google, to keep on top of how much traffic it is getting, and to be on the lookout for errors.
-Registering your website with Google It only takes a few simple steps to add your website to Google&amp;rsquo;s Search Console:</description>
+      <description>
+        
+          
+            &lt;p&gt;Google has a free tool called &lt;a href=&#34;https://search.google.com/search-console/about&#34;&gt;Search Console&lt;/a&gt;
+that &amp;ldquo;help you measure your site&amp;rsquo;s Search traffic and performance, fix issues,
+and make your site shine in Google Search results&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;This is super handy to make sure that your website is being properly indexed by Google, to keep on top of how much
+traffic it is getting, and to be on the lookout for errors.&lt;/p&gt;
+&lt;h1 id=&#34;registering-your-website-with-google&#34;&gt;Registering your website with Google&lt;/h1&gt;
+&lt;p&gt;It only takes a few simple steps to add your website to Google&amp;rsquo;s Search Console:&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -136,11 +290,21 @@ Registering your website with Google It only takes a few simple steps to add you
       <pubDate>Sat, 12 Sep 2020 04:21:49 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-15/</guid>
-      <description>This is part 15 of my journey learning Golang.
-fmt Package Go&amp;rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, old-school style of the C language, but modernized.
-This article covers the most basic functions for printing out text Println and Print:
-Println The Println method prints outs a line of text to the standard output device.
-It prints its arguments, with a space between them, and a new line character at the end.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 15 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;fmt-package&#34;&gt;fmt Package&lt;/h1&gt;
+&lt;p&gt;Go&amp;rsquo;s fmt package implements formatted I/O with formatting functions in the venerable, old-school style of the C
+language, but modernized.&lt;/p&gt;
+&lt;p&gt;This article covers the most basic functions for printing out text &lt;code&gt;Println&lt;/code&gt; and &lt;code&gt;Print&lt;/code&gt;:&lt;/p&gt;
+&lt;h1 id=&#34;println&#34;&gt;Println&lt;/h1&gt;
+&lt;p&gt;The &lt;a href=&#34;https://golang.org/pkg/fmt/#Println&#34;&gt;Println&lt;/a&gt; method prints outs a line of text to the standard output device.&lt;/p&gt;
+&lt;p&gt;It prints its arguments, with a space between them, and a new line character at the end.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -149,11 +313,20 @@ It prints its arguments, with a space between them, and a new line character at 
       <pubDate>Fri, 11 Sep 2020 03:59:46 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-14/</guid>
-      <description>This is part 14 of my journey learning Golang.
-As an exercise for Codecademy&amp;rsquo;s Learn Go course, I wrote my second Go program.
-It simulates a catalog for a comic book store.
-At this point the course has only covered the most fundamental parts of Go, like variables, simple data types, basic arithmetic, and printing. Arrays and functions are still out of the picture.
-For that reason, the structure of the program is very primitive and there is a lot of repetition (room for improvement).</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 14 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;p&gt;As an exercise for Codecademy&amp;rsquo;s &lt;a href=&#34;https://www.codecademy.com/learn/learn-go&#34;&gt;Learn Go&lt;/a&gt; course, I wrote my second Go
+program.&lt;/p&gt;
+&lt;p&gt;It simulates a catalog for a comic book store.&lt;/p&gt;
+&lt;p&gt;At this point the course has only covered the most fundamental parts of Go, like variables, simple data types, basic
+arithmetic, and printing. Arrays and functions are still out of the picture.&lt;/p&gt;
+&lt;p&gt;For that reason, the structure of the program is very primitive and there is a lot of repetition (room for improvement).&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -162,10 +335,20 @@ For that reason, the structure of the program is very primitive and there is a l
       <pubDate>Tue, 08 Sep 2020 01:35:40 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-13/</guid>
-      <description>This is part 13 of my journey learning Golang.
-Strings in Go Strings represent a sequence of bytes. More specifically, a read-only slice of uint8 integers.
-Their main use is for representing text. This text is usually, but not necessarily, encoded as UTF-8. In Go, strings can also be used to represent text in any encoding, and also raw bytes, not necessarily corresponding to text.
-It&amp;rsquo;s important to notice that strings can be empty (i.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 13 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;strings-in-go&#34;&gt;Strings in Go&lt;/h1&gt;
+&lt;p&gt;Strings represent a sequence of bytes. More specifically, a read-only slice of &lt;code&gt;uint8&lt;/code&gt; integers.&lt;/p&gt;
+&lt;p&gt;Their main use is for representing text. This text is usually, but not necessarily, encoded as UTF-8. In Go, strings can
+also be used to represent text in any encoding, and also raw bytes, not necessarily corresponding to text.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s important to notice that strings can be empty (i.e. have a length of 0) and that they can be arbitrarily long (as
+large as it will fit in memory).&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -174,10 +357,20 @@ It&amp;rsquo;s important to notice that strings can be empty (i.</description>
       <pubDate>Mon, 07 Sep 2020 21:06:17 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-12/</guid>
-      <description>This is part 12 of my journey learning Golang.
-Compile-time errors Go is a compiled language. That means that it will parse the source code and produce an executable binary file from it.
-The compiler parses the code according to strictly defined rules. That allows Go programs to run more efficiently than if they were interpreted as they run.
-As a valuable side-effect, it will reveal many kinds of errors (like typos or invalid code) immediately when the programs are compiled, as opposed to only when that particular part of the program is executed.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 12 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;compile-time-errors&#34;&gt;Compile-time errors&lt;/h1&gt;
+&lt;p&gt;Go is a compiled language. That means that it will parse the source code and produce an executable binary file from it.&lt;/p&gt;
+&lt;p&gt;The compiler parses the code according to strictly defined rules. That allows Go programs to run more efficiently than
+if they were interpreted as they run.&lt;/p&gt;
+&lt;p&gt;As a valuable side-effect, it will reveal many kinds of errors (like typos or invalid code) immediately when the
+programs are compiled, as opposed to only when that particular part of the program is executed.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -186,10 +379,26 @@ As a valuable side-effect, it will reveal many kinds of errors (like typos or in
       <pubDate>Sun, 06 Sep 2020 18:13:20 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-11/</guid>
-      <description>This is part 11 of my journey learning Golang.
-Variables A variable is a named value that can change during the execution of a program. The difference from a constant (which is also a named value) is that a variable&amp;rsquo;s value can be modified at run time.
-Variable declarations In Go, variables are declared following this pattern: var {identifier} {type}. Examples:
-1var songName string 2var lengthOfSong uint16 3var isMusicOver bool 4var songRating float32 Zero values If a value is not assigned to the variable when it is declared (like above) then it is initialized with a &amp;ldquo;zero value&amp;rdquo;.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 11 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;variables&#34;&gt;Variables&lt;/h1&gt;
+&lt;p&gt;A variable is a named value that can change during the execution of a program. The difference from a constant (which is
+also a named value) is that a variable&amp;rsquo;s value can be modified at run time.&lt;/p&gt;
+&lt;h1 id=&#34;variable-declarations&#34;&gt;Variable declarations&lt;/h1&gt;
+&lt;p&gt;In Go, variables are declared following this pattern: &lt;code&gt;var&lt;/code&gt; {identifier} {type}. Examples:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;songName&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;string&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;lengthOfSong&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;uint16&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;isMusicOver&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;var&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;songRating&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;float32&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;zero-values&#34;&gt;Zero values&lt;/h1&gt;
+&lt;p&gt;If a value is not assigned to the variable when it is declared (like above) then it is initialized with a &amp;ldquo;zero value&amp;rdquo;.
+The actual value depends on the data type. Generally:&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -198,10 +407,24 @@ Variable declarations In Go, variables are declared following this pattern: var 
       <pubDate>Sun, 06 Sep 2020 17:55:33 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-10/</guid>
-      <description>This is part 10 of my journey learning Golang.
-Literals In Go, values can be many things. Just to name a few, values can be numbers (like 109), or text wrapped in quotes (like &amp;ldquo;Hello world&amp;rdquo;).
-Literals are values written in the source code. For example:
-1fmt.Println(&amp;#34;Hello, world!&amp;#34;) // String literal 2fmt.Println(42) // Integer literal 3fmt.Println(3.141592653589793238) // Floating point literal Constants In addition to literal values (i.e. values directly expressed in the source code), Go also allows &amp;ldquo;named values&amp;rdquo;, i.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 10 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;literals&#34;&gt;Literals&lt;/h1&gt;
+&lt;p&gt;In Go, values can be many things. Just to name a few, values can be numbers (like 109), or text wrapped in quotes (like &amp;ldquo;Hello world&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;Literals are values written in the source code. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;       &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// String literal&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;42&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;                    &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Integer literal&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;3.141592653589793238&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Floating point literal&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;constants&#34;&gt;Constants&lt;/h1&gt;
+&lt;p&gt;In addition to literal values (i.e. values directly expressed in the source code), Go also allows &amp;ldquo;named values&amp;rdquo;, i.e.
+values identified by a name. These named values are called &amp;ldquo;constants&amp;rdquo; because the value represented by the name remains
+the same throughout the runtime of the program.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -210,10 +433,19 @@ Literals are values written in the source code. For example:
       <pubDate>Wed, 26 Aug 2020 03:29:48 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-9/</guid>
-      <description>This is part 9 of my journey learning Golang.
-Data types are a designation by a programming language about the kind of values that are being stored.
-Go has several basic data types built in. This article explores boolean, numeric and string data types. See Go&amp;rsquo;s documentation for more details.
-Boolean data type Boolean values can be either false (equivalent to 0) or true (equivalent to 1). Although in principle they only require 1 bit of storage, Go uses a byte for convenience reasons.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 9 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;p&gt;Data types are a designation by a programming language about the kind of values that are being stored.&lt;/p&gt;
+&lt;p&gt;Go has several basic data types built in. This article explores boolean, numeric and string data types. See &lt;a href=&#34;https://golang.org/ref/spec#Boolean_types&#34;&gt;Go&amp;rsquo;s documentation&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;h1 id=&#34;boolean-data-type&#34;&gt;Boolean data type&lt;/h1&gt;
+&lt;p&gt;Boolean values can be either &lt;code&gt;false&lt;/code&gt; (equivalent to 0) or &lt;code&gt;true&lt;/code&gt; (equivalent to 1). Although in principle they only require
+1 bit of storage, Go uses a byte for convenience reasons.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -222,10 +454,21 @@ Boolean data type Boolean values can be either false (equivalent to 0) or true (
       <pubDate>Sat, 22 Aug 2020 01:55:41 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-8/</guid>
-      <description>This is part 8 of my journey learning Golang.
-Reproducible build &amp;amp; run environments Over the years, it is not uncommon that different projects in the same language will have different requirements about the versions of the tools and libraries that they require.
-For instance, I learned that there are differences in the behavior of the GO111MODULE environment variable across Go versions 1.12 and 1.13.
-That&amp;rsquo;s why when I start a repository for a new project, one of the first things I do is to set up scripts for building and running the code in a reproducible way.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 8 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;reproducible-build--run-environments&#34;&gt;Reproducible build &amp;amp; run environments&lt;/h1&gt;
+&lt;p&gt;Over the years, it is not uncommon that different projects in the same language will have different requirements about
+the versions of the tools and libraries that they require.&lt;/p&gt;
+&lt;p&gt;For instance, I learned that there are differences in the behavior of the &lt;code&gt;GO111MODULE&lt;/code&gt; environment variable
+across Go versions 1.12 and 1.13.&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s why when I start a repository for a new project, one of the first things I do is to set up scripts for building
+and running the code in a reproducible way.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -234,10 +477,20 @@ That&amp;rsquo;s why when I start a repository for a new project, one of the fir
       <pubDate>Fri, 21 Aug 2020 03:18:04 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-7/</guid>
-      <description>This is part 7 of my journey learning Golang.
-My first assignment on Codecademy&amp;rsquo;s Learn Go course was to create a program that prints out ASCII art.
-The way that&amp;rsquo;s different from a &amp;ldquo;Hello, World&amp;rdquo; program is that it needs to print multiple lines. So it was a great opportunity to learn about how multi-line strings can be represented in Go.
-Go&amp;rsquo;s string literals String literals represent &amp;ldquo;string constants&amp;rdquo; i.e. immutable string values in a Go source file.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 7 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;p&gt;My first assignment on Codecademy&amp;rsquo;s &lt;a href=&#34;https://www.codecademy.com/learn/learn-go&#34;&gt;Learn Go&lt;/a&gt; course was to create a program
+that prints out &lt;a href=&#34;https://www.asciiart.eu/computers/computers&#34;&gt;ASCII art&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The way that&amp;rsquo;s different from a &amp;ldquo;Hello, World&amp;rdquo; program is that it needs to print multiple lines. So it was a great
+opportunity to learn about how multi-line strings can be represented in Go.&lt;/p&gt;
+&lt;h1 id=&#34;gos-string-literals&#34;&gt;Go&amp;rsquo;s string literals&lt;/h1&gt;
+&lt;p&gt;String literals represent &amp;ldquo;string constants&amp;rdquo; i.e. immutable string values in a Go source file.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -246,8 +499,57 @@ Go&amp;rsquo;s string literals String literals represent &amp;ldquo;string const
       <pubDate>Wed, 19 Aug 2020 03:27:35 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-6/</guid>
-      <description>This is part 6 of my journey learning Golang.
-Books and tutorials  A Tour of Go: An introduction that covers the most important features of the language. An Introduction to Programming in Go: A free e-book from 2012. For the Love of Go: Fundamentals: An interactive introduction to the Go programming language, suitable for complete beginners. Introducing Go: An O&amp;rsquo;Reilly book from 2016. &amp;ldquo;Perfect for beginners familiar with programming basics, this hands-on guide provides an easy introduction to Go.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 6 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;books-and-tutorials&#34;&gt;Books and tutorials&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tour.golang.org/list&#34;&gt;A Tour of Go&lt;/a&gt;: An introduction that covers the most important features of the language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.golang-book.com/books/intro&#34;&gt;An Introduction to Programming in Go&lt;/a&gt;: A free e-book from 2012.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitfieldconsulting.com/books/fundamentals&#34;&gt;For the Love of Go: Fundamentals&lt;/a&gt;: An interactive introduction to the Go programming language, suitable for complete beginners.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.oreilly.com/library/view/introducing-go/9781491941997/&#34;&gt;Introducing Go&lt;/a&gt;: An O&amp;rsquo;Reilly book from 2016.
+&amp;ldquo;Perfect for beginners familiar with programming basics, this hands-on guide provides an easy introduction to Go.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;chat&#34;&gt;Chat&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;irc:irc.freenode.net/go-nuts&#34;&gt;Go IRC Channel&lt;/a&gt;: Get live support at #go-nuts on irc.freenode.net, the official Go IRC&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.gopheracademy.com/gophers-slack-community/&#34;&gt;Gopher Slack&lt;/a&gt;: Get live support from other users in the Go slack channel.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discord.gg/64C346U&#34;&gt;Gophers Discord&lt;/a&gt;: Get live support and talk with other gophers on the Go Discord.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;forums&#34;&gt;Forums&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://forum.golangbridge.org/&#34;&gt;Go Forum&lt;/a&gt;: Discussion forum.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/group/golang-nuts&#34;&gt;Go Nuts Mailing List&lt;/a&gt;: Discussion group.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://reddit.com/r/golang&#34;&gt;golang sub-Reddit&lt;/a&gt;: A place for Go news and discussion.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://stackoverflow.com/questions/tagged/go&#34;&gt;StackOverflow&lt;/a&gt;: Community-driven questions and answers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang/go/wiki/GoUserGroups&#34;&gt;User groups&lt;/a&gt;: Local groups around the world.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;podcasts&#34;&gt;Podcasts&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://changelog.com/gotime&#34;&gt;Go Time Podcast&lt;/a&gt;: A panel of Go experts and
+special guests discussing the Go programming language, the community, and
+everything in between.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;tools&#34;&gt;Tools&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/cmd/doc/&#34;&gt;go doc&lt;/a&gt;: Command-line tool for displaying Go package documentation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;websites&#34;&gt;Websites&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://awesome-go.com/&#34;&gt;Awesome Go&lt;/a&gt;: An extensive, curated list of Go resources.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/doc/faq&#34;&gt;Frequently Asked Questions (FAQ)&lt;/a&gt;: Answers to common questions about Go.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang/go/wiki&#34;&gt;Go Wiki&lt;/a&gt;: A collection of information about the Go Programming Language.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://godoc.org/&#34;&gt;GoDoc&lt;/a&gt;: Documentation for Go packages.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://play.golang.org/&#34;&gt;The Go Playground&lt;/a&gt;: A place to write, run, and share Go code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/&#34;&gt;The Go Programming Language&lt;/a&gt;: Go&amp;rsquo;s official website.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;takeaway&#34;&gt;Takeaway&lt;/h1&gt;
+&lt;p&gt;There is an abundance of resources for learning Go. Which ones would you recommend?&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -256,10 +558,28 @@ Books and tutorials  A Tour of Go: An introduction that covers the most importan
       <pubDate>Tue, 18 Aug 2020 04:02:00 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-5/</guid>
-      <description>This is part 5 of my journey learning Golang.
-Inline comments Go ignores text to the right of //:
-1// This entire line is ignored by the compiler. 2// fmt.Println(&amp;#34;Does NOT print&amp;#34;) 3fmt.Println(&amp;#34;This gets printed!&amp;#34;) // This part gets ignored Block comments All lines between /* and */ will be ignored:
-1/* 2This is ignored. 3This is also ignored. 4fmt.Println(&amp;#34;This WON&amp;#39;T print!&amp;#34;) 5*/ Godoc Go has a tool for automatically generating documentation from Go source code: Godoc.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 5 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;inline-comments&#34;&gt;Inline comments&lt;/h1&gt;
+&lt;p&gt;Go ignores text to the right of &lt;code&gt;//&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// This entire line is ignored by the compiler.&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// fmt.Println(&amp;#34;Does NOT print&amp;#34;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;This gets printed!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// This part gets ignored&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;block-comments&#34;&gt;Block comments&lt;/h1&gt;
+&lt;p&gt;All lines between &lt;code&gt;/*&lt;/code&gt; and &lt;code&gt;*/&lt;/code&gt; will be ignored:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;This is ignored.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;This is also ignored.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;fmt.Println(&amp;#34;This WON&amp;#39;T print!&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cm&#34;&gt;*/&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;godoc&#34;&gt;Godoc&lt;/h1&gt;
+&lt;p&gt;Go has a tool for automatically generating documentation from Go source code: &lt;a href=&#34;https://godoc.org/golang.org/x/tools/cmd/godoc&#34;&gt;Godoc&lt;/a&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -268,10 +588,24 @@ Inline comments Go ignores text to the right of //:
       <pubDate>Sun, 16 Aug 2020 17:31:12 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-4/</guid>
-      <description>This is part 4 of my journey learning Golang.
-Function declarations Functions are reusable blocks of code. For example:
-1func main () { 2 fmt.Println(&amp;#34;Hello, World!&amp;#34;) 3} The func keyword declares a function. It is followed by the function&amp;rsquo;s name, a list of arguments (delimited by parenthesis) and the function block (delimited by curly braces).
-main function In Go, the main function is special. When the main function is defined in the main package, it is automatically called when the program is executed.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 4 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;function-declarations&#34;&gt;Function declarations&lt;/h1&gt;
+&lt;p&gt;Functions are reusable blocks of code. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;fmt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;Println&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;func&lt;/code&gt; keyword declares a function. It is followed by the function&amp;rsquo;s name, a list of arguments (delimited by
+parenthesis) and the function block (delimited by curly braces).&lt;/p&gt;
+&lt;h1 id=&#34;main-function&#34;&gt;main function&lt;/h1&gt;
+&lt;p&gt;In Go, the &lt;code&gt;main&lt;/code&gt; function is special. When the &lt;code&gt;main&lt;/code&gt; function is defined in the &lt;code&gt;main&lt;/code&gt; package, it is automatically
+called when the program is executed.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -280,11 +614,25 @@ main function In Go, the main function is special. When the main function is def
       <pubDate>Sun, 16 Aug 2020 02:12:03 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-3/</guid>
-      <description>This is part 3 of my journey learning Golang.
-Package declaration The first line of a Go source file is the &amp;ldquo;package declaration&amp;rdquo;, defined by the package keyword.
-This serves a few purposes:
- It provides a structure for grouping related source files. It provides a mechanism for code reuse. It differentiates between executable packages from utility packages (i.e. libraries).  Example:
-1package main go build will produce an executable binary file for source files with package main.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 3 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;package-declaration&#34;&gt;Package declaration&lt;/h1&gt;
+&lt;p&gt;The first line of a Go source file is the &amp;ldquo;package declaration&amp;rdquo;, defined by the &lt;code&gt;package&lt;/code&gt; keyword.&lt;/p&gt;
+&lt;p&gt;This serves a few purposes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It provides a structure for grouping related source files.&lt;/li&gt;
+&lt;li&gt;It provides a mechanism for code reuse.&lt;/li&gt;
+&lt;li&gt;It differentiates between executable packages from utility packages (i.e. libraries).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;package&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;go build&lt;/code&gt; will produce an executable binary file for source files with &lt;code&gt;package main&lt;/code&gt;.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -293,12 +641,26 @@ This serves a few purposes:
       <pubDate>Sun, 16 Aug 2020 01:55:20 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-2/</guid>
-      <description>This is part 2 of my journey learning Golang.
-Compiling Go programs An individual Go source file can be compiled with the go build command:
-1go build {filename}.go That will produce an executable binary file if the source&amp;rsquo;s package is main (see Part 3 for more on packages).
-The resulting binary can be executed with this command:
-1./{filename} Example:
-1$ go build main.go 2$ ./main 3Hello World Running from source The go run command combines the two previous steps: it builds a binary from a source file and executes it:</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 2 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;h1 id=&#34;compiling-go-programs&#34;&gt;Compiling Go programs&lt;/h1&gt;
+&lt;p&gt;An individual Go source file can be compiled with the &lt;code&gt;go build&lt;/code&gt; command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;go build {filename}.go
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;That will produce an executable binary file if the source&amp;rsquo;s package is &lt;code&gt;main&lt;/code&gt; (see &lt;a href=&#34;https://fernandocorreia.dev/posts/learning-golang-part-3/&#34;&gt;Part 3&lt;/a&gt; for more on packages).&lt;/p&gt;
+&lt;p&gt;The resulting binary can be executed with this command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;./{filename}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;$ go build main.go
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;$ ./main
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;Hello World
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;running-from-source&#34;&gt;Running from source&lt;/h1&gt;
+&lt;p&gt;The &lt;code&gt;go run&lt;/code&gt; command combines the two previous steps: it builds a binary from a source file and executes it:&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -307,9 +669,19 @@ The resulting binary can be executed with this command:
       <pubDate>Sun, 16 Aug 2020 01:30:03 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/learning-golang-part-1/</guid>
-      <description>This is part 1 of my journey learning Golang.
-The Go programming language (Golang) is becoming more relevant by the day. It is, famously, the language of the Docker and Kubernetes projects. Both have had a huge impact on how companies run applications, and I develop for them on a daily basis. Golang is also seeing increased adotoption at my company.
-I&amp;rsquo;m starting on a journey to become more familiar with this language.</description>
+      <description>
+        
+          
+            &lt;p&gt;This is part 1 of my &lt;a href=&#34;https://fernandocorreia.dev/categories/learning-golang/&#34;&gt;journey&lt;/a&gt; learning Golang.&lt;/p&gt;
+&lt;p&gt;The Go programming language (Golang) is becoming more relevant by the day. It is, famously, the language of the Docker
+and Kubernetes projects. Both have had a huge impact on how companies run applications, and I develop for them on a
+daily basis. Golang is also seeing increased adotoption at my company.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m starting on a journey to become more familiar with this language. I decided to start from the fundamentals. I&amp;rsquo;m
+going to follow the &lt;a href=&#34;https://www.codecademy.com/learn/learn-go&#34;&gt;Learn Go&lt;/a&gt; course on Codecademy&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -318,9 +690,19 @@ I&amp;rsquo;m starting on a journey to become more familiar with this language.<
       <pubDate>Sat, 15 Aug 2020 04:35:19 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/github-pages-custom-domain/</guid>
-      <description>I am hosting my blog on GitHub Pages. I wanted to use my own domain name instead of a github.io subdomain.
-GitHub&amp;rsquo;s documentation is very helpful. Even so, it took me some effort to figure out all the details, so I&amp;rsquo;m going to share what I learned.
-These instructions are for using an &amp;ldquo;apex domain&amp;rdquo; e.g. fernandocorreia.dev. The settings are a bit different when using a subdomain like www.fernandocorreia.dev. Again, GitHub&amp;rsquo;s documentation is very helpful and does a good job of explaining these differences.</description>
+      <description>
+        
+          
+            &lt;p&gt;I am hosting my blog on GitHub Pages. I wanted to use my own domain name instead of a &lt;code&gt;github.io&lt;/code&gt; subdomain.&lt;/p&gt;
+&lt;p&gt;GitHub&amp;rsquo;s documentation is very helpful. Even so, it took me some effort to figure out all the details, so I&amp;rsquo;m going to
+share what I learned.&lt;/p&gt;
+&lt;p&gt;These instructions are for using an &amp;ldquo;apex domain&amp;rdquo; e.g. &lt;code&gt;fernandocorreia.dev&lt;/code&gt;. The settings are a bit different when
+using a subdomain like &lt;code&gt;www.fernandocorreia.dev&lt;/code&gt;. Again, GitHub&amp;rsquo;s &lt;a href=&#34;https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site&#34;&gt;documentation&lt;/a&gt; is very helpful and does a good job of
+explaining these differences.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
@@ -329,10 +711,18 @@ These instructions are for using an &amp;ldquo;apex domain&amp;rdquo; e.g. ferna
       <pubDate>Thu, 13 Aug 2020 21:42:46 +0000</pubDate>
       
       <guid>https://fernandocorreia.dev/posts/new-blog/</guid>
-      <description>I decided to start a new blog to talk about software development.
-It&amp;rsquo;s been about 5 years since I last had a blog, so I went looking for what people are using in 2020.
-It turns out that Hugo is quite popular for building static sites.
-Two of its selling points are that it is super fast, and that people have built hundreds of good-looking themes so that you can hit the ground running.</description>
+      <description>
+        
+          
+            &lt;p&gt;I decided to start a new blog to talk about software development.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s been about 5 years since I last had a blog, so I went looking for what people are using in 2020.&lt;/p&gt;
+&lt;p&gt;It turns out that &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; is quite popular for building static sites.&lt;/p&gt;
+&lt;p&gt;Two of its selling points are that it is super fast, and that people have built hundreds of good-looking
+&lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;themes&lt;/a&gt; so that you can hit the ground running.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
   </channel>

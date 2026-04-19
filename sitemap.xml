@@ -1,200 +1,122 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://fernandocorreia.dev/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/categories/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/origin-tk85/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/tags/origin/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/categories/personal/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/tags/</loc>
     <lastmod>2021-05-02T22:03:43+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/tags/golang/</loc>
     <lastmod>2021-02-20T23:29:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/categories/learning-golang/</loc>
     <lastmod>2021-02-20T23:29:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-23/</loc>
     <lastmod>2021-02-20T23:29:42+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-22/</loc>
     <lastmod>2021-02-14T03:24:01+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-21/</loc>
     <lastmod>2020-12-19T18:59:21+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-20/</loc>
     <lastmod>2020-10-09T03:32:37+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-19/</loc>
     <lastmod>2020-10-08T04:26:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-18/</loc>
     <lastmod>2020-09-19T16:09:07+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-17/</loc>
     <lastmod>2020-09-16T03:09:15+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-16/</loc>
     <lastmod>2020-09-15T03:39:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/tags/blogging/</loc>
     <lastmod>2020-09-12T17:24:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/google-search-console/</loc>
     <lastmod>2020-09-12T17:24:50+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-15/</loc>
     <lastmod>2020-09-12T04:21:49+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-14/</loc>
     <lastmod>2020-09-11T03:59:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-13/</loc>
     <lastmod>2020-09-08T01:35:40+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-12/</loc>
     <lastmod>2020-09-07T21:06:17+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-11/</loc>
     <lastmod>2020-09-06T18:13:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-10/</loc>
     <lastmod>2020-09-06T17:55:33+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-9/</loc>
     <lastmod>2020-08-26T03:29:48+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-8/</loc>
     <lastmod>2020-08-22T01:55:41+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-7/</loc>
     <lastmod>2020-08-21T03:18:04+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-6/</loc>
     <lastmod>2020-08-19T03:27:35+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-5/</loc>
     <lastmod>2020-08-18T04:02:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-4/</loc>
     <lastmod>2020-08-16T17:31:12+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-3/</loc>
     <lastmod>2020-08-16T02:12:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-2/</loc>
     <lastmod>2020-08-16T01:55:20+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/learning-golang-part-1/</loc>
     <lastmod>2020-08-16T01:30:03+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/github-pages-custom-domain/</loc>
     <lastmod>2020-08-15T04:35:19+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/tags/dns/</loc>
     <lastmod>2020-08-15T04:35:19+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/tags/github-pages/</loc>
     <lastmod>2020-08-15T04:35:19+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/posts/new-blog/</loc>
     <lastmod>2020-08-13T21:42:46+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://fernandocorreia.dev/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
-  
 </urlset>
