@@ -2,40 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Untagged on Fernando Correia&#39;s Blog</title>
-    <link>https://fernandocorreia.dev/tags/untagged/</link>
+    <link>http://localhost:1313/tags/untagged/</link>
     <description>Recent content in Untagged on Fernando Correia&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2020, Fernando de Alcantara Correia; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 16 Aug 2020 02:12:03 +0000</lastBuildDate>
-    
-	<atom:link href="https://fernandocorreia.dev/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <copyright>Fernando de Alcantara Correia</copyright>
+    <lastBuildDate>Wed, 26 Aug 2020 03:12:32 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Learning Golang: Packages</title>
-      <link>https://fernandocorreia.dev/posts/learning-golang-part-3/</link>
-      <pubDate>Sun, 16 Aug 2020 02:12:03 +0000</pubDate>
+      <title>Scratch</title>
+      <link>http://localhost:1313/posts/scratch/</link>
+      <pubDate>Wed, 26 Aug 2020 03:12:32 +0000</pubDate>
       
-      <guid>https://fernandocorreia.dev/posts/learning-golang-part-3/</guid>
-      <description>This is part 3 of my journey learning Golang.
-Package declaration The first line of a Go source file is the &amp;ldquo;package declaration&amp;rdquo;, defined by the package keyword.
-This serves a few purposes:
- It provides a structure for grouping related source files. It provides a mechanism for code reuse. It differentiates between executable packages from utility packages (i.e. libraries).  Example:
-1package main go build will produce an executable binary file for source files with package main.</description>
-    </item>
-    
-    <item>
-      <title>Learning Golang: Compiling and running Go programs</title>
-      <link>https://fernandocorreia.dev/posts/learning-golang-part-2/</link>
-      <pubDate>Sun, 16 Aug 2020 01:55:20 +0000</pubDate>
-      
-      <guid>https://fernandocorreia.dev/posts/learning-golang-part-2/</guid>
-      <description>This is part 2 of my journey learning Golang.
-Compiling Go programs An individual Go source file can be compiled with the go build command:
-1go build {filename}.go That will produce an executable binary file if the source&amp;rsquo;s package is main (see Part 3 for more on packages).
-The resulting binary can be executed with this command:
-1./{filename} Example:
-1$ go build main.go 2$ ./main 3Hello World Running from source The go run command combines the two previous steps: it builds a binary from a source file and executes it:</description>
+      <guid>http://localhost:1313/posts/scratch/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;arithmetic&#34;&gt;Arithmetic&lt;/h1&gt;
+&lt;p&gt;We can perform arithmetic in Go with literals (or named values, covered in the next exercise) using the following operators:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; to add&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; to subtract&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; to multiply&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/&lt;/code&gt; to divide&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;%&lt;/code&gt; to take the remainder (the modulus operator) between two numbers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Go has the following arithmetic operations that perform calculations and update the variable’s value:&lt;/p&gt;
+&lt;p&gt;+= to add to the variable.
+-= to subtract from the variable.
+*= to multiply the variable by a factor.
+/= to divide the variable by a dividend.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
   </channel>
