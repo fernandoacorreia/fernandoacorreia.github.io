@@ -11,7 +11,7 @@
   
   >
   <head>
-<title>Learning Golang: Packages | Fernando Correia&#39;s Blog</title>
+<title>Shifting code review left | Fernando Correia&#39;s Blog</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -31,26 +31,26 @@
 <meta property="og:locale" content="en" />
 
 <meta property="og:type" content="article">
-<meta name="description" content="This is part 3 of my journey learning Golang.
-Package declaration
-The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the …" />
+<meta name="description" content="How I built an agent to automate the grunt work of code review so that reviewers can focus more on intent and design.
+
+1. The problem: thorough code review is …" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@facorreia">
-<meta name="twitter:title" content="Learning Golang: Packages" />
+<meta name="twitter:title" content="Shifting code review left" />
 <meta name="twitter:image" content="https://fernandocorreia.dev/images/thumbnail.png"/>
-<meta property="og:url" content="https://fernandocorreia.dev/posts/learning-golang-part-3/" />
-<meta property="og:title" content="Learning Golang: Packages" />
-<meta property="og:description" content="This is part 3 of my journey learning Golang.
-Package declaration
-The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the …" />
+<meta property="og:url" content="https://fernandocorreia.dev/posts/building-a-code-review-bot/" />
+<meta property="og:title" content="Shifting code review left" />
+<meta property="og:description" content="How I built an agent to automate the grunt work of code review so that reviewers can focus more on intent and design.
+
+1. The problem: thorough code review is …" />
 <meta property="og:image" content="https://fernandocorreia.dev/images/thumbnail.png" />
-  <meta name="keywords" content="golang" />
+  <meta name="keywords" content="Agents,Development process" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://fernandocorreia.dev/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://fernandocorreia.dev/icons/favicon-32x32.png">
 <link rel="manifest" href="https://fernandocorreia.dev/icons/site.webmanifest">
 
-<link rel="canonical" href="https://fernandocorreia.dev/posts/learning-golang-part-3/">
+<link rel="canonical" href="https://fernandocorreia.dev/posts/building-a-code-review-bot/">
 
 
 
@@ -66,8 +66,8 @@ The first line of a Go source file is the &ldquo;package declaration&rdquo;, def
 
   </head>
   <body
-    data-code="20"
-    data-lines="true"
+    data-code="100"
+    data-lines="false"
     id="documentTop"
     data-lang="en"
   >
@@ -153,7 +153,7 @@ The first line of a Go source file is the &ldquo;package declaration&rdquo;, def
   
 <div class="grid-inverse wrap content">
   <article class="post_content">
-    <h1 class="post_title">Learning Golang: Packages</h1>
+    <h1 class="post_title">Shifting code review left</h1>
   <div class="post_meta">
     <span><svg class="icon">
   <title>calendar</title>
@@ -161,22 +161,23 @@ The first line of a Go source file is the &ldquo;package declaration&rdquo;, def
 </svg>
 </span>
     <span class="post_date">
-      Aug 16, 2020	  
+      Apr 22, 2026	  
     </span>
-    <span class="post_time"> · 2 min read</span><span>&nbsp;· <a href='https://fernandocorreia.dev/tags/golang/' title="golang" class="post_tag button button_translucent">golang
+    <span class="post_time"> · 10 min read</span><span>&nbsp;· <a href='https://fernandocorreia.dev/tags/agents/' title="Agents" class="post_tag button button_translucent">Agents
+        </a><a href='https://fernandocorreia.dev/tags/development-process/' title="Development process" class="post_tag button button_translucent">Development process
         </a>
     </span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
-    <a href="https://twitter.com/intent/tweet?text=Learning%20Golang%3a%20Packages&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-3%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
+    <a href="https://twitter.com/intent/tweet?text=Shifting%20code%20review%20left&url=https%3a%2f%2ffernandocorreia.dev%2fposts%2fbuilding-a-code-review-bot%2f&tw_p=tweetbutton" class="twitter" title="Share on Twitter" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>twitter</title>
   <use xlink:href="#twitter"></use>
 </svg>
 
     </a>
-    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2flearning-golang-part-3%2f&t=Learning%20Golang%3a%20Packages" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
+    <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2ffernandocorreia.dev%2fposts%2fbuilding-a-code-review-bot%2f&t=Shifting%20code%20review%20left" class="facebook" title="Share on Facebook" target="_blank" rel="nofollow">
       <svg class="icon">
   <title>facebook</title>
   <use xlink:href="#facebook"></use>
@@ -190,7 +191,7 @@ The first line of a Go source file is the &ldquo;package declaration&rdquo;, def
 </svg>
 
     </a>
-    <a href="https://fernandocorreia.dev/posts/learning-golang-part-3/" title="Copy Link" class="link link_yank">
+    <a href="https://fernandocorreia.dev/posts/building-a-code-review-bot/" title="Copy Link" class="link link_yank">
       <svg class="icon">
   <title>copy</title>
   <use xlink:href="#copy"></use>
@@ -201,73 +202,160 @@ The first line of a Go source file is the &ldquo;package declaration&rdquo;, def
   </span>
   </div>
 
-    <div class="post_body"><p>This is part 3 of my <a href="/categories/learning-golang/">journey</a> learning Golang.</p>
-<h1 id="package-declaration">Package declaration</h1>
-<p>The first line of a Go source file is the &ldquo;package declaration&rdquo;, defined by the <code>package</code> keyword.</p>
-<p>This serves a few purposes:</p>
+    <div class="post_body"><p><em>How I built an agent to automate the grunt work of code review so that reviewers can focus more on intent and design.</em></p>
+<hr>
+<h2 id="1-the-problem-thorough-code-review-is-necessary-but-expensive">1. The problem: thorough code review is necessary but expensive</h2>
+<p>It&rsquo;s 2pm. My review queue has about a dozen pull requests in it. My team just finished their day and submitted them before signing
+off. A few PRs run to several hundred lines. By the time I work through the queue, the authors are offline. Whatever feedback I
+leave won&rsquo;t be read until they log on tomorrow.</p>
+<p>I&rsquo;m not the only reviewer on the team, but as tech lead I own what ships. If a PR doesn&rsquo;t fully address the problem, slips through with a subtle bug, or doesn&rsquo;t meet the quality bar, that&rsquo;s on me.</p>
+<p>A good review asks multiple questions at once:</p>
 <ul>
-<li>It provides a structure for grouping related source files.</li>
-<li>It provides a mechanism for code reuse.</li>
-<li>It differentiates between executable packages from utility packages (i.e. libraries).</li>
+<li><strong>Is it correct?</strong> Does the code do what the PR says it does?</li>
+<li><strong>Does it solve the problem?</strong> Does the diff actually address the ticket that spawned it, not just look coherent in isolation?</li>
+<li><strong>Is the quality up to par?</strong> Readability, naming, idiomatic usage of the language and frameworks.</li>
+<li><strong>What got missed?</strong> Edge cases, security holes, performance cliffs, concurrency bugs.</li>
+<li><strong>Is it tested?</strong> Evidence of automated tests, or at minimum a credible smoke test when end-to-end automation isn&rsquo;t practical.</li>
+<li><strong>What&rsquo;s next?</strong> Follow-up work the PR surfaces but shouldn&rsquo;t absorb: tech debt, adjacent issues, design questions.</li>
 </ul>
-<p>Example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
-</span></span></span></code></pre></div><p><code>go build</code> will produce an executable binary file for source files with <code>package main</code>.</p>
-<h1 id="importing-a-package">Importing a package</h1>
-<p>The <code>import</code> keyword allows bringing in and using code from other packages.</p>
-<p>Example:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="s">&#34;fmt&#34;</span><span class="w">
-</span></span></span></code></pre></div><p>A &ldquo;package reference variable&rdquo; is created from the imported package&rsquo;s name &ndash; in this case, <code>fmt</code>.</p>
-<h1 id="importing-multiple-packages">Importing multiple packages</h1>
-<p>It&rsquo;s usual for a source file to import multiple packages. The convention for that is to use a single <code>import</code> statement
-with a package list within parenthesis like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">  </span><span class="s">&#34;package1&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="s">&#34;package2&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="p">)</span><span class="w">
-</span></span></span></code></pre></div><h1 id="package-alias">Package alias</h1>
-<p>It is possible to define an &ldquo;alias&rdquo; as a shorthand name instead of the default package reference variable. The syntax
-for that is to specify the alias before the package name like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w">  </span><span class="nx">p1</span><span class="w"> </span><span class="s">&#34;package1&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="w">  </span><span class="s">&#34;package2&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="p">)</span><span class="w">
-</span></span></span></code></pre></div><p>That allows calling functions in <code>package1</code> like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln">1</span><span class="cl"><span class="nx">p1</span><span class="p">.</span><span class="nf">SampleFunc</span><span class="p">()</span><span class="w">
-</span></span></span></code></pre></div><h1 id="full-example">Full example</h1>
-<p>This is a full &ldquo;Hello World&rdquo; example in Go that demonstrates the concepts above.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">package</span><span class="w"> </span><span class="nx">main</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kn">import</span><span class="w"> </span><span class="p">(</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">  </span><span class="s">&#34;fmt&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">  </span><span class="nx">t</span><span class="w"> </span><span class="s">&#34;time&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="kd">func</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w">
-</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="p">)</span><span class="w">
-</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">  </span><span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="s">&#34;The time is now&#34;</span><span class="p">,</span><span class="w"> </span><span class="nx">t</span><span class="p">.</span><span class="nf">Now</span><span class="p">())</span><span class="w">
-</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">}</span><span class="w">
-</span></span></span></code></pre></div><p>Highlights:</p>
+<p>Before AI assistants, I used to do all of this manually: reading the diff, checking out the branch locally, sometimes running code to confirm what it does, walking up the call tree of affected code, cross-referencing library behavior, and writing comments by hand. That kind of thorough review is slow.</p>
+<p>A reviewer needs to operate simultaneously at different levels of abstraction: assessing the big picture (intent, design, scope) while catching low-level implementation gotchas like a background task that reads from a request context after the context was reset, silently falling back to a default value. On a large diff, focus slips — and that&rsquo;s exactly when issues like that get through.</p>
+<h3 id="a-workaround-running-the-review-on-my-laptop">A workaround: running the review on my laptop</h3>
+<p>I started by building a Claude Code slash command, <code>/review-pr</code>, that runs Opus at a high level of effort with full repo context and tool access. The prompt instructed the model to do a deep analysis, inspecting callers, surrounding code, and library sources, instead of basing its analysis on assumptions. Its most important instruction: before writing anything up, double-check Critical or Major findings. That single step meaningfully cut false positives.</p>
+<p>I used it as a pre-filter on my own reviews. I would run the command, triage its notes and paste the useful ones into the PR as comments. Over time I developed confidence that the model was catching most coding issues, and I could focus on design and on whether the PR addressed all requirements.</p>
+<p>It worked well — for me. But I couldn&rsquo;t reasonably expect the rest of the team to adopt the same workflow. Anything that adds friction to the development process — a specific prompt to run, a specific terminal-based tool to install, a specific flow to remember — tends to get skipped when people are busy shipping. Expecting every author to run this on their own PR before requesting review wasn&rsquo;t realistic.</p>
+<p>And the hosted review bots we already use aren&rsquo;t enough either. They catch obvious issues and common code-quality problems — once we filter out their false positives — but Claude Code with Opus consistently finds issues those bots miss.</p>
+<hr>
+<h2 id="2-the-solution-astra">2. The solution: Astra</h2>
+<p><figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt=""
+      
+        class="image_figure image_internal image_unprocessed"
+        src="https://fernandocorreia.dev/images/astra-logo.png"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<p><strong>Astra is a GitHub bot that runs a review workflow on demand in a sandboxed container.</strong></p>
+<p>The goal was to <strong>shift left</strong>: let PR authors get the same deep review I&rsquo;d been running from my terminal, before a human reviewer ever looks. Drop a <code>/astra review</code> comment on a PR and the bot does the rest.</p>
+<h3 id="what-makes-astra-different">What makes Astra different</h3>
+<p>Astra is built to reason about a PR, not pattern-match one — what a careful reviewer does, given time and tools:</p>
+<p><strong>1. Deep context.</strong> Astra clones the repo at the PR&rsquo;s head, installs all dependencies, and points the agent at where those dependencies live on disk. When the PR calls a library, the agent doesn&rsquo;t have to guess what the library does — it can read the library code. That alone eliminates a huge category of false positives.</p>
+<p>For example: a hosted bot once flagged a <code>posthog.capture</code> call inside an async handler as a blocking I/O hazard and told the author to move it to a thread. Astra read the PostHog SDK source and confirmed the opposite — <code>capture</code> just enqueues the event in memory; a background thread handles the flush. No fix needed. That&rsquo;s the difference between pattern-matching the shape of a call and verifying what it actually does.</p>
+<p><strong>2. It runs code, not just reads it.</strong> Astra installs the project&rsquo;s dev tools in the container. For dynamic languages like Python and TypeScript, where static reasoning only gets you so far, the agent can write and run small scripts to validate assumptions about behavior, like inspecting what a function returns for representative inputs, or whether a Python module imports without errors. That allows the model to review based on what the code <em>does</em>, not what it <em>looks like it should do</em>.</p>
+<p><strong>3. Workflow awareness.</strong> Astra plugs into the review process, not just the diff:</p>
 <ul>
-<li>Line 1: The package declaration with a package name of <code>main</code>. That will make this an executable program.</li>
-<li>Line 3: The <code>import</code> statement is importing a list of packages.</li>
-<li>Line 4: Imports the &ldquo;fmt&rdquo; package with its standard name (&ldquo;fmt&rdquo;).</li>
-<li>Line 5: Imports the &ldquo;time&rdquo; package with the alias &ldquo;t&rdquo;.</li>
-<li>Line 9: Uses the <code>Println</code> function from package <code>fmt</code> to display &ldquo;Hello, World!&rdquo;</li>
-<li>Line 10: Uses the <code>Println</code> function from package <code>fmt</code> to display &ldquo;The time is now &quot; followed by the current time, as
-returned by function <code>Now</code> from package <code>time</code> (aliased as <code>t</code>).</li>
+<li><strong>Reads the originating ticket.</strong> It fetches the ticket linked in the PR description and uses the problem statement and acceptance criteria as context — so it can judge whether the PR actually solves the thing it was supposed to solve, not just whether the diff is internally coherent.</li>
+<li><strong>Reads prior review feedback.</strong> Human comments, bot comments, resolved and unresolved threads. The agent is instructed to respond to each open thread — accepting, proposing alternatives, or pushing back with justification when a prior comment is invalid or already resolved.</li>
+<li><strong>Flags follow-up work.</strong> It identifies improvements that are out of scope for this PR and suggests them as follow-ups rather than review blockers.</li>
 </ul>
-<p>This is a sample output of the program above:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="ln">1</span><span class="cl">$ go run main.go
-</span></span><span class="line"><span class="ln">2</span><span class="cl">Hello, World!
-</span></span><span class="line"><span class="ln">3</span><span class="cl">The time is now 2020-08-16 18:07:24.180778888 +0000 UTC m=+0.000097040
-</span></span></code></pre></div><h1 id="takeaways">Takeaways</h1>
+<p><strong>4. Opinionated defaults.</strong> The prompt encodes principles I want every review to apply:</p>
 <ul>
-<li>The <code>package</code> keyword is used for the obligatory package declaration.</li>
-<li>The <code>import</code> keyword is used for bringing into context code from other packages.</li>
-<li><code>main</code> is a special package name for executable programs.</li>
+<li><strong>Trust nothing at face value</strong> — verify claims by reading the actual code.</li>
+<li><strong>Think adversarially</strong> — nil/null/empty, concurrency, malformed data, retries, partial failure.</li>
+<li><strong>Demand correctness, not perfection</strong> — strict on logic and security, not pedantic about style.</li>
+<li><strong>Suggest alternatives</strong> — don&rsquo;t just flag, propose a fix.</li>
+<li><strong>Push back</strong> — on scope, design, and ambiguous intent.</li>
+<li><strong>Check idioms</strong> — flag reinvented wheels and misused APIs.</li>
 </ul>
-<p>If you know Go, what would you add to an initial exposure on the concept of packages?</p>
+<h3 id="astras-architecture">Astra&rsquo;s architecture</h3>
+<div class="mermaid">flowchart LR
+    GitHub[GitHub]
+    Gateway[Gateway]
+    Job[Review container]
+    Claude[Claude Opus]
+
+    GitHub --&gt; Gateway
+    Gateway --&gt; Job
+    Job &lt;--&gt; Claude
+    Job --&gt; GitHub</div><style>
+  div.mermaid {
+    margin: 1.5rem auto;
+    text-align: center;
+    white-space: pre;
+  }
+  div.mermaid svg { max-width: 100%; height: auto; }
+</style>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  const themeFor = () => {
+    const mode = getComputedStyle(document.documentElement)
+      .getPropertyValue('--color-mode').replace(/["'\s]/g, '');
+    return mode === 'dim' ? 'dark' : 'default';
+  };
+  const nodes = document.querySelectorAll('div.mermaid');
+  nodes.forEach((el) => { el.dataset.source = el.textContent; });
+  const render = () => {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: themeFor(),
+      flowchart: { htmlLabels: false },
+      themeCSS: `
+        .edgeLabel rect, .edgeLabel .labelBkg { fill: none !important; background: transparent !important; }
+        .edgeLabel, .edgeLabel p { background: transparent !important; }
+        .edgeLabel text { transform: translateY(-8px); }
+      `,
+    });
+    nodes.forEach((el) => {
+      el.removeAttribute('data-processed');
+      el.innerHTML = el.dataset.source;
+    });
+    mermaid.run({ nodes });
+  };
+  render();
+  new MutationObserver((muts) => {
+    for (const m of muts) {
+      if (m.attributeName === 'data-mode') { render(); break; }
+    }
+  }).observe(document.documentElement, { attributes: true });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', render);
+</script><p>Here&rsquo;s how a review flows:</p>
+<p><strong>1. GitHub receives the command.</strong> A PR author posts <code>/astra review</code> on a pull request. GitHub fires an <code>issue_comment</code> webhook at the gateway.</p>
+<p><strong>2. The gateway hands the work off.</strong> It validates the signature, drops a task on Cloud Tasks, and returns. The queue handles retries and rate-limiting.</p>
+<p><strong>3. A fresh container spins up per review.</strong> Every review runs in its own Cloud Run job — an ephemeral environment that sees only the secrets it needs: a short-lived GitHub installation token minted just for this run, plus the Anthropic API key and the Shortcut (tickets) API token pulled from Secret Manager. Least privilege, scoped to a single review, with nothing persisting between runs. The container then clones the repo at the PR&rsquo;s head, fetches the diff, PR metadata, existing review threads, and the linked ticket, then installs dependencies and dev tools.</p>
+<p><strong>4. The agent loops with Claude.</strong> Inside the container, the Claude Agent SDK runs the review skill. The agent reads the diff, walks into dependency source to verify library behavior, runs small scripts to observe actual behavior, and responds to each open thread. The edge between the container and Claude is a loop, not a single call — the model drives many tool invocations per review before emitting a structured JSON review at the PR, file and line levels. The loop has two hard stops: a maximum turn count so it can&rsquo;t spin forever, and a maximum cost per review so a misbehaving run can&rsquo;t generate a surprise bill.</p>
+<p><strong>5. A Python harness posts back to GitHub.</strong> The harness turns the JSON into a GitHub review via the GraphQL API, attaching each comment to the right file and line. Astra only posts comments — it never approves or rejects a PR. Approval is a human decision; Astra is there to inform it, not make it.</p>
+<p>The split between steps 4 and 5 is the most important design choice in the whole system:</p>
+<blockquote>
+<p><strong>Use the agent&rsquo;s emergent reasoning for the review itself. Use deterministic Python for the algorithmic steps.</strong></p>
+</blockquote>
+<p>I could have asked the agent to post the comments itself, but I&rsquo;ve watched how that goes. When I tell Claude Code to post review comments on file lines, the agent routinely burns several failed requests before landing a valid one — GitHub&rsquo;s GraphQL mutation schema for anchored comments is finicky. That&rsquo;s tolerable when a human is watching; it&rsquo;s wasteful and fragile when the bot runs unattended. Judgment is what the model is good at, API calls and formatting are what code is good at.</p>
+<hr>
+<h2 id="3-the-outcome">3. The outcome</h2>
+<p>When I start reviewing a PR, the first thing I do is check whether Astra has run. If not — or if the author pushed changes after the last Astra run — I trigger it. Then I read its comments, assess them, and add my own observations on top. The bot catches the low-level stuff; I focus on intent, scope, and architectural direction.</p>
+<p><strong>The same workflow is available to PR authors, which is the whole point.</strong> They can get a deep, useful review and clean up issues that were found before proceeding to human review.</p>
+<p>A handful of folks on the team have reached out unprompted — both as authors and as reviewers — to say they&rsquo;re finding Astra useful.</p>
+<h3 id="what-im-seeing">What I&rsquo;m seeing</h3>
+<ul>
+<li><strong>Review cycles are faster.</strong> Authors get feedback in 2–5 minutes instead of waiting overnight. Low-level issues get fixed before a human reviewer opens the PR.</li>
+<li><strong>Subtle issues get caught.</strong> On one PR, Astra flagged that a user-supplied filter expression was evaluated as a regex in one code path and as a SQL <code>LIKE</code> substring match in another, across separate modules — so the same query returned different results depending on whether it hit the cache. That&rsquo;s the kind of cross-path inconsistency a careful human reviewer would likely miss on first pass, and a shallower review bot could miss entirely if the diff only touched one of the paths.</li>
+<li><strong>Follow-up work is captured.</strong> &ldquo;Out-of-scope but worth doing&rdquo; observations become tickets instead of getting dropped on the floor or blocking merges.</li>
+<li><strong>Cost-effective for internal use.</strong> Each review runs $0.50–$2.00 in API spend. Too expensive for a review bot that needs to turn a profit on its own, but cheap compared to the engineering time it saves.</li>
+</ul>
+<h3 id="what-id-emphasize-if-youre-building-something-similar">What I&rsquo;d emphasize if you&rsquo;re building something similar</h3>
+<ul>
+<li><strong>Give the agent a real workspace, not a diff in a vacuum.</strong> Cloned repo, installed dependencies, readable library source, linked tickets, prior review threads. Every piece of context you add removes a class of false positives.</li>
+<li><strong>Let the ticket define scope.</strong> The linked ticket and the PR description give the agent enough signal to judge what&rsquo;s a blocker versus what should be a follow-up — you don&rsquo;t need to hand-code scope rules. Skip that context and everything starts looking like a must-fix, and the signal drowns.</li>
+<li><strong>Let the agent reason, let the code execute.</strong> Use the model for judgment and prose. Use Python for API calls, formatting, and anything you want to be deterministic. This split is what lets the bot run unattended without burning tokens on GraphQL retries.</li>
+<li><strong>The biggest win is for the author, not the reviewer.</strong> A deep review before the human one shows up changes what the author ships, not just what the reviewer sees. Designing for the author-first flow changed which features mattered (e.g. responding to prior review threads) and which didn&rsquo;t.</li>
+</ul>
+<p>Astra is changing what humans spend their review time on, not replacing human review. And that, for me, is the point.</p>
 
     </div><div class="post_comments">
   

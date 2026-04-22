@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Development Process on Fernando Correia&#39;s Blog</title>
+    <link>https://fernandocorreia.dev/tags/development-process/</link>
+    <description>Recent content in Development Process on Fernando Correia&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Fernando de Alcantara Correia</copyright>
+    <lastBuildDate>Wed, 22 Apr 2026 05:11:55 +0000</lastBuildDate><atom:link href="https://fernandocorreia.dev/tags/development-process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shifting code review left</title>
+      <link>https://fernandocorreia.dev/posts/building-a-code-review-bot/</link>
+      <pubDate>Wed, 22 Apr 2026 05:11:55 +0000</pubDate>
+      
+      <guid>https://fernandocorreia.dev/posts/building-a-code-review-bot/</guid>
+      <description>
+        
+          
+            &lt;p&gt;&lt;em&gt;How I built an agent to automate the grunt work of code review so that reviewers can focus more on intent and design.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-the-problem-thorough-code-review-is-necessary-but-expensive&#34;&gt;1. The problem: thorough code review is necessary but expensive&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s 2pm. My review queue has about a dozen pull requests in it. My team just finished their day and submitted them before signing
+off. A few PRs run to several hundred lines. By the time I work through the queue, the authors are offline. Whatever feedback I
+leave won&amp;rsquo;t be read until they log on tomorrow.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

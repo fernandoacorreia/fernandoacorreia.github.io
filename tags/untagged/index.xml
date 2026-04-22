@@ -7,7 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Fernando de Alcantara Correia</copyright>
-    <lastBuildDate>Wed, 26 Aug 2020 03:12:32 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2026 20:24:13 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>building a code review bot</title>
+      <link>http://localhost:1313/posts/building-a-code-review-bot/</link>
+      <pubDate>Sun, 19 Apr 2026 20:24:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/building-a-code-review-bot/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;building-astra-a-pr-review-bot-with-deep-context&#34;&gt;Building Astra: A PR Review Bot With Deep Context&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;How I automated the grunt work of code review so that tech leads can focus more on intent and design.&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;1-the-problem-thorough-code-review-is-necessary-but-expensive&#34;&gt;1. The Problem: Thorough code review is necessary but expensive&lt;/h2&gt;
+&lt;p&gt;As a tech lead, reviewing my team&amp;rsquo;s pull requests is one of the most important parts of my job. A good review asks a lot of questions at once:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Is it correct?&lt;/strong&gt; Does the code do what the PR says it does?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Does it solve the problem?&lt;/strong&gt; Not just the diff in isolation — does it actually address the ticket that spawned it?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Is the quality up to par?&lt;/strong&gt; Readability, naming, idiomatic usage of the language and frameworks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What got missed?&lt;/strong&gt; Edge cases, security holes, performance cliffs, concurrency bugs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Is it tested?&lt;/strong&gt; Evidence of automated tests, or at minimum a credible smoke test when end-to-end automation isn&amp;rsquo;t practical.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What&amp;rsquo;s next?&lt;/strong&gt; Follow-up work the PR surfaces but shouldn&amp;rsquo;t absorb — tech debt, adjacent issues, design questions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before AI assistants, I did all of this manually: reading the diff, checking out the branch locally, walking the call tree of affected code, cross-referencing library behavior, and drafting comments by hand. It&amp;rsquo;s thorough, but it&amp;rsquo;s slow — and for large diffs, it&amp;rsquo;s exhausting. The reviewer becomes a bottleneck, and the deeper questions (intent, design, scope) get crowded out by the low-level work of spotting every null-check and off-by-one.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Scratch</title>
       <link>http://localhost:1313/posts/scratch/</link>
